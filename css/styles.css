@@ -1,0 +1,17 @@
+h1{
+  background-color: #FFB100;
+}
+h2{
+  background-color: #A3BB98;
+}
+body{
+  background-color: #F0ECCF;
+}
+hr{
+  border-style: dashed none none;
+  border-color: rgb(106, 106, 106);
+  border-width: 5px;
+}
+ul{
+  list-style-type: disc;
+}
