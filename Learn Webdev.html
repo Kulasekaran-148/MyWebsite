@@ -2,11 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>learn HTML</title>
+	<title>Web Development</title>
+	<style>
+		h1{
+			background-color: #FFB100;
+		}
+		h2{
+			background-color: #FBC252;
+		}
+		body{
+			background-color: #F0ECCF;
+		}
+	</style>
 </head>
 <body>
 <center><h1>HTML - <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</h1></center>
-<hr><center><h2>13. Introduction to HTML</h2></center><hr>
+<hr><center><h2>Introduction to HTML</h2></center><hr>
 <ol>
 	<li>HTML</li>
 		<ul>
@@ -18,7 +29,7 @@
 		</ul>
 	<li>HTML tags</li>
 </ol>
-<hr><center><h2>14. Anatomy of HTML Tag</h2></center><hr>
+<hr><center><h2>Anatomy of HTML Tag</h2></center><hr>
 <ol>
 	<li>Self closing tags</li>
 		<ul>
@@ -41,7 +52,7 @@
 			<li>For Multiline comment, use the <b>"--&gt;"</b> on a different line and type the text in between them</li>
 		</ul>
 </ol>
-<hr><center><h2>17. The HTML Boilerplate</h2></center><hr>
+<hr><center><h2>The HTML Boilerplate</h2></center><hr>
 <ol>
 	<li>Doctype</li>
 		<ul>
@@ -74,7 +85,7 @@
 			<li>This is where the content of the website goes</li>
 		</ul>
 </ol>
-<hr><center><h2>18. Structuring text in HTML</h2></center><hr>
+<hr><center><h2>Structuring text in HTML</h2></center><hr>
 <ol>
 	<li>&lt;P&gt; tag</li>
 	<li>&lt;i&gt; tag vs. &lt;em&gt; tag</li>
@@ -87,7 +98,7 @@
 			<li>But <b>strong</b> is a logical state and <b>b</b> is a physical state.</li>
 		</ul>
 </ol>
-<hr><center><h2>19. HTML lists</h2></center><hr>
+<hr><center><h2>HTML lists</h2></center><hr>
 <ol>
 	<li>Unordered lists (&lt;ul&gt;)</li>
 	<li>Ordered lists (&lt;ol&gt;)</li>
@@ -97,7 +108,7 @@
 	<li>We can customize the list, for eg, using Roman numerals instead of numbers in the ordered lists by using attribute: <b>&lt;ol&gt; type="i"</b></li>
 	<li>You can also make the list start at a particular number by using the attribute <b>start="number"</b></li>
 </ul>
-<hr><center><h2>20. HTML Image elements</h2></center><hr>
+<hr><center><h2>HTML Image elements</h2></center><hr>
 <ol>
 	<li>&lt;img&gt; tag</li>
 		<ul>
@@ -109,7 +120,7 @@
 			<li>the <b>alt</b> tag also helps in search optimization and increases ranking of the website by making it easier for google to fetch relevant information</li>
 		</ul>
 </ol>
-<hr><center><h2>21. HTML Links and Anchor Tags</h2></center><hr>
+<hr><center><h2>HTML Links and Anchor Tags</h2></center><hr>
 <ol>
 	<li>The &lt;a&gt; (Anchor) tag</li>
 		<ul>
@@ -119,7 +130,7 @@
 				https://Google.com">Google's Home Page</a></li>
 		</ul>
 </ol>
-<hr><center><h2>23. HTML Tables</h2></center><hr>
+<hr><center><h2>HTML Tables</h2></center><hr>
 <ol>
 	<li>&lt;table&gt; tag</li>
 		<ul>
@@ -137,7 +148,7 @@
 			<li>&lt;tfoot&gt; - Table Foot</li>
 		</ul>
 </ol>
-<hr><center><h2>24. Using HTML Tables for Layout</h2></center><hr>
+<hr><center><h2>Using HTML Tables for Layout</h2></center><hr>
 <ul>
 	<li> Using tables to arrange the photo on left and the details on right</li>
 	<li>Cell spacing</li>
@@ -145,7 +156,7 @@
 			<li>This is a deprecated feature which defines the spacing of data inside the cells in terms of pixels or percentage</li>
 		</ul>
 </ul>
-<hr><center><h2>28. HTML Forms</h2></center><hr>
+<hr><center><h2>HTML Forms</h2></center><hr>
 <ol>
 	<li>&lt;form&gt; tag</li>
 		<ol type="I">
@@ -162,7 +173,7 @@
 				</ul>
 		</ol>
 </ol>
-<hr><center><h2>29. Forms in Practice</h2></center><hr>
+<hr><center><h2>Forms in Practice</h2></center><hr>
 <ol>
 	<li>Text Area</li>
 		<ul>
@@ -175,7 +186,7 @@
 	<li>For example: <b>action="mailto:kulasekaranslrk@gmail.com" method="post"</b></li>
 	<li>There is another form attribute called <b>enctype</b>, which stands for encoding type, which like the <b>UTF-8</b> in our html document, specifies in what type the form data must be encoded. By specifying this, when using the form, the data will have only the plain text that was typed onto the form (it won't have the extra symbols that will be there when not specified)</li>
 </ol>
-<hr><center><h2>30. Publishing website in GitHub</h2></center><hr>
+<hr><center><h2>Publishing website in GitHub</h2></center><hr>
 <ol>
 	<li>Create a public repository and add the html files</li>
 	<li>The website's html file must be named <b>"index.html"</b>. This is mandatory otherwise the website will not work.</li>
@@ -183,7 +194,37 @@
 	<li>Once the files are uploaded, go the repo setting --> Pages --> source --> choose the branch --> save</li>
 	<li>github will take some time and then refresh the page. There will be a link shown. This link can be shared with anyone and they can see the website without needing any of the files</li>
 </ol>
+<hr size="3"><hr size="3">
 <center><h1>CSS - <b>C</b>ascading <b>S</b>tyle <b>S</b>heet</h1></center>
 <hr><center><h2>33. Introduction to CSS</h2></center><hr>
+<ul>
+	<li>CSS is used to style the website to make it look more appealing which can't be done with HTML alon. Also, CSS along can't do anything without a base HTML</li>
+</ul>
+<hr><h2><center>Inline CSS</center></h2><hr> 
+<ol>
+	<li>Changing Background color using css</li>
+		<ul>
+			<li>use <b>"background-colo: colorname;"</b> inside the body tag of the html document to change the background color of the whole page</li>
+			<li>Visit this link: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">changing Bg-color using css</a> to learn more about this <b>backgroud-color</b> attribute</li>
+			<li>You can also change the background color with hexvalue, RGB, HSL, control transparency of the background color by including the alpha channel, etc.,</li>
+			<li>Visit <a href="https://colorhunt.co/">Colorhunt.co</a> website to find interesting color palettes created and liked by artists and fetch their hex values</li>
+			<li>Install the vscode extension called <b>pigment</b> to visualize the color when you type its value in the editor</li>
+			<li>Also visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Css Color mdn</a> site to know what name of the color to specify according to its hexvalue</li>
+		</ul>
+</ol>
+<hr><h2><center>Internal CSS</center></h2>
+<ul>
+	<li>Instead of changing the whole color of the page, what if only the horizontal rule's colors need to be changed.</li>
+	<li>adding the <b>"background-color: colorname;"</b> inside each and every &lt;hr&gt; tag is cumbersome</li>
+	<li>This is where the <b>Internal CSS</b> comes into the picture</li>
+</ul>
+<ol>
+	<li>Internal CSS</li>
+	<ul>
+		<li>Create <b>&lt;style&gt; &lt;/style&gt;</b> inside the <b>head</b> section of the html</li>
+		<li>Inside this <b>&lt;style&gt; &lt;/style&gt;</b> specific sections of the page can be edited.</li>
+		<li>For Example, to change the bg colors of the level 1 headings alone, type <b>h1{background-color:colorname}</b></li>
+	</ul>
+</ol>
 </body>
 </html>
