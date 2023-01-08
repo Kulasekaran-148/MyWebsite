@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>learn HTML</title>
+</head>
+<body>
+<center><h1>HTML - <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</h1></center>
+<hr><center><h2>13. Introduction to HTML</h2></center><hr>
+<ol>
+	<li>HTML</li>
+		<ul>
+			<li>Websites are made of HTML, CSS and JS files. A website can't function with CSS or JS files alone.</li>
+			<li>But a website can work be made with HTML file alone. </li>
+			<li>HTML = <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</li>
+			<li>HyperText = Parts of text that link to other documents</li>
+			<li>Markup Language = HTML Tags. People used to mark parts of a text with certain rules to denote which needs to be italicized, bold, etc., similarly HTML is a markup language that uses HTML tags to do the same.</li>
+		</ul>
+	<li>HTML tags</li>
+</ol>
+<hr><center><h2>14. Anatomy of HTML Tag</h2></center><hr>
+<ol>
+	<li>Self closing tags</li>
+		<ul>
+			<li>Some tags require both start and end tag. But some are <b>self closing</b> meaning they don't require a closing tag</li>
+			<li>For example: the <b>&lt;br&gt;</b> tag</li>
+		</ul>
+	<li>HTML attributes</li>
+		<ul>
+			<li>Attributes lets us specify some rules about the function or appearance of the tag.</li>
+			<li>For example, the <b>&lt;hr&gt;</b> is called a Horizontal rule tag that creates a horizontal line. with the attribute called <b>size</b> we can define the thickness of the horizontal line</li>
+			<li><b>&lt;hr size="3"&gt;</b> will make the line 3 pixel thinkness</li>
+			<li><b>&lt;hr&gt;</b> is also a Self closing tag</li>
+		</ul>
+	<li><a href="https://devdocs.io">devdocs.io</a></li>
+	<li><a href="https://codepen.io/your-work">codeopen.io</a></li>
+	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org</a></li>
+	<li>Commenting in HTML</li>
+		<ul>
+			<li>Use <b>"&lt;!-- --&gt;"</b> to comment</li>
+			<li>For Multiline comment, use the <b>"--&gt;"</b> on a different line and type the text in between them</li>
+		</ul>
+</ol>
+<hr><center><h2>17. The HTML Boilerplate</h2></center><hr>
+<ol>
+	<li>Doctype</li>
+		<ul>
+			<li>The <b>&lt;!DOCTYPE html&gt; </b> tells the browser which version of html the file was written in. The latest version is the html5 and the above line denotes html5</li>
+		</ul>
+	<li>html tag</li>
+		<ul>
+			<li>Every element in the html file will be inside the <b>&lt;html&gt; &lt;/html&gt;</b> tag. Actually the contents go inside the <b>body tag</b> and the body tag is inside the html tag itself</li>
+			<li>html tag has an attribute called <b>lang</b> which denotes in which language the text content of the website is written in. For example, <b>&lt;html&gt; lang="en"</b> denotes that the language is in english</li>
+			<li>Its not important for those who can see and read the page. But it's important for the people who can't as they rely on some computer narrating tools, which requires to know in which language the content is in for the correct pronounciation</li>
+		</ul>
+	<li>Head tag</li>
+		<ul>
+			<li>Important information required for the website is placed inside <b>&lt;head&gt; &lt;/head&gt;</b> tag, but its <b>not visible to the user</b>
+			<ol>
+				<li>&lt;meta charset="UTF-8"&gt;</li>
+					<ul>
+						<li>For example, it includes the <b>&lt;meta charset="UTF-8"&gt;</b> to denote which charset that the text in the file should use so that the browser can render them correctly. Some character sets may include emojis and some may not. So, it is good practice to always include and use the right charset for the website</li>
+					</ul>
+				<li>&lt;title&gt;
+					<ul>
+						<li>The title tag denotes the title of the page. Its the text that gets displayed in the tabs of the browser.</li>
+					</ul> 
+			</ol> 
+			<li>There are other things that can go inside the head tag, its not discussed here</li>
+			
+		</ul>
+	<li>Body tag</li>
+		<ul>
+			<li>This is where the content of the website goes</li>
+		</ul>
+</ol>
+<hr><center><h2>18. Structuring text in HTML</h2></center><hr>
+<ol>
+	<li>&lt;P&gt; tag</li>
+	<li>&lt;i&gt; tag vs. &lt;em&gt; tag</li>
+		<ul>
+			<li>The <b>i</b> and <b>em</b> tags both are used to italicize the words. But the <b>em</b> tag not only italicizes but also tells the system narrator to <b>emphasize</b> the word while it being read</li>
+		</ul>
+	<li>&lt;b&gt; tag vs &lt;strong&gt; tag</li>
+		<ul>
+			<li>Similar to the <b>i</b> and the <b>em</b> tags, <b>strong</b> and <b>b</b> tags both are used the make the text inside them stand out by bolding them</li>
+			<li>But <b>strong</b> is a logical state and <b>b</b> is a physical state.</li>
+		</ul>
+</ol>
+<hr><center><h2>19. HTML lists</h2></center><hr>
+<ol>
+	<li>Unordered lists (&lt;ul&gt;)</li>
+	<li>Ordered lists (&lt;ol&gt;)</li>
+</ol>
+<ul>
+	<li>Both these list tags introduces the use of element tag called <b>&lt;li&gt;</b> for each item in the list</li>
+	<li>We can customize the list, for eg, using Roman numerals instead of numbers in the ordered lists by using attribute: <b>&lt;ol&gt; type="i"</b></li>
+	<li>You can also make the list start at a particular number by using the attribute <b>start="number"</b></li>
+</ul>
+<hr><center><h2>20. HTML Image elements</h2></center><hr>
+<ol>
+	<li>&lt;img&gt; tag</li>
+		<ul>
+			<li>the &lt;img&gt; tag requires an attribute called <b>src</b> which is called as source, which is the locaction of the image that needs to be displayed</li>
+			<li>The source can be an online link or a computer directory</li>
+			<li>In the case of a computer directory, if the .html file as well as the image are in the same directory, then only file name along with the extension (for eg. src="Wallpaper.png") is enough</li>
+			<li>But if they are in different directory, then the full path of the image is to be entered</li>
+			<li>Apart from the <b>src</b> attribute, there is another attribute called as <b>alt</b> which stands for <b>alternative text</b> which is used to display a text in case if a browser can't locate or render the image</li>
+			<li>the <b>alt</b> tag also helps in search optimization and increases ranking of the website by making it easier for google to fetch relevant information</li>
+		</ul>
+</ol>
+<hr><center><h2>21. HTML Links and Anchor Tags</h2></center><hr>
+<ol>
+	<li>The &lt;a&gt; (Anchor) tag</li>
+		<ul>
+			<li> &lt;a&gt; tag is used to include links in the website. It requires an attribute called <b>href</b> which contains the link</li>
+			<li>after the <b>href</b> attribute, type in the text that needs to be displayed for that link</li>
+			<li>For example: &lt;a href="https://Google.com"&gt;Google's Home Page&lt;/a&gt; will look like this: <a href="
+				https://Google.com">Google's Home Page</a></li>
+		</ul>
+</ol>
+<hr><center><h2>23. HTML Tables</h2></center><hr>
+<ol>
+	<li>&lt;table&gt; tag</li>
+		<ul>
+			<li>attribute: <b>border="1"</b> - creates a border of 1 pixel thickness</li>
+			<li>&lt;tr&gt; - Table row - creates a table row</li> 
+			<li>&lt;td&gt; - Table data - contains the cell data</li> 
+			<li>&lt;thead&gt; -  Table Head</li>
+				<ul>
+					<li>&lt;th&gt; - Table head cell</li>
+					<li><b>&lt;th&gt;</b> elements work even without being inside the <b>&lt;thead&gt;</b> tag as most browsers know where th elements need to be</li>
+					<li>Then the reason or use of these table head is in situations where we would want to stylize the table headers and data in a different way</li>
+					<li><b>Rowspan</b> and <b>Colspan</b> - attirbutes that denote the width and height of the cell respectively in terms of cells</li>
+				</ul>
+			<li>&lt;tbody&gt; - Table Body - contains all the data of the table</li>
+			<li>&lt;tfoot&gt; - Table Foot</li>
+		</ul>
+</ol>
+<hr><center><h2>24. Using HTML Tables for Layout</h2></center><hr>
+<ul>
+	<li> Using tables to arrange the photo on left and the details on right</li>
+	<li>Cell spacing</li>
+		<ul>
+			<li>This is a deprecated feature which defines the spacing of data inside the cells in terms of pixels or percentage</li>
+		</ul>
+</ul>
+<hr><center><h2>28. HTML Forms</h2></center><hr>
+<ol>
+	<li>&lt;form&gt; tag</li>
+		<ol type="I">
+			<li>&lt;label&gt; tag</li>
+				<ul>
+					<li>It's the name of the details that are asked in a typical form: Name, D.O.B. These are called labels</li>
+				</ul>
+			<li>&lt;input&gt; tag</li>
+				<ul>
+					<li>type attribute - what datatype must be entered in the input box. submit is also a type.</li>
+					<li>name attribute</li>
+					<li>value attribute - the data itself</li>
+					<li>For more attributes of the input tag, visit: <a href="https://www.w3schools.com/html/html_form_input_types.asp">Other input types</a></li>
+				</ul>
+		</ol>
+</ol>
+<hr><center><h2>29. Forms in Practice</h2></center><hr>
+<ol>
+	<li>Text Area</li>
+		<ul>
+			<li>Text area has two required attributes called <b>rows</b> and <b>columns</b> which is nothing but the length and width of the text area</li>
+			<li>The text area can be modified from the browswer itself, the rows and cols data denote the initial size of that text area</li>
+		</ul>
+	<li>The form tag has an attribute called <b>action</b> which says what to do when an action like <b>clicking the submit button</b> is performed</li>
+	<li>The <b>email input type</b> of the form tag automatically checks whether a valid email address was typed</li>
+	<li>there is an action called <b>mailto</b> which opens up the default mail client with the input that was typed in. This also requires the <b>method="post</b></li>
+	<li>For example: <b>action="mailto:kulasekaranslrk@gmail.com" method="post"</b></li>
+	<li>There is another form attribute called <b>enctype</b>, which stands for encoding type, which like the <b>UTF-8</b> in our html document, specifies in what type the form data must be encoded. By specifying this, when using the form, the data will have only the plain text that was typed onto the form (it won't have the extra symbols that will be there when not specified)</li>
+</ol>
+<hr><center><h2>30. Publishing website in GitHub</h2></center><hr>
+<ol>
+	<li>Create a public repository and add the html files</li>
+	<li>The website's html file must be named <b>"index.html"</b>. This is mandatory otherwise the website will not work.</li>
+	<li>Make sure all the data sources are pointing the right directory, otherwise they won't show up in the website</li>
+	<li>Once the files are uploaded, go the repo setting --> Pages --> source --> choose the branch --> save</li>
+	<li>github will take some time and then refresh the page. There will be a link shown. This link can be shared with anyone and they can see the website without needing any of the files</li>
+</ol>
+<center><h1>CSS - <b>C</b>ascading <b>S</b>tyle <b>S</b>heet</h1></center>
+<hr><center><h2>33. Introduction to CSS</h2></center><hr>
+</body>
+</html>
