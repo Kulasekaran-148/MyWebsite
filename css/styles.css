@@ -18,19 +18,43 @@ a:hover{
 }
 a{
   color:Yellow;
+  text-decoration: none;
 }
 b{
   color:rgb(255, 0, 149)
 }
 /*----------------class selectors------------------*/
-.Mypic{
-  height: 200px;
-  border-radius: 100%;
-  border: Solid 5px;
-}
 .Myname{
   background-color:rgba(255, 0, 0, 0); color:#00ccff;
 }
 .heading{
   color:red;
+}
+.profilepic{
+  height:200px;
+  border-radius:100%;
+  border: solid 5px;
+}
+.coverpic{
+  height:300px;
+  width:100%;
+  object-fit: cover;
+  object-position: 0% 30%;
+}
+.picdiv{
+  /* background-color: red; */
+  display: inline-block;
+  position: absolute;
+  left:41.44%;
+  bottom:500px;
+}
+.First_subheading{
+  margin-top: 115px;
+}
+.contactslink{
+  position: absolute;
+  top:50px;
+  right:50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: larger;
 }
