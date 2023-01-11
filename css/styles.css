@@ -1,3 +1,4 @@
+/*------------------Tag selectors------------------*/
 h1{
   background-color: #FFB100;
 }
@@ -20,4 +21,15 @@ hr{
 }
 ul{
   list-style-type: disc;
+}
+a:hover{
+  color:red;
+  font-size: 120%;
+}
+/*----------------class selectors------------------*/
+.Mypic{
+  height: 200px;
+}
+.Myname{
+  background-color:rgba(255, 0, 0, 0); color:#243763;
 }

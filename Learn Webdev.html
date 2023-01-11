@@ -203,7 +203,7 @@
 			<li>Also visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Css Color mdn</a> site to know what name of the color to specify according to its hexvalue</li>
 		</ul>
 </ol>
-<hr><h2><center>Internal CSS</center></h2>
+<hr><h2><center>Internal CSS</center></h2><hr>
 <ul>
 	<li>Instead of changing the whole color of the page, what if only the horizontal rule's colors need to be changed.</li>
 	<li>adding the <b>"background-color: colorname;"</b> inside each and every &lt;hr&gt; tag is cumbersome</li>
@@ -220,7 +220,7 @@
 		<li>The customizations above mentioned only applies to the html file that is being worked on. To make it global, that is, to make it get applied to all its sister pages, it needs to be in a external css</li>
 	</ul>
 </ol>
-<hr><h2><center>External CSS</center></h2>
+<hr><h2><center>External CSS</center></h2><hr>
 <ol>
 	<li>Creating an external stylesheet</li>
 	<ul>
@@ -233,16 +233,57 @@
 		<li>This will modify the appearance of all the html files that has this link in their head section</li>
 	</ul>
 </ol>
-<hr><h2><center>Debugging in CSS</center></h2>
+<hr><h2><center>Debugging in CSS</center></h2><hr>
 <ul>
 	<li>Always use Chrome's web developer tools to check for bugs in the website</li>
 	<li>Inline css overrides Internal css as well as external css</li>
 	<li>style precedence is like: <b>Inline > Internal > External</b></li>
 </ul>
-<hr><h2><center>The Anatomy of CSS Syntax</center></h2>
+<hr><h2><center>The Anatomy of CSS Syntax</center></h2><hr>
 <ul>
 	<li><b>Selector{property:value;}</b></li>
 	<li>It is always best practice to have the properties in the <b>styles.css</b> file arranged in alphabetical order for each element. Helps a lot while debugging</li>
 </ul>
+<hr><h2><center>CSS Selectors</center></h2><hr>
+<ol>
+	<li>Class Selectors</li>
+	<ul>
+		<li><a href="https://emojipedia.org/">EmojiPedia</a></li>
+		<li>The above site lets users use different kinds of emoji from various operating systems</li>
+		<li>When an img customization is present in a <b>styles.css</b> file, that customization will get applied to all the images that is on the website</li>
+		<li>To apply different customization to different types of images, For eg: Having the Background color of images that has a dog as red and having the background color of images that has a cat as green, we need to include a <b>class</b> attribute inside the <b>img</b> tag and then target customizations based on classes and not on tags</li>
+		<li>Lets have two classes as <b>dogs</b> and <b>cats</b></li>
+		<li>In the <b>styles.css</b> file, add <b>.dogs{background-color:red;}</b> and <b>.cats{background-color:green;}</b></li>
+		<li>The dot(<b>.</b>) in front represent that the following is a class and not a tag</li>
+		<li><b>Note: </b>commenting in CSS is done within <b>/* */</b>. Have them on different line for multiline commenting.</li>
+	</ul>
+</ol>
+<hr><h2><center>Classes vs. Ids</center></h2><hr>
+<ol>
+	<li>Id selectors</li>
+	<ul>
+		<li>Use the <b>#</b> symbol to target Ids</li>
+		<li><b>Note:</b>The customization based on Classes and Ids will override that of the general tag customization. Meaning, Even if for example, an img tag customization is already present, a specific class customization of the img will override the general one</li>
+		<li>The difference between classes and ids is that, classes can be instanced at more than one places. But Ids cane be instanced only once</li>
+		<li>For example, if there is a h1 tag with the id="heading", then this id="heading" can't be instanced anywhere else on the code. But the classes="dogs" can be instanced any number of time</li>
+		<li>They both are used to specifically target the customization across the elements. But classes target a specifig group of elements whereas Ids target a single unique element</li>
+		<li>A tag can have more than one class name. for example, If all the dog class images needs to be circular, it can be done as: <b>class="dogs circular"</b> And then can be targeted as: <b>.circular{border-radius:100%;}</b></li>
+		<li>But a tag can't have two Ids. If more than one id was included, it won't be considered as a valid id and its customizations will not get applied. This is another difference between classes and ids</li>
+	</ul>
+	<li>psuedo classes</li>
+	<ul>
+		<li>The psuedo classes are used to perfom a change in the element when the user, say for example, hovers the mounse pointer over an element (but not clicking it)</li>
+		<li><b>Note: </b>The psudo classes begin with a <b>colon(:)</b> in front. The syntax is <b>tag name:pseudo class</b></li>
+		<li>For example, There is a pseudo class called <b>:hover</b>. It can be used to make changes to an element only when it is being hovered. To do this:</li>
+		<ol type="i">
+			<li>Go to styles.css</li>
+			<li>img:hover{background-color:blue;}</li>
+		</ol>
+		<li>This will change the background of the image to blue only when the mouse cursor is brought on top of any image.</li>
+		<li><b>Note:</b> The hover customization doesn't work if an inline CSS syling is present as it has the most precedence</li>
+		<li>Check this: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">site</a> to learn more about different pseudo classes available</li>
+
+	</ul>
+</ol>
 </body>
 </html>
