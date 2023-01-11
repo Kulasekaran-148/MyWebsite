@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Web Development</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" href="webdev_logo.ico">
 </head>
 <body>
 <a href="index.html">Go back</a>
-<center><h1>HTML - <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</h1></center>
+<center><h1>HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
 <hr><center><h2>Introduction to HTML</h2></center><hr>
 <ol>
 	<li>HTML</li>
@@ -187,7 +188,7 @@
 </ol>
 <hr>
 
-<center><h1>CSS - <b>C</b>ascading <b>S</b>tyle <b>S</b>heet</h1></center>
+<center><h1>CSS - <b class="heading">C</b>ascading <b class="heading">S</b>tyle <b class="heading">S</b>heet</h1></center>
 
 <hr><center><h2>33. Introduction to CSS</h2></center><hr>
 <ul>
@@ -309,7 +310,52 @@
 </ol>
 <hr><h2><center>Box Model of Website styling</center></h2><hr>
 <ul>
-	<li></li>
+	<li>The box model of css: <b>margin, border, padding, content</b></li>
+	<li>When a text is displayed in a website, that text has a bounding box, which has a width and height, let's assume 100px each</li>
+	<li>Padding the the space between the content of the text and its border</li>
+	<li>The space between borders of two adjacent elements is called as the margin</li>
+</ul>
+<hr><h2><center>CSS Display Property</center></h2><hr>
+<ul>
+	<li>The display property has 4 values: <b>Block, Inline, Inline-block, None</b></li>
+</ul>
+<ol>
+	<li>Block elements</li>
+	<ul>
+		<li>Block elements are those which take up the whole width of the viewport unlike imgaes.</li>
+		<li>So when two paragraphs are inserted, they naturally occur as in new lines, since paragraphs, headings, etc., are block elements</li>
+	</ul>
+</ol>
+<ul>
+	<li>Say, for example, if the "pro" part in a sentence called "a programmer" needs to be underlined, it wont work if it was done as: <b>&lt;p&gt; a&lt;/p&gt; &lt;p class="pro"&gt; pro&lt;/p&gt; &lt;p&gt;grammer&lt;/p&gt;</b> and in the css as: <b>.pro{text-decoration:underline;}</b></li>
+</ul>
+<ol start="2">
+	<li>Span Tag - Inline Block elements</li>
+	<ul>
+		<li>To achieve that, a tag called <b>span</b> needs to be used</li>
+		<li>It is achieved as follows: <b>&lt;p&gt; a &lt;span class="pro"&gt;pro&lt;/span&gt;grammer&lt;/p&gt;</b> and then the Css modification of the class <b>pro</b></li>
+		<li>Span tag will be very useful in formatting one part of the text. Just like the <b>div</b> tag, span tag don't do very much unless they are used in conjunction with css</li>
+		<li>Some common inline elements:
+			<ul><li>spans</li><li>images</li><li>Anchors</li></ul>
+		</li>
+		<li>Spans seem like they have the advantage since they can be stacked next to each other unlike the block elements, so one may think that why block elements are needed anyway</li>
+		<li>The reason is that, unlike block elements, Inline block element's width can't be adjusted</li>
+		<li>On the other hand, even if the width of the block element's are adjustable, it still doesn't let other elements to sit next to it</li>
+		<li>chaning the <b>display</b> value of a block element to <b>inline </b> doesn't do any good because the width can't be changed once it becomes <b>inline</b></li>
+	</ul>
+	<li>Inline-block elements</li>
+		<ul>
+			<li>This is where Inline - block elements come in which give in the best of both worlds</li>
+			<li>They can be stacked next to each other and still their widths can be modified</li>
+		</ul>
+	<li>None elements</li>
+		<ul>
+			<li>This display type is like it deletes the element with the display property as <b>none</b></li>
+			<li>Imagine a situation in which a quiz is being attended on a site. To hide/show the answer at the click of a button can be made by changing the display property to <b>none</b> and back</li>
+		</ul>
+</ol>
+<ul>
+	<li>There is another property called <b>visibility</b> which when set to hidden will simply hide the element, but the element is still on the website. But when display is set to <b>none</b>, the element stops existing in the site and its place can be occupied by another element</li>
 </ul>
 </body>
 </html>
