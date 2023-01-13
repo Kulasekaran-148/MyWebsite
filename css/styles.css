@@ -3,34 +3,34 @@ a:hover{
   color:red;
 }
 a{
-  color: #FFD4B2;
+  color:#f0f0f0;
   text-decoration: none;
 }
 b{
-  color:orange;
+  color:#03C988;
 }
 body{
-  background-color: #3f3c38;
-  color:#E5E5CB;
+  background-color: #373737;
+  color:#f0f0f0;
   font-family: 'Cormorant Garamond', serif;
   font-size: large;
   margin:0px;
 }
 h1{
-  color:rgb(231, 0, 0)
+  color:#1C82AD;
 }
 h2{
-  color:rgb(187, 23, 252)
+  color:#03C988;
 }
 h3{
-  color:#FFD4B2;
+  color:#03C988;
 }
 /* td{
   padding-left: 10px;
   padding-right: 10px;
 } */
 th{
-  color:#FFD4B2;
+  color:#03C988;
   /* padding-left: 10px; */
   /* padding-right: 10px; */
 }
@@ -48,7 +48,7 @@ ul{
 .coverarea{
   height:255px;
   width:100%;
-  background-color: #D5CEA3;
+  background-color: #03C988;
 }
 .covercontents{
   height:fit-content;
