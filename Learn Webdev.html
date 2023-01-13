@@ -5,6 +5,7 @@
 	<title>Web Development</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="icon" href="webdev_logo.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
 </head>
 <body>
 <a href="index.html">Go back</a>
@@ -412,5 +413,50 @@
 	<li>It can also be set by <b>margin: 0 auto</b>, which means margin top and bottom are zero and margin left and right are auto</li>
 </ul>
 <hr><h2><center>Font styling in CSS</center></h2><hr>
+<ol>
+	<li>Common CSS Font families
+		<ol>
+			<li>Cursive</li>
+			<li>Fantasy</li>
+			<li>inherit</li>
+			<li>monospace
+				<ul>
+					<li>This is used mostly for coding as in this font all the letters of a word will be of equal width.</li>
+				</ul>
+			</li>
+			<li>sans-serif
+				<li>Letter don't have tiny feet linke structures</li>
+				<li>The default sans-serif font for most browswers is the arial font</li>
+			</li>
+			<li>serif
+				<ul>
+					<li>For most browsers, the default serif is the Times font</li>
+					<li>Letters have tiny feet like structures</li>
+				</ul>
+			</li>
+		</ol>
+	</li>
+</ol>
+<ul>
+	<li>
+		It's always recommended to use websafe fonts because, when a special font is used for a website, if the user's system or the browser doesn't have that font installed, then it can't render that font and will render the default one, which will make the website look different for them instead of how it should.
+	</li>
+	<li><a href="https://www.cssfontstack.com">CssFontStack.com</a> Visit this site to know which fonts are most commonly used across different operating systems</li>
+	<li>On this site, when a font is copied, a font stack actually gets copied. For eg. <b>font-family: "helvetica neue",helvetica,arial,sans-serif</b></li>
+	<li>The above will work like, if the system has the <b>helvetica neue</b> then it will get displayed, or else the one next to it and so on.</li>
+</ul>
+<ol start="2">
+		<li>Font embedding</li>
+		<ul>
+			<li>But there is a way to use the font that seems good and still make it get displayed whether or not the user's system's able to render it.
+			<li>Use: <a href="https://fonts.google.com/">Google fonts</a></li>
+			<li>To embed the font, copy the font's link on the site and past it in the head section of the html file</li>
+			<li>Then go into the css section and paste the text in the <b>CSS rules to specify</b> box in the site, into the element's style</li>
+		</ul>
+	</li>
+	
+
+</ol>
+	
 </body>
 </html>

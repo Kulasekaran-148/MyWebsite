@@ -2,7 +2,8 @@
 body{
   background-color: rgb(42, 42, 42);
   color:white;
-  font-family:cursive;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: large;
 }
 h1{
   color:rgb(231, 0, 0)
@@ -14,18 +15,21 @@ ul{
   list-style-type: disc;
 }
 a:hover{
-  color:orange;
+  color:red;
 }
 a{
-  color:Yellow;
+  color:rgb(30, 255, 0);
   text-decoration: none;
 }
 b{
-  color:rgb(255, 0, 149)
+  color:orange;
 }
 /*----------------class selectors------------------*/
 .Myname{
-  background-color:rgba(255, 0, 0, 0); color:#00ccff;
+  background-color:rgba(255, 0, 0, 0); color:#ffffff;
+  font-family: 'Tangerine', serif;
+  font-size:xxx-large;
+  margin-bottom:10px;
 }
 .Mypic{
   border-radius: 100%;
