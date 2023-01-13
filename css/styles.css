@@ -3,7 +3,7 @@ a:hover{
   color:red;
 }
 a{
-  color: #3C79F5;
+  color: #FFD4B2;
   text-decoration: none;
 }
 b{
@@ -23,14 +23,14 @@ h2{
   color:rgb(187, 23, 252)
 }
 h3{
-  color:#1C82AD;
+  color:#FFD4B2;
 }
 /* td{
   padding-left: 10px;
   padding-right: 10px;
 } */
 th{
-  color:#03C988;
+  color:#FFD4B2;
   /* padding-left: 10px; */
   /* padding-right: 10px; */
 }
