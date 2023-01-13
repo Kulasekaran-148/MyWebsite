@@ -457,6 +457,38 @@
 	
 
 </ol>
-	
+<hr><h2><center>Adding content to the site</center></h2><hr>
+<ul>
+	<li><a href="https://www.lipsum.com/">Lorem Ipsum</a> - Facts about it.</li>
+	<li>Have a look at: <a href="https://www.flaticon.com/">Flaticon</a>, to use cool icons for the site</li>
+	<li>We can also use GIFs for the site from : <a href="https://giphy.com/">Giphy.com</a></li>
+</ul>
+<hr><h2><center>CSS Sizing</center></h2><hr>
+<ul>
+	<li><b>NOTE:</b> When a font size of a text is hardcoded in the html, even if the user change the font settings in the browser, say from medium to large, that harcoded element's font alone will remain same and the rest of the texts in the page will change size.</li>
+	<li>That's because, using px and mentioning font size will the lock the font's size</li> 
+	<ul>
+		<li>Dynamic Font Sizing
+			<ol>
+				<li>Use %
+					<ul>
+						<li><b>NOTE: </b>100% in font-size means 16px</li>
+						<li>So, if 90px is needed, then (90/16)*100%, that is 562.5%is needed</li>
+					</ul>
+				</li>
+				<li>Use em
+					<ul>
+						<li>em, is the phonetic pronounciation of the letter 'M'. It is no longer used in current days. In em <b>NOTE:</b> 1em = 16px</li>
+						<li>90px=5.625em</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+		<li><b>NOTE: </b>With zooming, it doesn't matter if the text is dynamically or statically sized cause zooming will scale up the whole site</li>
+		<li><b>NOTE: </b>say for example, the body tag has a font-size customized as 2em and then the h1 tag has the font size customized as 5em, then in the end the h1 tag will appear as 7em as it inherits the base font-size from its parent, which is the body. And its the same with using percentages. <b> But when the body tag says the font should be 20px and the h1 tag says it needs to 90px, then it will be 90px only</b></li>
+		<li>To avoid, such situation, there is a feature in the CSS3, the one that is being used, is called <b>rem</b> - Root em</li>
+		<li>The rem is used to ignore all the parent settings.</li>
+	</ul>
+</ul>
 </body>
 </html>
