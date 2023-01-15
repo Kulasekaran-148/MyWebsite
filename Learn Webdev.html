@@ -648,7 +648,49 @@
 				<li>the <b>fixed-top</b> class can be used inside the navbar to make it fixed to the top so that it won't disappear while scrolling</li>
 			</ul>
 		</ol>
-		
+		<hr><center><h2>Setting up our new project</h2></center><hr>
+		<ul>
+			<li>
+				When there is content on the site the navbar will not dropdown. To make it drop down, some java script is actually needed to be embedded into the HTML file.
+			</li>
+			<li>
+				a script tag with a cdn link of java script from the bootstrap website is needed to be added to the head section of the html file
+			</li>
+		</ul>
+		<hr><h2><center>Bootstrap grid system</center></h2><hr>
+		<ol>
+			<li>Class="row" and Class="column"
+				<ul>
+					<li>
+						Bootstrap divides the columns into 12 parts. They can be used with class names as <b>col-1</b> till <b>col-12</b>
+					</li>
+					<li>Col-6 takes up 50.0% of the width</li>
+					<li>Col-4 takes up 33.3% of the width</li>
+					<li>Col-3 takes up 25.0% of the width</li>
+					<li>Col-2 takes up 20.0% of the width</li>
+					<li>From the code below and its output, its easy to under how simple its to create tables using bootstrap.</li>
+				</ul>
+			</li>
+			<div style="text-align: center; padding:15px 0 15px 0">
+				Code: <br>
+				<img class="codeblock" style="height:400px; display:inline-block; margin:0 auto 0 auto;" src="codeimgs/bootstrap_columns.png" alt="columns_code"> <br>
+				Output: <br>
+				<img class="codeblock" style="width:800px;" src="codeimgs/bootstrap_columns_ouptut.png" alt="columns_code_output">
+			</div>
+			<ul>
+				<li>But still, when changing the width of the screen, the columns stay the same and are not responsive</li>
+				<li>To make it responsive, mention the size in the class when creating the columns. For example, instead of <code>col-6</code>, mention it as <code>col-md-6</code>. This will keep two columns of size 6 next to each other when the screen is large and medium (laptop and tablet), and when screen is (small) phone sized, it will stack on top of one another</li>
+			</ul>
+		</ol>
+	</div>
+	<div class="endbox">
+		<hr>
+		<p><center><a href="https://www.instagram.com/ur_known_stranger.offl/">Instagram</a><a style="padding-left: 10px;" href="https://www.linkedin.com/in/kulasekaran-s-7a478a18b/">Linkedin</a></center> </p>
+		<h1><center>© 2023 Kulasekaran.S</center></h1>
 	</div>
 </body>
 </html> 
+
+
+
+

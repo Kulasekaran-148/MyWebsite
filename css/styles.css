@@ -25,11 +25,11 @@ ul{
 }
 /*----------------class selectors------------------*/
 .codeblock{
-  background-color: rgb(27, 27, 27);
+  background-color: rgb(0, 0, 0);
   border-radius: 15px;
-  border-color: #424242;
+  border-color: #252525;
   border:solid 2px;
-  width:fit-content;
+  width:max-content;
   padding:10px;
   margin-top:10px;
   margin-bottom:10px;
