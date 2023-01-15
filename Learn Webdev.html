@@ -11,525 +11,544 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
 </head>
 <body>
-<a href="index.html">Go back</a>
-<center><h1>HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
-<hr><center><h2>Introduction to HTML</h2></center><hr>
-<ol>
-	<li>HTML</li>
-		<ul>
-			<li>Websites are made of HTML, CSS and JS files. A website can't function with CSS or JS files alone.</li>
-			<li>But a website can work be made with HTML file alone. </li>
-			<li>HTML = <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</li>
-			<li>HyperText = Parts of text that link to other documents</li>
-			<li>Markup Language = HTML Tags. People used to mark parts of a text with certain rules to denote which needs to be italicized, bold, etc., similarly HTML is a markup language that uses HTML tags to do the same.</li>
-		</ul>
-	<li>HTML tags</li>
-</ol>
-<hr><center><h2>Anatomy of HTML Tag</h2></center><hr>
-<ol>
-	<li>Self closing tags</li>
-		<ul>
-			<li>Some tags require both start and end tag. But some are <b>self closing</b> meaning they don't require a closing tag</li>
-			<li>For example: the <b>&lt;br&gt;</b> tag</li>
-		</ul>
-	<li>HTML attributes</li>
-		<ul>
-			<li>Attributes lets us specify some rules about the function or appearance of the tag.</li>
-			<li>For example, the <b>&lt;hr&gt;</b> is called a Horizontal rule tag that creates a horizontal line. with the attribute called <b>size</b> we can define the thickness of the horizontal line</li>
-			<li><b>&lt;hr size="3"&gt;</b> will make the line 3 pixel thinkness</li>
-			<li><b>&lt;hr&gt;</b> is also a Self closing tag</li>
-		</ul>
-	<li><a href="https://devdocs.io">devdocs.io</a></li>
-	<li><a href="https://codepen.io/your-work">codeopen.io</a></li>
-	<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org</a></li>
-	<li>Commenting in HTML</li>
-		<ul>
-			<li>Use <b>"&lt;!-- --&gt;"</b> to comment</li>
-			<li>For Multiline comment, use the <b>"--&gt;"</b> on a different line and type the text in between them</li>
-		</ul>
-</ol>
-<hr><center><h2>The HTML Boilerplate</h2></center><hr>
-<ol>
-	<li>Doctype</li>
-		<ul>
-			<li>The <b>&lt;!DOCTYPE html&gt; </b> tells the browser which version of html the file was written in. The latest version is the html5 and the above line denotes html5</li>
-		</ul>
-	<li>html tag</li>
-		<ul>
-			<li>Every element in the html file will be inside the <b>&lt;html&gt; &lt;/html&gt;</b> tag. Actually the contents go inside the <b>body tag</b> and the body tag is inside the html tag itself</li>
-			<li>html tag has an attribute called <b>lang</b> which denotes in which language the text content of the website is written in. For example, <b>&lt;html&gt; lang="en"</b> denotes that the language is in english</li>
-			<li>Its not important for those who can see and read the page. But it's important for the people who can't as they rely on some computer narrating tools, which requires to know in which language the content is in for the correct pronounciation</li>
-		</ul>
-	<li>Head tag</li>
-		<ul>
-			<li>Important information required for the website is placed inside <b>&lt;head&gt; &lt;/head&gt;</b> tag, but its <b>not visible to the user</b>
-			<ol>
-				<li>&lt;meta charset="UTF-8"&gt;</li>
-					<ul>
-						<li>For example, it includes the <b>&lt;meta charset="UTF-8"&gt;</b> to denote which charset that the text in the file should use so that the browser can render them correctly. Some character sets may include emojis and some may not. So, it is good practice to always include and use the right charset for the website</li>
-					</ul>
-				<li>&lt;title&gt;
-					<ul>
-						<li>The title tag denotes the title of the page. Its the text that gets displayed in the tabs of the browser.</li>
-					</ul> 
-			</ol> 
-			<li>There are other things that can go inside the head tag, its not discussed here</li>
-			
-		</ul>
-	<li>Body tag</li>
-		<ul>
-			<li>This is where the content of the website goes</li>
-		</ul>
-</ol>
-<hr><center><h2>Structuring text in HTML</h2></center><hr>
-<ol>
-	<li>&lt;P&gt; tag</li>
-	<li>&lt;i&gt; tag vs. &lt;em&gt; tag</li>
-		<ul>
-			<li>The <b>i</b> and <b>em</b> tags both are used to italicize the words. But the <b>em</b> tag not only italicizes but also tells the system narrator to <b>emphasize</b> the word while it being read</li>
-		</ul>
-	<li>&lt;b&gt; tag vs &lt;strong&gt; tag</li>
-		<ul>
-			<li>Similar to the <b>i</b> and the <b>em</b> tags, <b>strong</b> and <b>b</b> tags both are used the make the text inside them stand out by bolding them</li>
-			<li>But <b>strong</b> is a logical state and <b>b</b> is a physical state.</li>
-		</ul>
-</ol>
-<hr><center><h2>HTML lists</h2></center><hr>
-<ol>
-	<li>Unordered lists (&lt;ul&gt;)</li>
-	<li>Ordered lists (&lt;ol&gt;)</li>
-</ol>
-<ul>
-	<li>Both these list tags introduces the use of element tag called <b>&lt;li&gt;</b> for each item in the list</li>
-	<li>We can customize the list, for eg, using Roman numerals instead of numbers in the ordered lists by using attribute: <b>&lt;ol&gt; type="i"</b></li>
-	<li>You can also make the list start at a particular number by using the attribute <b>start="number"</b></li>
-</ul>
-<hr><center><h2>HTML Image elements</h2></center><hr>
-<ol>
-	<li>&lt;img&gt; tag</li>
-		<ul>
-			<li>the &lt;img&gt; tag requires an attribute called <b>src</b> which is called as source, which is the locaction of the image that needs to be displayed</li>
-			<li>The source can be an online link or a computer directory</li>
-			<li>In the case of a computer directory, if the .html file as well as the image are in the same directory, then only file name along with the extension (for eg. src="Wallpaper.png") is enough</li>
-			<li>But if they are in different directory, then the full path of the image is to be entered</li>
-			<li>Apart from the <b>src</b> attribute, there is another attribute called as <b>alt</b> which stands for <b>alternative text</b> which is used to display a text in case if a browser can't locate or render the image</li>
-			<li>the <b>alt</b> tag also helps in search optimization and increases ranking of the website by making it easier for google to fetch relevant information</li>
-		</ul>
-</ol>
-<hr><center><h2>HTML Links and Anchor Tags</h2></center><hr>
-<ol>
-	<li>The &lt;a&gt; (Anchor) tag</li>
-		<ul>
-			<li> &lt;a&gt; tag is used to include links in the website. It requires an attribute called <b>href</b> which contains the link</li>
-			<li>after the <b>href</b> attribute, type in the text that needs to be displayed for that link</li>
-			<li>For example: &lt;a href="https://Google.com"&gt;Google's Home Page&lt;/a&gt; will look like this: <a href="
-				https://Google.com">Google's Home Page</a></li>
-		</ul>
-</ol>
-<hr><center><h2>HTML Tables</h2></center><hr>
-<ol>
-	<li>&lt;table&gt; tag</li>
-		<ul>
-			<li>attribute: <b>border="1"</b> - creates a border of 1 pixel thickness</li>
-			<li>&lt;tr&gt; - Table row - creates a table row</li> 
-			<li>&lt;td&gt; - Table data - contains the cell data</li> 
-			<li>&lt;thead&gt; -  Table Head</li>
-				<ul>
-					<li>&lt;th&gt; - Table head cell</li>
-					<li><b>&lt;th&gt;</b> elements work even without being inside the <b>&lt;thead&gt;</b> tag as most browsers know where th elements need to be</li>
-					<li>Then the reason or use of these table head is in situations where we would want to stylize the table headers and data in a different way</li>
-					<li><b>Rowspan</b> and <b>Colspan</b> - attirbutes that denote the width and height of the cell respectively in terms of cells</li>
-				</ul>
-			<li>&lt;tbody&gt; - Table Body - contains all the data of the table</li>
-			<li>&lt;tfoot&gt; - Table Foot</li>
-		</ul>
-</ol>
-<hr><center><h2>Using HTML Tables for Layout</h2></center><hr>
-<ul>
-	<li> Using tables to arrange the photo on left and the details on right</li>
-	<li>Cell spacing</li>
-		<ul>
-			<li>This is a deprecated feature which defines the spacing of data inside the cells in terms of pixels or percentage</li>
-		</ul>
-</ul>
-<hr><center><h2>HTML Forms</h2></center><hr>
-<ol>
-	<li>&lt;form&gt; tag</li>
-		<ol type="I">
-			<li>&lt;label&gt; tag</li>
-				<ul>
-					<li>It's the name of the details that are asked in a typical form: Name, D.O.B. These are called labels</li>
-				</ul>
-			<li>&lt;input&gt; tag</li>
-				<ul>
-					<li>type attribute - what datatype must be entered in the input box. submit is also a type.</li>
-					<li>name attribute</li>
-					<li>value attribute - the data itself</li>
-					<li>For more attributes of the input tag, visit: <a href="https://www.w3schools.com/html/html_form_input_types.asp">Other input types</a></li>
-				</ul>
-		</ol>
-</ol>
-<hr><center><h2>Forms in Practice</h2></center><hr>
-<ol>
-	<li>Text Area</li>
-		<ul>
-			<li>Text area has two required attributes called <b>rows</b> and <b>columns</b> which is nothing but the length and width of the text area</li>
-			<li>The text area can be modified from the browswer itself, the rows and cols data denote the initial size of that text area</li>
-		</ul>
-	<li>The form tag has an attribute called <b>action</b> which says what to do when an action like <b>clicking the submit button</b> is performed</li>
-	<li>The <b>email input type</b> of the form tag automatically checks whether a valid email address was typed</li>
-	<li>there is an action called <b>mailto</b> which opens up the default mail client with the input that was typed in. This also requires the <b>method="post</b></li>
-	<li>For example: <b>action="mailto:kulasekaranslrk@gmail.com" method="post"</b></li>
-	<li>There is another form attribute called <b>enctype</b>, which stands for encoding type, which like the <b>UTF-8</b> in our html document, specifies in what type the form data must be encoded. By specifying this, when using the form, the data will have only the plain text that was typed onto the form (it won't have the extra symbols that will be there when not specified)</li>
-</ol>
-<hr><center><h2>Publishing website in GitHub</h2></center><hr>
-<ol>
-	<li>Create a public repository and add the html files</li>
-	<li>The website's html file must be named <b>"index.html"</b>. This is mandatory otherwise the website will not work.</li>
-	<li>Make sure all the data sources are pointing the right directory, otherwise they won't show up in the website</li>
-	<li>Once the files are uploaded, go the repo setting --> Pages --> source --> choose the branch --> save</li>
-	<li>github will take some time and then refresh the page. There will be a link shown. This link can be shared with anyone and they can see the website without needing any of the files</li>
-</ol>
-<hr>
-
-<center><h1>CSS - <b class="heading">C</b>ascading <b class="heading">S</b>tyle <b class="heading">S</b>heet</h1></center>
-
-<hr><center><h2>33. Introduction to CSS</h2></center><hr>
-<ul>
-	<li>CSS is used to style the website to make it look more appealing which can't be done with HTML alon. Also, CSS along can't do anything without a base HTML</li>
-</ul>
-<hr><h2><center>Inline CSS</center></h2><hr> 
-<ol>
-	<li>Changing Background color using css</li>
-		<ul>
-			<li>use <b>"background-colo: colorname;"</b> inside the body tag of the html document to change the background color of the whole page</li>
-			<li>Visit this link: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">changing Bg-color using css</a> to learn more about this <b>backgroud-color</b> attribute</li>
-			<li>You can also change the background color with hexvalue, RGB, HSL, control transparency of the background color by including the alpha channel, etc.,</li>
-			<li>Visit <a href="https://colorhunt.co/">Colorhunt.co</a> website to find interesting color palettes created and liked by artists and fetch their hex values</li>
-			<li>Install the vscode extension called <b>pigment</b> to visualize the color when you type its value in the editor</li>
-			<li>Also visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Css Color mdn</a> site to know what name of the color to specify according to its hexvalue</li>
-		</ul>
-</ol>
-<hr><h2><center>Internal CSS</center></h2><hr>
-<ul>
-	<li>Instead of changing the whole color of the page, what if only the horizontal rule's colors need to be changed.</li>
-	<li>adding the <b>"background-color: colorname;"</b> inside each and every &lt;hr&gt; tag is cumbersome</li>
-	<li>This is where the <b>Internal CSS</b> comes into the picture</li>
-</ul>
-<ol>
-	<li>Internal CSS</li>
-	<ul>
-		<li>Create <b>&lt;style&gt; &lt;/style&gt;</b> inside the <b>head</b> section of the html</li>
-		<li>Inside this <b>&lt;style&gt; &lt;/style&gt;</b> specific sections of the page can be edited.</li>
-		<li>For Example, to change the bg colors of the level 1 headings alone, type <b>h1{background-color:colorname}</b></li>
-		<li>Visit: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">Border-style</a>
-		</li>
-		<li>The customizations above mentioned only applies to the html file that is being worked on. To make it global, that is, to make it get applied to all its sister pages, it needs to be in a external css</li>
-	</ul>
-</ol>
-<hr><h2><center>External CSS</center></h2><hr>
-<ol>
-	<li>Creating an external stylesheet</li>
-	<ul>
-		<li>Create a folder named <b>css</b> in the root folder of the html files</li>
-		<li>Create a file named <b>styles.css</b></li>
-		<li>Cut and paste the data inside the &lt;style&gt; &lt;/style&gt; into the <b>styles.css</b> file</li>
-		<li>Now on every html document's head section, add a <b>link</b> tag</li>
-		<li>This link tag has two attributes: <b>rel</b> meaning relation and <b>href</b></li>
-		<li>set the <b>rel="stylesheet"</b> and <b>href="css/styles.css"</b></li>
-		<li>This will modify the appearance of all the html files that has this link in their head section</li>
-	</ul>
-</ol>
-<hr><h2><center>Debugging in CSS</center></h2><hr>
-<ul>
-	<li>Always use Chrome's web developer tools to check for bugs in the website</li>
-	<li>Inline css overrides Internal css as well as external css</li>
-	<li>style precedence is like: <b>Inline > Internal > External</b></li>
-</ul>
-<hr><h2><center>The Anatomy of CSS Syntax</center></h2><hr>
-<ul>
-	<li><b>Selector{property:value;}</b></li>
-	<li>It is always best practice to have the properties in the <b>styles.css</b> file arranged in alphabetical order for each element. Helps a lot while debugging</li>
-</ul>
-<hr><h2><center>CSS Selectors</center></h2><hr>
-<ol>
-	<li>Class Selectors</li>
-	<ul>
-		<li><a href="https://emojipedia.org/">EmojiPedia</a></li>
-		<li>The above site lets users use different kinds of emoji from various operating systems</li>
-		<li>When an img customization is present in a <b>styles.css</b> file, that customization will get applied to all the images that is on the website</li>
-		<li>To apply different customization to different types of images, For eg: Having the Background color of images that has a dog as red and having the background color of images that has a cat as green, we need to include a <b>class</b> attribute inside the <b>img</b> tag and then target customizations based on classes and not on tags</li>
-		<li>Lets have two classes as <b>dogs</b> and <b>cats</b></li>
-		<li>In the <b>styles.css</b> file, add <b>.dogs{background-color:red;}</b> and <b>.cats{background-color:green;}</b></li>
-		<li>The dot(<b>.</b>) in front represent that the following is a class and not a tag</li>
-		<li><b>Note: </b>commenting in CSS is done within <b>/* */</b>. Have them on different line for multiline commenting.</li>
-	</ul>
-</ol>
-<hr><h2><center>Classes vs. Ids</center></h2><hr>
-<ol>
-	<li>Id selectors</li>
-	<ul>
-		<li>Use the <b>#</b> symbol to target Ids</li>
-		<li><b>Note:</b>The customization based on Classes and Ids will override that of the general tag customization. Meaning, Even if for example, an img tag customization is already present, a specific class customization of the img will override the general one</li>
-		<li>The difference between classes and ids is that, classes can be instanced at more than one places. But Ids cane be instanced only once</li>
-		<li>For example, if there is a h1 tag with the id="heading", then this id="heading" can't be instanced anywhere else on the code. But the classes="dogs" can be instanced any number of time</li>
-		<li>They both are used to specifically target the customization across the elements. But classes target a specifig group of elements whereas Ids target a single unique element</li>
-		<li>A tag can have more than one class name. for example, If all the dog class images needs to be circular, it can be done as: <b>class="dogs circular"</b> And then can be targeted as: <b>.circular{border-radius:100%;}</b></li>
-		<li>But a tag can't have two Ids. If more than one id was included, it won't be considered as a valid id and its customizations will not get applied. This is another difference between classes and ids</li>
-	</ul>
-	<li>psuedo classes</li>
-	<ul>
-		<li>The psuedo classes are used to perfom a change in the element when the user, say for example, hovers the mounse pointer over an element (but not clicking it)</li>
-		<li><b>Note: </b>The psudo classes begin with a <b>colon(:)</b> in front. The syntax is <b>tag name:pseudo class</b></li>
-		<li>For example, There is a pseudo class called <b>:hover</b>. It can be used to make changes to an element only when it is being hovered. To do this:</li>
-		<ol type="i">
-			<li>Go to styles.css</li>
-			<li>img:hover{background-color:blue;}</li>
-		</ol>
-		<li>This will change the background of the image to blue only when the mouse cursor is brought on top of any image.</li>
-		<li><b>Note:</b> The hover customization doesn't work if an inline CSS syling is present as it has the most precedence</li>
-		<li>Check this: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">site</a> to learn more about different pseudo classes available</li>
-
-	</ul>
-</ol>
-<hr>
-
-<center><h1>Intermediate CSS</h1></center>
-<hr><h2><center>Favicons</center></h2><hr>
-<ul>
-	<li>A Favicon is a small icon that appears next to the title of the website in the tab bar of the browser</li>
-	<li>Head over to: <a href="https://favicon.io/">Favicon</a> to create custom favicons</li>
-	<li>The format of favicon has the extension <b>.ico</b></li>
-	<li>In order to change the favicon of the site, create a <b>link</b> in the <b>head</b>section of the site.</li>
-	<li>Instead of the <b>rel="stylesheet"</b> change it to <b>rel="icon"</b> and in the href give the location of the icon file</li>
-</ul>
-<hr><h2><center>HTML Divs</center></h2><hr>
-<ol>
-	<li>The Div element</li>
-	<ul>
-		<li>Its called the Content division element, which divides the page into several divisions and let's customizing the layout of each of them separately</li>
-		<li>Div is an HTML element and it doesn't do much of anything without CSS</li>
-		<li>Div by default has a height of 0px Unless anyother height is specified or has contents inside it</li>
-	</ul>
-</ol>
-<hr><h2><center>Box Model of Website styling</center></h2><hr>
-<ul>
-	<li>The box model of css: <b>margin, border, padding, content</b></li>
-	<li>When a text is displayed in a website, that text has a bounding box, which has a width and height, let's assume 100px each</li>
-	<li>Padding the the space between the content of the text and its border</li>
-	<li>The space between borders of two adjacent elements is called as the margin</li>
-</ul>
-<hr><h2><center>CSS Display Property</center></h2><hr>
-<ul>
-	<li>The display property has 4 values: <b>Block, Inline, Inline-block, None</b></li>
-</ul>
-<ol>
-	<li>Block elements</li>
-	<ul>
-		<li>Block elements are those which take up the whole width of the viewport unlike imgaes.</li>
-		<li>So when two paragraphs are inserted, they naturally occur as in new lines, since paragraphs, headings, etc., are block elements</li>
-	</ul>
-</ol>
-<ul>
-	<li>Say, for example, if the "pro" part in a sentence called "a programmer" needs to be underlined, it wont work if it was done as: <b>&lt;p&gt; a&lt;/p&gt; &lt;p class="pro"&gt; pro&lt;/p&gt; &lt;p&gt;grammer&lt;/p&gt;</b> and in the css as: <b>.pro{text-decoration:underline;}</b></li>
-</ul>
-<ol start="2">
-	<li>Span Tag - Inline Block elements</li>
-	<ul>
-		<li>To achieve that, a tag called <b>span</b> needs to be used</li>
-		<li>It is achieved as follows: <b>&lt;p&gt; a &lt;span class="pro"&gt;pro&lt;/span&gt;grammer&lt;/p&gt;</b> and then the Css modification of the class <b>pro</b></li>
-		<li>Span tag will be very useful in formatting one part of the text. Just like the <b>div</b> tag, span tag don't do very much unless they are used in conjunction with css</li>
-		<li>Some common inline elements:
-			<ul><li>spans</li><li>images</li><li>Anchors</li></ul>
-		</li>
-		<li>Spans seem like they have the advantage since they can be stacked next to each other unlike the block elements, so one may think that why block elements are needed anyway</li>
-		<li>The reason is that, unlike block elements, Inline block element's width can't be adjusted</li>
-		<li>On the other hand, even if the width of the block element's are adjustable, it still doesn't let other elements to sit next to it</li>
-		<li>chaning the <b>display</b> value of a block element to <b>inline </b> doesn't do any good because the width can't be changed once it becomes <b>inline</b></li>
-	</ul>
-	<li>Inline-block elements</li>
-		<ul>
-			<li>This is where Inline - block elements come in which give in the best of both worlds</li>
-			<li>They can be stacked next to each other and still their widths can be modified</li>
-		</ul>
-	<li>None elements</li>
-		<ul>
-			<li>This display type is like it deletes the element with the display property as <b>none</b></li>
-			<li>Imagine a situation in which a quiz is being attended on a site. To hide/show the answer at the click of a button can be made by changing the display property to <b>none</b> and back</li>
-		</ul>
-</ol>
-<ul>
-	<li>There is another property called <b>visibility</b> which when set to hidden will simply hide the element, but the element is still on the website. But when display is set to <b>none</b>, the element stops existing in the site and its place can be occupied by another element</li>
-</ul>
-<hr><h2><center>CSS Static and Relative positioning</center></h2><hr>
-<ol>
-	<li>Position property</li>
+	<video class="covervideo" src="videos/matrix-modified.mp4" loop autoplay muted></video>
+  <div class="coverarea">
+    <div class="covercontents">
+      <div class="coverMyPic">
+					<img class="Mypic" src="images/KULASEKARAN.jpg" alt="">
+				</div>
+				<div class="coverdetails">
+					<h1 class="Myname">I'm Kulasekaran</h1>
+					<h1 class="oneLineBioText">A Web Developer</h1>
+				</div>
+    </div>
+  </div>
+  <div class="coverlinkbox">
+    <a style="padding-right:15px;" class="coverlinks" href="https://github.com/Kulasekaran-148">Github</a>
+		<a style="padding-right:15px;" class="coverlinks" href="contacts.html">Contact</a>
+    <a class="coverlinks" href="index.html">Home</a>
+  </div>
+  <div class="gradbox"></div>
+	<div class="restOfTheContent" style="padding:0px;">
+		<center><h1 style="margin-top:0; padding-top:40px;">HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
+		<hr><center><h2>Introduction to HTML</h2></center><hr>
 		<ol>
-			<li>Static</li>
+			<li>HTML</li>
 				<ul>
-					<li>The default positioning of all elements</li>
+					<li>Websites are made of HTML, CSS and JS files. A website can't function with CSS or JS files alone.</li>
+					<li>But a website can work be made with HTML file alone. </li>
+					<li>HTML = <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage</li>
+					<li>HyperText = Parts of text that link to other documents</li>
+					<li>Markup Language = HTML Tags. People used to mark parts of a text with certain rules to denote which needs to be italicized, bold, etc., similarly HTML is a markup language that uses HTML tags to do the same.</li>
 				</ul>
-			<li>Relative</li>
-			<ul>
-				<li>This positions the element relative to how it would have been positioned had it been static. Say an img would have appeared at 0 margin on the left. if its attribute was changed to <b>position: relative; left: 30px;</b>. Then the image would appear with a gap of 30px on the left</li>
-				<li>Just by changing the position of an element to relative, no changes will be made unless it is accompanied with one of the four coordinates that mention the change</li>
-				<li>The coordinates order is: <b>Top, Bottom, Left, Right</b></li>
-				<li><b>NOTE:</b>When an element gets pushed due to relative positioning, it doesn't affect the position of any other element when it gets shifted.</li>
-				<li><b>NOTE:</b>Even after the element's change in position, its old posiition is still occupied by the same element. Its like the element hid itself in its original position and moved its copy to the new position, that is relative to the old one</li>
-			</ul>
-			<li>Absolute</li>
-			<li>Fixed</li>
+			<li>HTML tags</li>
 		</ol>
-</ol>
-<hr><h2><center>Absolute Positioning</center></h2><hr>
-<ol>
-	<li>
-		Absolute Positioning
+		<hr><center><h2>Anatomy of HTML Tag</h2></center><hr>
+		<ol>
+			<li>Self closing tags</li>
+				<ul>
+					<li>Some tags require both start and end tag. But some are <b>self closing</b> meaning they don't require a closing tag</li>
+					<li>For example: the <b>&lt;br&gt;</b> tag</li>
+				</ul>
+			<li>HTML attributes</li>
+				<ul>
+					<li>Attributes lets us specify some rules about the function or appearance of the tag.</li>
+					<li>For example, the <b>&lt;hr&gt;</b> is called a Horizontal rule tag that creates a horizontal line. with the attribute called <b>size</b> we can define the thickness of the horizontal line</li>
+					<li><b>&lt;hr size="3"&gt;</b> will make the line 3 pixel thinkness</li>
+					<li><b>&lt;hr&gt;</b> is also a Self closing tag</li>
+				</ul>
+			<li><a href="https://devdocs.io">devdocs.io</a></li>
+			<li><a href="https://codepen.io/your-work">codeopen.io</a></li>
+			<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">developer.mozilla.org</a></li>
+			<li>Commenting in HTML</li>
+				<ul>
+					<li>Use <b>"&lt;!-- --&gt;"</b> to comment</li>
+					<li>For Multiline comment, use the <b>"--&gt;"</b> on a different line and type the text in between them</li>
+				</ul>
+		</ol>
+		<hr><center><h2>The HTML Boilerplate</h2></center><hr>
+		<ol>
+			<li>Doctype</li>
+				<ul>
+					<li>The <b>&lt;!DOCTYPE html&gt; </b> tells the browser which version of html the file was written in. The latest version is the html5 and the above line denotes html5</li>
+				</ul>
+			<li>html tag</li>
+				<ul>
+					<li>Every element in the html file will be inside the <b>&lt;html&gt; &lt;/html&gt;</b> tag. Actually the contents go inside the <b>body tag</b> and the body tag is inside the html tag itself</li>
+					<li>html tag has an attribute called <b>lang</b> which denotes in which language the text content of the website is written in. For example, <b>&lt;html&gt; lang="en"</b> denotes that the language is in english</li>
+					<li>Its not important for those who can see and read the page. But it's important for the people who can't as they rely on some computer narrating tools, which requires to know in which language the content is in for the correct pronounciation</li>
+				</ul>
+			<li>Head tag</li>
+				<ul>
+					<li>Important information required for the website is placed inside <b>&lt;head&gt; &lt;/head&gt;</b> tag, but its <b>not visible to the user</b>
+					<ol>
+						<li>&lt;meta charset="UTF-8"&gt;</li>
+							<ul>
+								<li>For example, it includes the <b>&lt;meta charset="UTF-8"&gt;</b> to denote which charset that the text in the file should use so that the browser can render them correctly. Some character sets may include emojis and some may not. So, it is good practice to always include and use the right charset for the website</li>
+							</ul>
+						<li>&lt;title&gt;
+							<ul>
+								<li>The title tag denotes the title of the page. Its the text that gets displayed in the tabs of the browser.</li>
+							</ul> 
+					</ol> 
+					<li>There are other things that can go inside the head tag, its not discussed here</li>
+					
+				</ul>
+			<li>Body tag</li>
+				<ul>
+					<li>This is where the content of the website goes</li>
+				</ul>
+		</ol>
+		<hr><center><h2>Structuring text in HTML</h2></center><hr>
+		<ol>
+			<li>&lt;P&gt; tag</li>
+			<li>&lt;i&gt; tag vs. &lt;em&gt; tag</li>
+				<ul>
+					<li>The <b>i</b> and <b>em</b> tags both are used to italicize the words. But the <b>em</b> tag not only italicizes but also tells the system narrator to <b>emphasize</b> the word while it being read</li>
+				</ul>
+			<li>&lt;b&gt; tag vs &lt;strong&gt; tag</li>
+				<ul>
+					<li>Similar to the <b>i</b> and the <b>em</b> tags, <b>strong</b> and <b>b</b> tags both are used the make the text inside them stand out by bolding them</li>
+					<li>But <b>strong</b> is a logical state and <b>b</b> is a physical state.</li>
+				</ul>
+		</ol>
+		<hr><center><h2>HTML lists</h2></center><hr>
+		<ol>
+			<li>Unordered lists (&lt;ul&gt;)</li>
+			<li>Ordered lists (&lt;ol&gt;)</li>
+		</ol>
 		<ul>
-			<li>In abosulte positioning an element is positioned with respect to its parent</li>
-			<li>For example, if an image was contained within a div, and the img's position was <b>absolute</b> and had <b>right: 30px;</b> then the img will be shifted to position such that it has 30px right margin from the right end of the div's box</li>
-			<li>Unlike relative positioning, which leaves a ghost of the element behind so it won't affect the other element's positions, absolute positioning does affect the position of other elements when an element gets moved</li>
+			<li>Both these list tags introduces the use of element tag called <b>&lt;li&gt;</b> for each item in the list</li>
+			<li>We can customize the list, for eg, using Roman numerals instead of numbers in the ordered lists by using attribute: <b>&lt;ol&gt; type="i"</b></li>
+			<li>You can also make the list start at a particular number by using the attribute <b>start="number"</b></li>
 		</ul>
-	</li>
-	<li>
-		Fixed Positioning
+		<hr><center><h2>HTML Image elements</h2></center><hr>
+		<ol>
+			<li>&lt;img&gt; tag</li>
+				<ul>
+					<li>the &lt;img&gt; tag requires an attribute called <b>src</b> which is called as source, which is the locaction of the image that needs to be displayed</li>
+					<li>The source can be an online link or a computer directory</li>
+					<li>In the case of a computer directory, if the .html file as well as the image are in the same directory, then only file name along with the extension (for eg. src="Wallpaper.png") is enough</li>
+					<li>But if they are in different directory, then the full path of the image is to be entered</li>
+					<li>Apart from the <b>src</b> attribute, there is another attribute called as <b>alt</b> which stands for <b>alternative text</b> which is used to display a text in case if a browser can't locate or render the image</li>
+					<li>the <b>alt</b> tag also helps in search optimization and increases ranking of the website by making it easier for google to fetch relevant information</li>
+				</ul>
+		</ol>
+		<hr><center><h2>HTML Links and Anchor Tags</h2></center><hr>
+		<ol>
+			<li>The &lt;a&gt; (Anchor) tag</li>
+				<ul>
+					<li> &lt;a&gt; tag is used to include links in the website. It requires an attribute called <b>href</b> which contains the link</li>
+					<li>after the <b>href</b> attribute, type in the text that needs to be displayed for that link</li>
+					<li>For example: &lt;a href="https://Google.com"&gt;Google's Home Page&lt;/a&gt; will look like this: <a href="
+						https://Google.com">Google's Home Page</a></li>
+				</ul>
+		</ol>
+		<hr><center><h2>HTML Tables</h2></center><hr>
+		<ol>
+			<li>&lt;table&gt; tag</li>
+				<ul>
+					<li>attribute: <b>border="1"</b> - creates a border of 1 pixel thickness</li>
+					<li>&lt;tr&gt; - Table row - creates a table row</li> 
+					<li>&lt;td&gt; - Table data - contains the cell data</li> 
+					<li>&lt;thead&gt; -  Table Head</li>
+						<ul>
+							<li>&lt;th&gt; - Table head cell</li>
+							<li><b>&lt;th&gt;</b> elements work even without being inside the <b>&lt;thead&gt;</b> tag as most browsers know where th elements need to be</li>
+							<li>Then the reason or use of these table head is in situations where we would want to stylize the table headers and data in a different way</li>
+							<li><b>Rowspan</b> and <b>Colspan</b> - attirbutes that denote the width and height of the cell respectively in terms of cells</li>
+						</ul>
+					<li>&lt;tbody&gt; - Table Body - contains all the data of the table</li>
+					<li>&lt;tfoot&gt; - Table Foot</li>
+				</ul>
+		</ol>
+		<hr><center><h2>Using HTML Tables for Layout</h2></center><hr>
+		<ul>
+			<li> Using tables to arrange the photo on left and the details on right</li>
+			<li>Cell spacing</li>
+				<ul>
+					<li>This is a deprecated feature which defines the spacing of data inside the cells in terms of pixels or percentage</li>
+				</ul>
+		</ul>
+		<hr><center><h2>HTML Forms</h2></center><hr>
+		<ol>
+			<li>&lt;form&gt; tag</li>
+				<ol type="I">
+					<li>&lt;label&gt; tag</li>
+						<ul>
+							<li>It's the name of the details that are asked in a typical form: Name, D.O.B. These are called labels</li>
+						</ul>
+					<li>&lt;input&gt; tag</li>
+						<ul>
+							<li>type attribute - what datatype must be entered in the input box. submit is also a type.</li>
+							<li>name attribute</li>
+							<li>value attribute - the data itself</li>
+							<li>For more attributes of the input tag, visit: <a href="https://www.w3schools.com/html/html_form_input_types.asp">Other input types</a></li>
+						</ul>
+				</ol>
+		</ol>
+		<hr><center><h2>Forms in Practice</h2></center><hr>
+		<ol>
+			<li>Text Area</li>
+				<ul>
+					<li>Text area has two required attributes called <b>rows</b> and <b>columns</b> which is nothing but the length and width of the text area</li>
+					<li>The text area can be modified from the browswer itself, the rows and cols data denote the initial size of that text area</li>
+				</ul>
+			<li>The form tag has an attribute called <b>action</b> which says what to do when an action like <b>clicking the submit button</b> is performed</li>
+			<li>The <b>email input type</b> of the form tag automatically checks whether a valid email address was typed</li>
+			<li>there is an action called <b>mailto</b> which opens up the default mail client with the input that was typed in. This also requires the <b>method="post</b></li>
+			<li>For example: <b>action="mailto:kulasekaranslrk@gmail.com" method="post"</b></li>
+			<li>There is another form attribute called <b>enctype</b>, which stands for encoding type, which like the <b>UTF-8</b> in our html document, specifies in what type the form data must be encoded. By specifying this, when using the form, the data will have only the plain text that was typed onto the form (it won't have the extra symbols that will be there when not specified)</li>
+		</ol>
+		<hr><center><h2>Publishing website in GitHub</h2></center><hr>
+		<ol>
+			<li>Create a public repository and add the html files</li>
+			<li>The website's html file must be named <b>"index.html"</b>. This is mandatory otherwise the website will not work.</li>
+			<li>Make sure all the data sources are pointing the right directory, otherwise they won't show up in the website</li>
+			<li>Once the files are uploaded, go the repo setting --> Pages --> source --> choose the branch --> save</li>
+			<li>github will take some time and then refresh the page. There will be a link shown. This link can be shared with anyone and they can see the website without needing any of the files</li>
+		</ol>
+		<hr>
+
+		<center><h1>CSS - <b class="heading">C</b>ascading <b class="heading">S</b>tyle <b class="heading">S</b>heet</h1></center>
+
+		<hr><center><h2>33. Introduction to CSS</h2></center><hr>
+		<ul>
+			<li>CSS is used to style the website to make it look more appealing which can't be done with HTML alon. Also, CSS along can't do anything without a base HTML</li>
+		</ul>
+		<hr><h2><center>Inline CSS</center></h2><hr> 
+		<ol>
+			<li>Changing Background color using css</li>
+				<ul>
+					<li>use <b>"background-colo: colorname;"</b> inside the body tag of the html document to change the background color of the whole page</li>
+					<li>Visit this link: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">changing Bg-color using css</a> to learn more about this <b>backgroud-color</b> attribute</li>
+					<li>You can also change the background color with hexvalue, RGB, HSL, control transparency of the background color by including the alpha channel, etc.,</li>
+					<li>Visit <a href="https://colorhunt.co/">Colorhunt.co</a> website to find interesting color palettes created and liked by artists and fetch their hex values</li>
+					<li>Install the vscode extension called <b>pigment</b> to visualize the color when you type its value in the editor</li>
+					<li>Also visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Css Color mdn</a> site to know what name of the color to specify according to its hexvalue</li>
+				</ul>
+		</ol>
+		<hr><h2><center>Internal CSS</center></h2><hr>
+		<ul>
+			<li>Instead of changing the whole color of the page, what if only the horizontal rule's colors need to be changed.</li>
+			<li>adding the <b>"background-color: colorname;"</b> inside each and every &lt;hr&gt; tag is cumbersome</li>
+			<li>This is where the <b>Internal CSS</b> comes into the picture</li>
+		</ul>
+		<ol>
+			<li>Internal CSS</li>
+			<ul>
+				<li>Create <b>&lt;style&gt; &lt;/style&gt;</b> inside the <b>head</b> section of the html</li>
+				<li>Inside this <b>&lt;style&gt; &lt;/style&gt;</b> specific sections of the page can be edited.</li>
+				<li>For Example, to change the bg colors of the level 1 headings alone, type <b>h1{background-color:colorname}</b></li>
+				<li>Visit: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">Border-style</a>
+				</li>
+				<li>The customizations above mentioned only applies to the html file that is being worked on. To make it global, that is, to make it get applied to all its sister pages, it needs to be in a external css</li>
+			</ul>
+		</ol>
+		<hr><h2><center>External CSS</center></h2><hr>
+		<ol>
+			<li>Creating an external stylesheet</li>
+			<ul>
+				<li>Create a folder named <b>css</b> in the root folder of the html files</li>
+				<li>Create a file named <b>styles.css</b></li>
+				<li>Cut and paste the data inside the &lt;style&gt; &lt;/style&gt; into the <b>styles.css</b> file</li>
+				<li>Now on every html document's head section, add a <b>link</b> tag</li>
+				<li>This link tag has two attributes: <b>rel</b> meaning relation and <b>href</b></li>
+				<li>set the <b>rel="stylesheet"</b> and <b>href="css/styles.css"</b></li>
+				<li>This will modify the appearance of all the html files that has this link in their head section</li>
+			</ul>
+		</ol>
+		<hr><h2><center>Debugging in CSS</center></h2><hr>
+		<ul>
+			<li>Always use Chrome's web developer tools to check for bugs in the website</li>
+			<li>Inline css overrides Internal css as well as external css</li>
+			<li>style precedence is like: <b>Inline > Internal > External</b></li>
+		</ul>
+		<hr><h2><center>The Anatomy of CSS Syntax</center></h2><hr>
+		<ul>
+			<li><b>Selector{property:value;}</b></li>
+			<li>It is always best practice to have the properties in the <b>styles.css</b> file arranged in alphabetical order for each element. Helps a lot while debugging</li>
+		</ul>
+		<hr><h2><center>CSS Selectors</center></h2><hr>
+		<ol>
+			<li>Class Selectors</li>
+			<ul>
+				<li><a href="https://emojipedia.org/">EmojiPedia</a></li>
+				<li>The above site lets users use different kinds of emoji from various operating systems</li>
+				<li>When an img customization is present in a <b>styles.css</b> file, that customization will get applied to all the images that is on the website</li>
+				<li>To apply different customization to different types of images, For eg: Having the Background color of images that has a dog as red and having the background color of images that has a cat as green, we need to include a <b>class</b> attribute inside the <b>img</b> tag and then target customizations based on classes and not on tags</li>
+				<li>Lets have two classes as <b>dogs</b> and <b>cats</b></li>
+				<li>In the <b>styles.css</b> file, add <b>.dogs{background-color:red;}</b> and <b>.cats{background-color:green;}</b></li>
+				<li>The dot(<b>.</b>) in front represent that the following is a class and not a tag</li>
+				<li><b>Note: </b>commenting in CSS is done within <b>/* */</b>. Have them on different line for multiline commenting.</li>
+			</ul>
+		</ol>
+		<hr><h2><center>Classes vs. Ids</center></h2><hr>
+		<ol>
+			<li>Id selectors</li>
+			<ul>
+				<li>Use the <b>#</b> symbol to target Ids</li>
+				<li><b>Note:</b>The customization based on Classes and Ids will override that of the general tag customization. Meaning, Even if for example, an img tag customization is already present, a specific class customization of the img will override the general one</li>
+				<li>The difference between classes and ids is that, classes can be instanced at more than one places. But Ids cane be instanced only once</li>
+				<li>For example, if there is a h1 tag with the id="heading", then this id="heading" can't be instanced anywhere else on the code. But the classes="dogs" can be instanced any number of time</li>
+				<li>They both are used to specifically target the customization across the elements. But classes target a specifig group of elements whereas Ids target a single unique element</li>
+				<li>A tag can have more than one class name. for example, If all the dog class images needs to be circular, it can be done as: <b>class="dogs circular"</b> And then can be targeted as: <b>.circular{border-radius:100%;}</b></li>
+				<li>But a tag can't have two Ids. If more than one id was included, it won't be considered as a valid id and its customizations will not get applied. This is another difference between classes and ids</li>
+			</ul>
+			<li>psuedo classes</li>
+			<ul>
+				<li>The psuedo classes are used to perfom a change in the element when the user, say for example, hovers the mounse pointer over an element (but not clicking it)</li>
+				<li><b>Note: </b>The psudo classes begin with a <b>colon(:)</b> in front. The syntax is <b>tag name:pseudo class</b></li>
+				<li>For example, There is a pseudo class called <b>:hover</b>. It can be used to make changes to an element only when it is being hovered. To do this:</li>
+				<ol type="i">
+					<li>Go to styles.css</li>
+					<li>img:hover{background-color:blue;}</li>
+				</ol>
+				<li>This will change the background of the image to blue only when the mouse cursor is brought on top of any image.</li>
+				<li><b>Note:</b> The hover customization doesn't work if an inline CSS syling is present as it has the most precedence</li>
+				<li>Check this: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">site</a> to learn more about different pseudo classes available</li>
+
+			</ul>
+		</ol>
+		<hr>
+
+		<center><h1>Intermediate CSS</h1></center>
+		<hr><h2><center>Favicons</center></h2><hr>
+		<ul>
+			<li>A Favicon is a small icon that appears next to the title of the website in the tab bar of the browser</li>
+			<li>Head over to: <a href="https://favicon.io/">Favicon</a> to create custom favicons</li>
+			<li>The format of favicon has the extension <b>.ico</b></li>
+			<li>In order to change the favicon of the site, create a <b>link</b> in the <b>head</b>section of the site.</li>
+			<li>Instead of the <b>rel="stylesheet"</b> change it to <b>rel="icon"</b> and in the href give the location of the icon file</li>
+		</ul>
+		<hr><h2><center>HTML Divs</center></h2><hr>
+		<ol>
+			<li>The Div element</li>
+			<ul>
+				<li>Its called the Content division element, which divides the page into several divisions and let's customizing the layout of each of them separately</li>
+				<li>Div is an HTML element and it doesn't do much of anything without CSS</li>
+				<li>Div by default has a height of 0px Unless anyother height is specified or has contents inside it</li>
+			</ul>
+		</ol>
+		<hr><h2><center>Box Model of Website styling</center></h2><hr>
+		<ul>
+			<li>The box model of css: <b>margin, border, padding, content</b></li>
+			<li>When a text is displayed in a website, that text has a bounding box, which has a width and height, let's assume 100px each</li>
+			<li>Padding the the space between the content of the text and its border</li>
+			<li>The space between borders of two adjacent elements is called as the margin</li>
+		</ul>
+		<hr><h2><center>CSS Display Property</center></h2><hr>
+		<ul>
+			<li>The display property has 4 values: <b>Block, Inline, Inline-block, None</b></li>
+		</ul>
+		<ol>
+			<li>Block elements</li>
+			<ul>
+				<li>Block elements are those which take up the whole width of the viewport unlike imgaes.</li>
+				<li>So when two paragraphs are inserted, they naturally occur as in new lines, since paragraphs, headings, etc., are block elements</li>
+			</ul>
+		</ol>
+		<ul>
+			<li>Say, for example, if the "pro" part in a sentence called "a programmer" needs to be underlined, it wont work if it was done as: <b>&lt;p&gt; a&lt;/p&gt; &lt;p class="pro"&gt; pro&lt;/p&gt; &lt;p&gt;grammer&lt;/p&gt;</b> and in the css as: <b>.pro{text-decoration:underline;}</b></li>
+		</ul>
+		<ol start="2">
+			<li>Span Tag - Inline Block elements</li>
+			<ul>
+				<li>To achieve that, a tag called <b>span</b> needs to be used</li>
+				<li>It is achieved as follows: <b>&lt;p&gt; a &lt;span class="pro"&gt;pro&lt;/span&gt;grammer&lt;/p&gt;</b> and then the Css modification of the class <b>pro</b></li>
+				<li>Span tag will be very useful in formatting one part of the text. Just like the <b>div</b> tag, span tag don't do very much unless they are used in conjunction with css</li>
+				<li>Some common inline elements:
+					<ul><li>spans</li><li>images</li><li>Anchors</li></ul>
+				</li>
+				<li>Spans seem like they have the advantage since they can be stacked next to each other unlike the block elements, so one may think that why block elements are needed anyway</li>
+				<li>The reason is that, unlike block elements, Inline block element's width can't be adjusted</li>
+				<li>On the other hand, even if the width of the block element's are adjustable, it still doesn't let other elements to sit next to it</li>
+				<li>chaning the <b>display</b> value of a block element to <b>inline </b> doesn't do any good because the width can't be changed once it becomes <b>inline</b></li>
+			</ul>
+			<li>Inline-block elements</li>
+				<ul>
+					<li>This is where Inline - block elements come in which give in the best of both worlds</li>
+					<li>They can be stacked next to each other and still their widths can be modified</li>
+				</ul>
+			<li>None elements</li>
+				<ul>
+					<li>This display type is like it deletes the element with the display property as <b>none</b></li>
+					<li>Imagine a situation in which a quiz is being attended on a site. To hide/show the answer at the click of a button can be made by changing the display property to <b>none</b> and back</li>
+				</ul>
+		</ol>
+		<ul>
+			<li>There is another property called <b>visibility</b> which when set to hidden will simply hide the element, but the element is still on the website. But when display is set to <b>none</b>, the element stops existing in the site and its place can be occupied by another element</li>
+		</ul>
+		<hr><h2><center>CSS Static and Relative positioning</center></h2><hr>
+		<ol>
+			<li>Position property</li>
+				<ol>
+					<li>Static</li>
+						<ul>
+							<li>The default positioning of all elements</li>
+						</ul>
+					<li>Relative</li>
+					<ul>
+						<li>This positions the element relative to how it would have been positioned had it been static. Say an img would have appeared at 0 margin on the left. if its attribute was changed to <b>position: relative; left: 30px;</b>. Then the image would appear with a gap of 30px on the left</li>
+						<li>Just by changing the position of an element to relative, no changes will be made unless it is accompanied with one of the four coordinates that mention the change</li>
+						<li>The coordinates order is: <b>Top, Bottom, Left, Right</b></li>
+						<li><b>NOTE:</b>When an element gets pushed due to relative positioning, it doesn't affect the position of any other element when it gets shifted.</li>
+						<li><b>NOTE:</b>Even after the element's change in position, its old posiition is still occupied by the same element. Its like the element hid itself in its original position and moved its copy to the new position, that is relative to the old one</li>
+					</ul>
+					<li>Absolute</li>
+					<li>Fixed</li>
+				</ol>
+		</ol>
+		<hr><h2><center>Absolute Positioning</center></h2><hr>
+		<ol>
+			<li>
+				Absolute Positioning
+				<ul>
+					<li>In abosulte positioning an element is positioned with respect to its parent</li>
+					<li>For example, if an image was contained within a div, and the img's position was <b>absolute</b> and had <b>right: 30px;</b> then the img will be shifted to position such that it has 30px right margin from the right end of the div's box</li>
+					<li>Unlike relative positioning, which leaves a ghost of the element behind so it won't affect the other element's positions, absolute positioning does affect the position of other elements when an element gets moved</li>
+				</ul>
+			</li>
+			<li>
+				Fixed Positioning
+				<ul>
+					<li>
+						When an element's position is fixed, it will be still visible even when scrolling throught the page. Like the top bars or the side bars that has the items like contacts, profile being visible even when the page is scrolled down
+					</li>
+				</ul>
+			</li>
+
+		</ol>
+		<hr><h2><center>The dark art of centering elements</center></h2><hr>
+		<ol>
+			<li>
+				Text align property
+				<ul>
+					<li>In the external css, inside the body tag selector, put <b>text-align:center;</b></li>
+					<li>This will make all the Inline-block elements like images and the full width block elements like the texts to be aligned at the center of the webpage</li>
+				</ul>
+			</li>
+		</ol>
+		<ul>
+			<li>To center the elements that are not Inline or not of full width, there is another method which uses <b>margin: 0 auto 0 auto</b> which means margin top is 0, margin right is auto, margin bottom is 0 and margin left is auto</li>
+			<li>It can also be set by <b>margin: 0 auto</b>, which means margin top and bottom are zero and margin left and right are auto</li>
+		</ul>
+		<hr><h2><center>Font styling in CSS</center></h2><hr>
+		<ol>
+			<li>Common CSS Font families
+				<ol>
+					<li>Cursive</li>
+					<li>Fantasy</li>
+					<li>inherit</li>
+					<li>monospace
+						<ul>
+							<li>This is used mostly for coding as in this font all the letters of a word will be of equal width.</li>
+						</ul>
+					</li>
+					<li>sans-serif
+						<li>Letter don't have tiny feet linke structures</li>
+						<li>The default sans-serif font for most browswers is the arial font</li>
+					</li>
+					<li>serif
+						<ul>
+							<li>For most browsers, the default serif is the Times font</li>
+							<li>Letters have tiny feet like structures</li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+		</ol>
 		<ul>
 			<li>
-				When an element's position is fixed, it will be still visible even when scrolling throught the page. Like the top bars or the side bars that has the items like contacts, profile being visible even when the page is scrolled down
+				It's always recommended to use websafe fonts because, when a special font is used for a website, if the user's system or the browser doesn't have that font installed, then it can't render that font and will render the default one, which will make the website look different for them instead of how it should.
 			</li>
+			<li><a href="https://www.cssfontstack.com">CssFontStack.com</a> Visit this site to know which fonts are most commonly used across different operating systems</li>
+			<li>On this site, when a font is copied, a font stack actually gets copied. For eg. <b>font-family: "helvetica neue",helvetica,arial,sans-serif</b></li>
+			<li>The above will work like, if the system has the <b>helvetica neue</b> then it will get displayed, or else the one next to it and so on.</li>
 		</ul>
-	</li>
+		<ol start="2">
+				<li>Font embedding</li>
+				<ul>
+					<li>But there is a way to use the font that seems good and still make it get displayed whether or not the user's system's able to render it.
+					<li>Use: <a href="https://fonts.google.com/">Google fonts</a></li>
+					<li>To embed the font, copy the font's link on the site and past it in the head section of the html file</li>
+					<li>Then go into the css section and paste the text in the <b>CSS rules to specify</b> box in the site, into the element's style</li>
+				</ul>
+			</li>
+			
 
-</ol>
-<hr><h2><center>The dark art of centering elements</center></h2><hr>
-<ol>
-	<li>
-		Text align property
-		<ul>
-			<li>In the external css, inside the body tag selector, put <b>text-align:center;</b></li>
-			<li>This will make all the Inline-block elements like images and the full width block elements like the texts to be aligned at the center of the webpage</li>
-		</ul>
-	</li>
-</ol>
-<ul>
-	<li>To center the elements that are not Inline or not of full width, there is another method which uses <b>margin: 0 auto 0 auto</b> which means margin top is 0, margin right is auto, margin bottom is 0 and margin left is auto</li>
-	<li>It can also be set by <b>margin: 0 auto</b>, which means margin top and bottom are zero and margin left and right are auto</li>
-</ul>
-<hr><h2><center>Font styling in CSS</center></h2><hr>
-<ol>
-	<li>Common CSS Font families
-		<ol>
-			<li>Cursive</li>
-			<li>Fantasy</li>
-			<li>inherit</li>
-			<li>monospace
-				<ul>
-					<li>This is used mostly for coding as in this font all the letters of a word will be of equal width.</li>
-				</ul>
-			</li>
-			<li>sans-serif
-				<li>Letter don't have tiny feet linke structures</li>
-				<li>The default sans-serif font for most browswers is the arial font</li>
-			</li>
-			<li>serif
-				<ul>
-					<li>For most browsers, the default serif is the Times font</li>
-					<li>Letters have tiny feet like structures</li>
-				</ul>
-			</li>
 		</ol>
-	</li>
-</ol>
-<ul>
-	<li>
-		It's always recommended to use websafe fonts because, when a special font is used for a website, if the user's system or the browser doesn't have that font installed, then it can't render that font and will render the default one, which will make the website look different for them instead of how it should.
-	</li>
-	<li><a href="https://www.cssfontstack.com">CssFontStack.com</a> Visit this site to know which fonts are most commonly used across different operating systems</li>
-	<li>On this site, when a font is copied, a font stack actually gets copied. For eg. <b>font-family: "helvetica neue",helvetica,arial,sans-serif</b></li>
-	<li>The above will work like, if the system has the <b>helvetica neue</b> then it will get displayed, or else the one next to it and so on.</li>
-</ul>
-<ol start="2">
-		<li>Font embedding</li>
+		<hr><h2><center>Adding content to the site</center></h2><hr>
 		<ul>
-			<li>But there is a way to use the font that seems good and still make it get displayed whether or not the user's system's able to render it.
-			<li>Use: <a href="https://fonts.google.com/">Google fonts</a></li>
-			<li>To embed the font, copy the font's link on the site and past it in the head section of the html file</li>
-			<li>Then go into the css section and paste the text in the <b>CSS rules to specify</b> box in the site, into the element's style</li>
+			<li><a href="https://www.lipsum.com/">Lorem Ipsum</a> - Facts about it.</li>
+			<li>Have a look at: <a href="https://www.flaticon.com/">Flaticon</a>, to use cool icons for the site</li>
+			<li>We can also use GIFs for the site from : <a href="https://giphy.com/">Giphy.com</a></li>
 		</ul>
-	</li>
-	
-
-</ol>
-<hr><h2><center>Adding content to the site</center></h2><hr>
-<ul>
-	<li><a href="https://www.lipsum.com/">Lorem Ipsum</a> - Facts about it.</li>
-	<li>Have a look at: <a href="https://www.flaticon.com/">Flaticon</a>, to use cool icons for the site</li>
-	<li>We can also use GIFs for the site from : <a href="https://giphy.com/">Giphy.com</a></li>
-</ul>
-<hr><h2><center>CSS Sizing</center></h2><hr>
-<ul>
-	<li><b>NOTE:</b> When a font size of a text is hardcoded in the html, even if the user change the font settings in the browser, say from medium to large, that harcoded element's font alone will remain same and the rest of the texts in the page will change size.</li>
-	<li>That's because, using px and mentioning font size will the lock the font's size</li> 
-	<ul>
-		<li>Dynamic Font Sizing
-			<ol>
-				<li>Use %
-					<ul>
-						<li><b>NOTE: </b>100% in font-size means 16px</li>
-						<li>So, if 90px is needed, then (90/16)*100%, that is 562.5%is needed</li>
-					</ul>
-				</li>
-				<li>Use em
-					<ul>
-						<li>em, is the phonetic pronounciation of the letter 'M'. It is no longer used in current days. In em <b>NOTE:</b> 1em = 16px</li>
-						<li>90px=5.625em</li>
-					</ul>
-				</li>
-			</ol>
-		</li>
-		<li><b>NOTE: </b>With zooming, it doesn't matter if the text is dynamically or statically sized cause zooming will scale up the whole site</li>
-		<li><b>NOTE: </b>say for example, the body tag has a font-size customized as 2em and then the h1 tag has the font size customized as 5em, then in the end the h1 tag will appear as 7em as it inherits the base font-size from its parent, which is the body. And its the same with using percentages. <b> But when the body tag says the font should be 20px and the h1 tag says it needs to 90px, then it will be 90px only</b></li>
-		<li>To avoid, such situation, there is a feature in the CSS3, the one that is being used, is called <b>rem</b> - Root em</li>
-		<li>The rem is used to ignore all the parent settings.</li>
-	</ul>
-</ul>
-<hr><h2><center>CSS Float and Clear</center></h2><hr>
-<ul>
-	<li>The Line height - This property is used to change the height between the lines in a paragraph. It doesn't have any units</li>
-</ul>
-<ol>
-	<li>Float
+		<hr><h2><center>CSS Sizing</center></h2><hr>
 		<ul>
-			<li>There is a div containing a pragraph and an image. The image is on top of the text.</li>
-			<li>By changing the float property of an img tag to, say <b>left</b>, the text which was at the bottom of the image, will now wrap around the image, meaning the image will float on the left, there will be text to the right of it and also to the bottom of it, if the paragraph's height is more than that of the image. Kind of what we see in school books</li>
+			<li><b>NOTE:</b> When a font size of a text is hardcoded in the html, even if the user change the font settings in the browser, say from medium to large, that harcoded element's font alone will remain same and the rest of the texts in the page will change size.</li>
+			<li>That's because, using px and mentioning font size will the lock the font's size</li> 
+			<ul>
+				<li>Dynamic Font Sizing
+					<ol>
+						<li>Use %
+							<ul>
+								<li><b>NOTE: </b>100% in font-size means 16px</li>
+								<li>So, if 90px is needed, then (90/16)*100%, that is 562.5%is needed</li>
+							</ul>
+						</li>
+						<li>Use em
+							<ul>
+								<li>em, is the phonetic pronounciation of the letter 'M'. It is no longer used in current days. In em <b>NOTE:</b> 1em = 16px</li>
+								<li>90px=5.625em</li>
+							</ul>
+						</li>
+					</ol>
+				</li>
+				<li><b>NOTE: </b>With zooming, it doesn't matter if the text is dynamically or statically sized cause zooming will scale up the whole site</li>
+				<li><b>NOTE: </b>say for example, the body tag has a font-size customized as 2em and then the h1 tag has the font size customized as 5em, then in the end the h1 tag will appear as 7em as it inherits the base font-size from its parent, which is the body. And its the same with using percentages. <b> But when the body tag says the font should be 20px and the h1 tag says it needs to 90px, then it will be 90px only</b></li>
+				<li>To avoid, such situation, there is a feature in the CSS3, the one that is being used, is called <b>rem</b> - Root em</li>
+				<li>The rem is used to ignore all the parent settings.</li>
+			</ul>
 		</ul>
-	</li>
-	<li>Clear</li>
-	<ul>
-		<li>This is opposite to what float does. Suppose if only heading is to be wrapped around an image and the paragraph should be at the bottom of the image, by changing the clear property of the text to <b>clear:left</b> will bring it down to the image</li>
-	</ul>
-</ol>
-<hr><hr>
+		<hr><h2><center>CSS Float and Clear</center></h2><hr>
+		<ul>
+			<li>The Line height - This property is used to change the height between the lines in a paragraph. It doesn't have any units</li>
+		</ul>
+		<ol>
+			<li>Float
+				<ul>
+					<li>There is a div containing a pragraph and an image. The image is on top of the text.</li>
+					<li>By changing the float property of an img tag to, say <b>left</b>, the text which was at the bottom of the image, will now wrap around the image, meaning the image will float on the left, there will be text to the right of it and also to the bottom of it, if the paragraph's height is more than that of the image. Kind of what we see in school books</li>
+				</ul>
+			</li>
+			<li>Clear</li>
+			<ul>
+				<li>This is opposite to what float does. Suppose if only heading is to be wrapped around an image and the paragraph should be at the bottom of the image, by changing the clear property of the text to <b>clear:left</b> will bring it down to the image</li>
+			</ul>
+		</ol>
+		<hr><hr>
 
-<center><h1>Introduction to Bootstrap</h1></center>
-<hr><h2><center>What is bootstrap</center></h2><hr>
-<ul>
-	<li>Bootstrap is a Front-end library</li>
-	<li>Javascript, CSS, HTML are some of the front end stack</li>
-	<li>.NET, Ruby, PHP, NodeJS, Java, SQL are some of the backend stack</li>
-	<li>While the front end give the appearance, the backend provides the functionality to the webpage</li>
-	<li>Bootstrap was deveoped by <b>twitter</b> and is an open source tool</li>
-	<li>One main advantage of incorporating Bootstrap is that it makes the website <b>responsive</b>, meaning, the website will alter its appearance automatically depending on the device its being viewed upon from so that the contents will appear as it should and not as broken</li>
-	<li>It makes the website to have adaptable layout</li>
-	<li>Remember at the start of the tutorial <b>codepen.io</b> was used as online editor? Now instead of that, <a href="https://www.codeply.com/">Codeply</a> will be used, as it supports front-end frameworks like bootstrap unlike codepen</li>
-	<li>To get a styled button with a hover state, many lines of CSS code is required. But it can be achieved in just <b>two words</b> using bootstrap</li>
-	<li>In the HTML file, create a button using the <b>button</b> tag and give its class name as follows: <b>btn-primary</b></li>
-	<li>This <b>btn-primary</b> is a pre-defined class in bootstrap for a blue colored button with a hover state</li>
-	<li>In bootstrap, <b>primary=blue</b>, <b>dark=black</b>. So, for a black colored button, give the class name as <b>btn-dark</b></li>
-	<li>Another example is <b>btn-outline-dark</b>, which is button with white fill - black text - black outline that gets filled with black when hovered over</li>
-	<li>The size can also be alterd by having class name as <b>btn-lg</b></li>
-	<li>Head over to <a href="https://getbootstrap.com/">Bootstrap</a> website and download the bootstrap files as zip (not the software), and inside the zip there will be a folder named <b>css</b> and inside it a file named <b>bootstrap.css</b>. This file containes lot of predefined classes inside it that are ready to be used on any website</li>
-	<li>Do visite the examples section as well as the docs section in the bootstrap website in order to understand well while using bootstrap</li>
-</ul>
+		<center><h1>Introduction to Bootstrap</h1></center>
+		<hr><h2><center>What is bootstrap</center></h2><hr>
+		<ul>
+			<li>Bootstrap is a Front-end library</li>
+			<li>Javascript, CSS, HTML are some of the front end stack</li>
+			<li>.NET, Ruby, PHP, NodeJS, Java, SQL are some of the backend stack</li>
+			<li>While the front end give the appearance, the backend provides the functionality to the webpage</li>
+			<li>Bootstrap was deveoped by <b>twitter</b> and is an open source tool</li>
+			<li>One main advantage of incorporating Bootstrap is that it makes the website <b>responsive</b>, meaning, the website will alter its appearance automatically depending on the device its being viewed upon from so that the contents will appear as it should and not as broken</li>
+			<li>It makes the website to have adaptable layout</li>
+			<li>Remember at the start of the tutorial <b>codepen.io</b> was used as online editor? Now instead of that, <a href="https://www.codeply.com/">Codeply</a> will be used, as it supports front-end frameworks like bootstrap unlike codepen</li>
+			<li>To get a styled button with a hover state, many lines of CSS code is required. But it can be achieved in just <b>two words</b> using bootstrap</li>
+			<li>In the HTML file, create a button using the <b>button</b> tag and give its class name as follows: <b>btn-primary</b></li>
+			<li>This <b>btn-primary</b> is a pre-defined class in bootstrap for a blue colored button with a hover state</li>
+			<li>In bootstrap, <b>primary=blue</b>, <b>dark=black</b>. So, for a black colored button, give the class name as <b>btn-dark</b></li>
+			<li>Another example is <b>btn-outline-dark</b>, which is button with white fill - black text - black outline that gets filled with black when hovered over</li>
+			<li>The size can also be alterd by having class name as <b>btn-lg</b></li>
+			<li>Head over to <a href="https://getbootstrap.com/">Bootstrap</a> website and download the bootstrap files as zip (not the software), and inside the zip there will be a folder named <b>css</b> and inside it a file named <b>bootstrap.css</b>. This file containes lot of predefined classes inside it that are ready to be used on any website</li>
+			<li>Do visite the examples section as well as the docs section in the bootstrap website in order to understand well while using bootstrap</li>
+		</ul>
+	</div>
 </body>
 </html> 
