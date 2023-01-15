@@ -14,6 +14,7 @@ body{
 }
 h1,h2,h3,th,b{
   color:#138c00;
+  filter:brightness(150%)
 }
 table,th,td{
   border: 1px solid white;
@@ -23,6 +24,16 @@ ul{
   list-style-type: disc;
 }
 /*----------------class selectors------------------*/
+.codeblock{
+  background-color: rgb(27, 27, 27);
+  border-radius: 15px;
+  border-color: #424242;
+  border:solid 2px;
+  width:fit-content;
+  padding:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
 .coverarea{
   width:100%;
   height:400px;
@@ -66,7 +77,7 @@ ul{
   left:0;
   width:100%;
   z-index: -1;
-  /* filter:blur(3px) brightness(200%); */
+  /* filter:blur(0px) brightness(100%); */
 }
 .endbox{
   height:100px;

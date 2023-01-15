@@ -9,6 +9,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+
 </head>
 <body>
 	<video class="covervideo" src="videos/lonelyroad.mp4" loop autoplay muted></video>
@@ -549,6 +550,105 @@
 			<li>Head over to <a href="https://getbootstrap.com/">Bootstrap</a> website and download the bootstrap files as zip (not the software), and inside the zip there will be a folder named <b>css</b> and inside it a file named <b>bootstrap.css</b>. This file containes lot of predefined classes inside it that are ready to be used on any website</li>
 			<li>Do visite the examples section as well as the docs section in the bootstrap website in order to understand well while using bootstrap</li>
 		</ul>
+		<hr><h2><center>Bootstrap installation</center></h2><hr>
+		<ul>
+			<li>To install or incoporate Bootstrap into the website, in the head section of the html include a link with the relation as <b>stylesheet</b></li>
+			<li>For the <b>href</b> head to the <a href="https://getbootstrap.com/">bootstrap</a> site and copy the cdn link. cdn stands for <b>C</b>ontent <b>D</b>elivery <b>N</b>etwork</li>
+			<li>It was learnt in the one of the previous lessons that the Internet is not working via satellites but via underground fibre optic Inter-continental cables laid down all over the world</li>
+			<li>It can be checked out in the site: <a href="https://www.submarinecablemap.com/">submarine Cable Map</a></li>
+			<li>The point where these cables touch the land will be probaly a data center and there will be other interior data centers as well on the land</li>
+			<li>The cdn of the bootstrap starts with <b>maxcdn</b>, which means bootstrap is using <a href="https://www.stackpath.com/maxcdn/">MaxCDN</a> as their website host, which has a lot of data points set across the world and that means a website made with bootstrap has a lower latency and is easier to load from anywhere in the world</li>
+			<li>And since a large number of websites already uses bootstrap framework, its very likely that the user must've loaded a bootstrap oriented website in their device at some point in time and if they haven't cleared their cache yet, then the bootstrap.css file will be probably stored in their device and will get applied easily once they load the site</li>
+		</ul>
+		<hr><center><h2>Web Design 101 - Wireframign</h2></center><hr>
+		<ol>
+			<li>
+				Wireframing
+				<ul>
+					<li>Wireframes are low fidelity representation of the website design. It is the first step that should be done when designing a website from scratch</li>
+					<li>It is meant to be done with pencil and paper and roughly sketch out the layout of where things should be</li>
+					<li></li>
+					<li><a href="https://sneakpeekit.com/">SneakPeekIt</a> is a cool site that lets users download wireframe template sheet that can be printed out and drawn upon</li>
+					<li>Another way is to use the industry standard tool called <a href="https://balsamiq.com/">Balsamiq</a>. It is not a free tool.</li>
+				</ul>
+			</li>
+			<li>
+				Mockup
+				<ul>
+					<li>This is kind of opposite of wireframing</li>
+					<li>
+						Its like taking a screenshot of the website from the future
+					</li>
+				</ul>
+			</li>
+		</ol>
+		<ul>
+			<li>Visit: <a href="https://www.awwwards.com/">awwwards</a> for examples of cool website designs</li>
+			<li>Also visit: <a href="https://ui-patterns.com/">UI-Design patterns</a></li>
+			<li>Also visit: <a href="https://dribbble.com/">Dribble</a> for Inspiration</li>
+		</ul>
+		<hr><center><h2>Boostrap NavBar</h2></center><hr>
+		<ol>
+			<li>Navigational bar</li>
+			<ul>
+				<li>create a nav element by using &lt;nav&gt; &lt;/nav&gt;</li>
+				<li>Give it a class name of <b>navbar</b></li>
+				<li>Then create an unordered list inside the nav and give the list a class name of <b>navbar-nav</b></li>
+				Then create an item by using the <b>li</b> and give it a class name of <b>nav-item</b>
+				<li>Finally create an anchor element inside the item and give it a class name of <b>nav-link</b></li>
+				<li>As usual give the href of the anchor tag the appropriate link</li>
+				<li>An appropriate navbar has been created</li>
+				<li>But this <b>navbar</b> class will make the navbar items get stacked on top of each other as more elements are added into it. But that's not how a normal navbar looks like</li>
+				<li>to make the items get arranged next to each other, give an additional class name of <b>navbar-expand-lg</b> next to the already existing <b>navbar</b> class in the nav element</li>
+				<li>When using <b>lg (large)</b>, the navbar will be horizontal on laptop like large width devices and will appear vertical when viewed in smarphone like low width devices</li>
+				<li>Instead of <b>lg</b>, which means large width devices like laptop, if <b>md (medium)</b> was used, then for both laptop and say tablets, the navbar will be horizontal and for smarphones it will be vertical</li>
+				<li>To make the navbar appear more clearly, a background class can be added along with the two already added classes. Add <b>bg-light</b> for a very subtle light background navbar</li>
+				<li>By default, the navbar items will look blue in color, and this can be changed by adding one more class called <b>navbar-light</b> to make them appear with black text color</li>
+			</ul>
+			<li>classes - colors</li>
+			<ul>
+				<li>
+					primary - blue
+				</li>
+				<li>secondary - gray</li>
+				<li>success - green</li>
+				<li>danger - red</li>
+				<li>warning - yellow</li>
+				<li>info - light blue</li>
+				<li>light - white</li>
+				<li>dark - black</li>
+				<li>link - text will be blue with underline</li>
+			</ul>
+			<li>.navbar-brand</li>
+			<ul>
+				<li>An element with the class as <b>navbar-brand</b> will appear on the top left corner of the page</li>
+			</ul>
+			<li>ms-auto</li>
+			<ul>
+				<li>From all the above things, the navbar will look with the brand and the three links, all arranged one after the other. But this looks a bit clumsy. To push the links onto the right and keep the brand alone on the left, add a class to the ul tag of the navbar
+				</li>
+				<li>Add <b>ms-auto</b>. This will create a margin from the start of the unordered list and auto means, it will push the contents to the right as much as possible. m - margin</li>
+			</ul>
+			<li>toggler</li>
+			<ul>
+				<li>Now, the three links are on the righ the navbar with the brand on the left of the navbar. But when the screen size gets so small that its not possible to see all the four of them in a single line, the navbar will get bigger in height and make the links appear vertical</li>
+				<li>But it will be better if all the three links are visible inside a drop-down list. Well that's what a <b>toggler</b> is for</li>
+				<li>The toggler is a simple button with three horizontal lines. when clicked on it will show the contents inside it as a drop-down list</li>
+				<li>
+					Add the following into the code: <br>
+					<div class="codeblock">
+						<code>
+							&lt;button class = "navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="toplinks" aria-controls<br>
+							&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br>
+							&lt;/button&gt;
+						</code>
+					</div>
+				</li>
+				<li>Then create a div around the contents that are needed to be collapsed upon and give the div a class name that is given in the <b>data-bs-target</b> inside the toggler, in this case it is <b>toplinks</b></li>
+				<li>the <b>fixed-top</b> class can be used inside the navbar to make it fixed to the top so that it won't disappear while scrolling</li>
+			</ul>
+		</ol>
+		
 	</div>
 </body>
 </html> 
