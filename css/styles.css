@@ -74,7 +74,7 @@ ul{
   background-color:#000000;
 }
 .gradbox{
-  height:110px;
+  height:155px;
   width:100%;
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0));
 }
