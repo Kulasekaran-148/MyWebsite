@@ -26,18 +26,25 @@ ul{
 /*----------------class selectors------------------*/
 .bottomlogo{
   height:30px;
+  padding:10px;
 }
 .bottominstagram:hover{
   position:relative;
-  bottom:10px;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .bottomgithub:hover{
   position:relative;
-  bottom:10px;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .bottomlinkedin:hover{
   position:relative;
-  bottom:10px;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .codeblock{
   background-color: rgb(0, 0, 0);
@@ -131,6 +138,11 @@ ul{
   filter:drop-shadow(3px 3px 1px rgb(75, 75, 75));
   text-align: center;
 }
+.oneLineBioText:hover{
+  animation-name: brighten;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 .rating5{
   background-color: #03C988; 
 }
@@ -150,6 +162,24 @@ ul{
 background-color: rgb(0, 0, 0);
 padding:20px;
 }
-/* --------------------------------------------------------- Animations --------------------------------------------------------- */
-
+/* Animations */
+@keyframes float{
+0%{bottom:0px;}
+50%{bottom:15px; transform: scale(1.2); filter:brightness(300%)}
+100%{bottom:0px; transform: scale(1); filter:brightness(100%)}
+}
+@keyframes brighten{
+  0%{
+    filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
+    transform: scale(1);
+  }
+  50%{
+    filter:brightness(300%) drop-shadow(3px 3px 1px rgb(75, 75, 75));
+    transform: scale(1.1);
+  }
+  100%{
+    filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
+    transform: scale(1);
+  }
+}
 
