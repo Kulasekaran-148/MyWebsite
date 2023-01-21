@@ -75,19 +75,41 @@ ul{
   height:max-content;
   background-color: rgba(255, 191, 101, 0);
 }
-.coverlinks{
-  background-color: rgba(164, 164, 164, 0);
-  font-size: 28px;
-  color:white;
-  font-size:x-large;
-  filter:drop-shadow(3px 3px 1px black);
+.covercontact:hover{
+  position:relative;
+  animation:brighten;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.coverhome:hover{
+  position:relative;
+  animation:brighten;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.coverweb:hover{
+  position:relative;
+  animation:brighten;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.coverweb{
+  position: relative;
+  height:40px;
+  bottom:3px;
+  padding-right: 15px;
 }
 .coverlinkbox{
+  height:max-content;
   background-color: rgba(0, 139, 139, 0);
   width:max-content;
   position:absolute;
   right:20px;
   top:10px;
+}
+.coverlogo{
+  height:50px;
+  padding-right:15px;
 }
 .coverMyPic{
   background-color: rgba(0, 0, 255, 0);
@@ -139,7 +161,7 @@ ul{
   text-align: center;
 }
 .oneLineBioText:hover{
-  animation-name: brighten;
+  animation-name: brightenandtransform;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
@@ -181,7 +203,7 @@ padding:20px;
     bottom: 10px;
   }
 }
-@keyframes brighten{
+@keyframes brightenandtransform{
   0%{
     filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
     transform: scale(1);
@@ -193,6 +215,18 @@ padding:20px;
   100%{
     filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
     transform: scale(1);
+  }
+}
+@keyframes brighten{
+  0%{
+    filter: brightness(300%) saturate(250%);
+    transform:scale(1.1);
+    bottom:4px;
+  }
+  100%{
+    filter: brightness(300%) saturate(250%);
+    bottom:4px;
+    transform: scale(1.1);
   }
 }
 
