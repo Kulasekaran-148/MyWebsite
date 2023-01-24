@@ -135,7 +135,7 @@ ul{
   left:0;
   width:100%;
   z-index: -1;
-  filter:blur(3px) brightness(200%);
+  filter:blur(3px) brightness(100%);
 }
 .endbox{
   height:100px;
