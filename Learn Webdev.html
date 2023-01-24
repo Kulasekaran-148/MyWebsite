@@ -3,16 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Web Development</title>
+
+	<!-- BOOTSTRAP START -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
+	<!-- BOOTSTRAP END-->
+
 	<link rel="stylesheet" href="css/styles.css">
+
+	<!-- GOOGLE FONTS START -->
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+	<!-- GOOGLE FONTS END-->
 
 </head>
 <body>
 	<video class="covervideo" src="videos/matrix-modified.mp4" loop autoplay muted></video>
+	<!-- <nav class="navbar" style="background-color: black;">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" style="color: white;" href="contacts.html">Contact: <img class="coverlogo covercontact" src="images/contacts.png" alt="contact"></a>
+				<a class="nav-link" style="color: white;" href="index.html">Home: <img class="coverlogo coverhome" src="images/home_logo.png" alt="home"></a>
+			</li>
+		</ul>
+	</nav> -->
+	<!-- <div class="revgradbox"></div> -->
   <div class="coverarea">
     <div class="covercontents">
       <div class="coverMyPic">
@@ -24,13 +41,13 @@
 				</div>
     </div>
   </div>
-  <div class="coverlinkbox">
+	<div class="coverlinkbox">
 		<a href="contacts.html"><img class="coverlogo covercontact" src="images/contacts.png" alt="contact"></a>
 		<a href="index.html"><img class="coverlogo coverhome" src="images/home_logo.png" alt="home"></a>
 	</div>
   <div class="gradbox"></div>
-	<div class="restOfTheContent" style="padding:0px;">
-		<center><h1 style="margin-top:0; padding-top:40px;">HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
+	<div class="restOfTheContent container-fluid" style="padding:20px;">
+		<center><h1 style="margin-top:0; padding-top:20px;">HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
 		<hr><center><h2>Introduction to HTML</h2></center><hr>
 		<ol>
 			<li>HTML</li>
@@ -551,7 +568,7 @@
 		</ul>
 		<hr><h2><center>Bootstrap installation</center></h2><hr>
 		<ul>
-			<li>To install or incoporate Bootstrap into the website, in the head section of the html include a link with the relation as <b>stylesheet</b></li>
+			<li>To install or incoporate Bootstrap into the website, in the head section of the html include a link with the relation as <b>stylesheet</b>. It is important to put this cdn link above the custom created <b>styles.css</b> stylesheet link for the previous customizations to still work</li>
 			<li>For the <b>href</b> head to the <a href="https://getbootstrap.com/">bootstrap</a> site and copy the cdn link. cdn stands for <b>C</b>ontent <b>D</b>elivery <b>N</b>etwork</li>
 			<li>It was learnt in the one of the previous lessons that the Internet is not working via satellites but via underground fibre optic Inter-continental cables laid down all over the world</li>
 			<li>It can be checked out in the site: <a href="https://www.submarinecablemap.com/">submarine Cable Map</a></li>
@@ -635,7 +652,7 @@
 				<li>The toggler is a simple button with three horizontal lines. when clicked on it will show the contents inside it as a drop-down list</li>
 				<li>
 					Add the following into the code: <br>
-					<div class="codeblock">
+					<div class="codeblock container">
 						<code>
 							&lt;button class = "navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="toplinks" aria-controls<br>
 							&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br>
@@ -672,14 +689,25 @@
 			</li>
 			<div style="text-align: center; padding:15px 0 15px 0">
 				Code: <br>
-				<img class="codeblock" style="height:400px; display:inline-block; margin:0 auto 0 auto;" src="codeimgs/bootstrap_columns.png" alt="columns_code"> <br>
+				<img class="codeblock" style="height:400px; display:inline-block; margin:0 auto 2 auto;" src="codeimgs/bootstrap_columns.png" alt="columns_code"> <br>
 				Output: <br>
-				<img class="codeblock" style="width:800px;" src="codeimgs/bootstrap_columns_ouptut.png" alt="columns_code_output">
+				<img class="codeblock container" style="width:800px;" src="codeimgs/bootstrap_columns_ouptut.png" alt="columns_code_output">
 			</div>
 			<ul>
 				<li>But still, when changing the width of the screen, the columns stay the same and are not responsive</li>
 				<li>To make it responsive, mention the size in the class when creating the columns. For example, instead of <code>col-6</code>, mention it as <code>col-md-6</code>. This will keep two columns of size 6 next to each other when the screen is large and medium (laptop and tablet), and when screen is (small) phone sized, it will stack on top of one another</li>
 			</ul>
+		</ol>
+		<hr><h2><center>Bootstrap containers</center></h2><hr>
+		<ol>
+			<li>class="Container"</li>
+			<ul>
+				<li>Create a div element with some text content inside it</li>
+				<li>Give the div a class name of <b>container</b></li>
+				<li>Now, since the div has a class of container, it makes the div responsive when the the window is resized or when the content is viewed from different width devices</li>
+			</ul>
+			<li>Class="conatiner-fluid"</li>
+			<ul>fluid container's function is similar to that of the regular container, but <b>fluid containers can take up 100% of the width</b>, whereas the regular ones do not.</ul>
 		</ol>
 	</div>
 	<div class="endbox">
