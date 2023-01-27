@@ -146,7 +146,7 @@ ul{
   padding-right:5px;
   position:relative;
   top:3px;
-  filter:brightness(200%)
+  filter:brightness(200%);
 }
 .coverMyPic{
   background-color: rgba(0, 0, 255, 0);
@@ -312,13 +312,13 @@ padding:20px;
 @keyframes brighten{
   0%{
     filter: brightness(300%) saturate(250%);
-    transform:scale(1.1);
+    transform:scale(1.2);
     bottom:4px;
   }
   100%{
     filter: brightness(300%) saturate(250%);
     bottom:4px;
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }
 
