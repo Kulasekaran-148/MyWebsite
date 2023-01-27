@@ -158,7 +158,6 @@ ul{
   left:0;
   width:100%;
   z-index: -1;
-  filter:blur(3px) brightness(100%);
 }
 .endbox{
   height:100px;
@@ -184,10 +183,6 @@ ul{
 .Mypic{
   border-radius:100%;
   height:200px;
-  border:solid 5px;
-  border-color:#138c00;
-  filter:drop-shadow(0px 0px 120px #138c00);
-  /* filter:drop-shadow(3px 3px 10px yellow) */
 }
 .oneLineBioText{
   margin:0;
@@ -283,6 +278,17 @@ padding:20px;
   margin-top:0px;
   padding:0px;
 }
+/* .videocontainer{
+  width:1000px;
+  height:1000px;
+  border-radius: 500px;
+  backdrop-filter: brightness(200%);
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -300px;
+} */
 /* Animations */
 /* @keyframes float{
 0%{bottom:0px;}
