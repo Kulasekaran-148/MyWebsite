@@ -60,6 +60,22 @@ ul{
   position: relative;
   padding:0;
 }
+.blurred-box{
+  height:50px;
+  backdrop-filter: blur(10px);
+}
+.blurry-gradient {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 800px;
+  height: 800px;
+	border-radius: 50% 22% 40% 80%;  
+	filter: blur(100px);
+  background: radial-gradient(circle at 50% 50%,rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
+  opacity: 0.2;
+}
 .codeblock{
   background-color: rgb(0, 0, 0);
   border-radius: 15px;
@@ -107,10 +123,15 @@ ul{
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+.coverhome{
+  height:40px;
+}
+.covercontact{
+  height:40px;
+}
 .coverweb{
   position: relative;
-  height:40px;
-  bottom:3px;
+  height:37px;
   padding-right: 15px;
 }
 .coverlinkbox{
@@ -122,8 +143,10 @@ ul{
   top:10px;
 }
 .coverlogo{
-  height:50px;
-  padding-right:15px;
+  padding-right:5px;
+  position:relative;
+  top:3px;
+  filter:brightness(200%)
 }
 .coverMyPic{
   background-color: rgba(0, 0, 255, 0);
@@ -245,11 +268,9 @@ ul{
   animation-iteration-count: infinite;
 }
 .revgradbox{
-  height:155px;
+  height:max-content;
   width:100%;
   background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));
-  position:fixed;
-  z-index:+1;
 }
 .restOfTheContent{
 background-color: rgb(0, 0, 0);
