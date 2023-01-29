@@ -60,6 +60,17 @@ ul{
   position: relative;
   padding:0;
 }
+.bottomsom:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.bottomsom{
+  position: relative;
+  right:3px;
+  height:55px;
+}
 .blurred-box{
   height:50px;
   backdrop-filter: blur(10px);
