@@ -49,6 +49,17 @@ ul{
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
+.bottommaths{
+  height:35px;
+  position: relative;
+  padding:0;
+}
+.bottommaths:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
 .bottomthermo:hover{
   position:relative;
   animation-name: float;
@@ -74,18 +85,6 @@ ul{
 .blurred-box{
   height:50px;
   backdrop-filter: blur(10px);
-}
-.blurry-gradient {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 800px;
-  height: 800px;
-	border-radius: 50% 22% 40% 80%;  
-	filter: blur(100px);
-  background: radial-gradient(circle at 50% 50%,rgba(76, 0, 255, 1), rgba(76, 0, 255, 0));
-  opacity: 0.2;
 }
 .codeblock{
   background-color: rgb(0, 0, 0);
@@ -174,6 +173,10 @@ ul{
   height:100px;
   width:100%;
   background-color:#000000;
+}
+.Gate-Shortnotes{
+  height:fit-content;
+  width:100%;
 }
 .gradbox{
   height:100px;
@@ -283,40 +286,22 @@ background-color: rgb(0, 0, 0);
 padding:20px;
 }
 .topbar{
-  /* background-color: black; */
   height: 80px;
   background-image: linear-gradient(to top, transparent, black);
   margin-top:0px;
   padding:0px;
 }
-/* .videocontainer{
-  width:1000px;
-  height:1000px;
-  border-radius: 500px;
-  backdrop-filter: brightness(200%);
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: -300px;
-} */
-/* Animations */
-/* @keyframes float{
-0%{bottom:0px;}
-50%{bottom:15px; transform: scale(1.2); filter:brightness(300%)}
-100%{bottom:0px; transform: scale(1); filter:brightness(100%)}
-} */
 @keyframes float{
   0%{
     transform: scale(1.3);
     filter: brightness(300%) saturate(250%);
     position: relative;
-    bottom: 10px;
+    /* bottom: 10px; */
   }
   100%{
     transform: scale(1.3);
     filter: brightness(300%) saturate(250%);
-    bottom: 10px;
+    /* bottom: 10px; */
   }
 }
 @keyframes brightenandtransform{
