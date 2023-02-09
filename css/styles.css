@@ -38,7 +38,7 @@ ul{
   animation-iteration-count: infinite;
 }
 .bottomlogo{
-  height:50px;
+  height:60px;
   padding:10px;
 }
 .bottominstagram:hover{
@@ -108,6 +108,11 @@ ul{
   animation-iteration-count: infinite;
 }
 .bottommaths:hover{
+  animation-name: float;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.bottompowerplant:hover{
   animation-name: float;
   animation-duration: 1s;
   animation-iteration-count: infinite;
