@@ -102,15 +102,17 @@ ul{
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.bottommachinedesign{
-  display: none;
-}
 .bottommaterialscience:hover{
   animation-name: float;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
 .bottommaintenance:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottommachinedesign:hover{
   animation-name: float;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -160,8 +162,10 @@ ul{
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.bottomvibrations{
-  display: none;
+.bottomvibrations:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .bottomwelding:hover{
   animation-name: float;
