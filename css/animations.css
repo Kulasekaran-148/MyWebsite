@@ -1,0 +1,42 @@
+@keyframes float{
+  0%{
+    transform: scale(1);
+    filter: brightness(300%) saturate(250%);
+    bottom:0px;
+  }
+  50%{
+    transform: scale(1.1);
+    bottom:15px;
+  }
+  100%{
+    transform: scale(1);
+    filter: brightness(300%) saturate(250%);
+    bottom:0px;
+  }
+}
+@keyframes brightenandtransform{
+  0%{
+    filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
+    transform: scale(1);
+  }
+  50%{
+    filter:brightness(300%) drop-shadow(3px 3px 1px rgb(75, 75, 75));
+    transform: scale(1.1);
+  }
+  100%{
+    filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
+    transform: scale(1);
+  }
+}
+@keyframes brighten{
+  0%{
+    filter: brightness(300%) saturate(250%);
+    transform:scale(1.2);
+    bottom:4px;
+  }
+  100%{
+    filter: brightness(300%) saturate(250%);
+    bottom:4px;
+    transform: scale(1.2);
+  }
+}

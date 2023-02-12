@@ -1,23 +1,21 @@
 /*------------------Tag selectors------------------*/
-a:hover{
-  color:red;
-}
 a{
   color:lightgreen;
   text-decoration: none;
 }
+a:hover{
+  color:red;
+}
 body{
-  background-color: rgba(0, 0, 0, 0);
-  color:#f0f0f0;
+  background-color: rgb(0, 0, 0);
+  color:#ffffff;
   font-family: 'Gabriela', serif;
   margin:0px;
+  font-size: 1vw;
 }
-h1,h2,h3,th,b{
+h1,h2,h3,h5,th,b{
   color:#138c00;
   filter:brightness(150%)
-}
-h5{
-  color:#138c00;
 }
 table,th,td{
   border: 1px solid white;
@@ -30,147 +28,9 @@ ul{
   list-style-type: disc;
 }
 /*----------------class selectors------------------*/
-.bottomaptitude:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomcasting:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
 .bottomlogo{
   height:40px;
   margin: 10px 5px 10px 5px;
-}
-.bottominstagram:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomgithub:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomlinkedin:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomenglish:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomenggmech:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomfluidmechanics{
-  position: relative;
-}
-.bottomfluidmechanics:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomheattransfer{
-  padding-left:3px;
-  padding-right:4px;
-}
-.bottomheattransfer:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-/* .bottomicengine{
-  width:70px;
-} */
-.bottomicengine:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomindustrialengineering:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottommaterialscience:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottommaintenance:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottommachinedesign:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottommaths:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottommetalcutting:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottommetalforming:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottompowerplant:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomproduction:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomrac:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomsom:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomtheoryofmachines:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomthermo:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomvibrations:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.bottomwelding:hover{
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
 }
 .codeblock{
   background-color: rgb(0, 0, 0);
@@ -254,27 +114,6 @@ ul{
   width:100%;
   z-index: -1;
 }
-.endbox{
-  height:100px;
-  width:100%;
-  background-color:#000000;
-  text-align: center;
-}
-.gate{
-  position:relative;
-  background-color: rgba(236, 236, 236, 0);
-  height:60px;
-  width: 60px;
-  margin:5px;
-  border-radius: 20%;
-  border: 2px solid #138c00;
-}
-.Gate-Shortnotes{
-  background-color: black;
-  width:100%;
-  height:fit-content;
-  text-align: center;
-}
 .gradbox{
   height:100px;
   width:100%;
@@ -308,67 +147,6 @@ ul{
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-.programminglogo{
-  border: 3px solid #138c00;
-  border-radius: 30%;
-  margin-left:5px;
-  margin-right:5px;
-  height: 60px;
-}
-.pro_leetcode:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.pro_kaggle:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.pro_newtonschool:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.pro_w3schools:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.pro_codechef:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.pro_hackerrank:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.pro_hackerearth:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.pro_geeksforgeeks:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.pro_stackoverflow:hover{
-  position:relative;
-  animation-name: float;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
 .revgradbox{
   height:max-content;
   width:100%;
@@ -384,46 +162,5 @@ padding:20px;
   margin-top:0px;
   padding:0px;
 }
-@keyframes float{
-  0%{
-    transform: scale(1);
-    filter: brightness(300%) saturate(250%);
-    bottom:0px;
-  }
-  50%{
-    transform: scale(1.1);
-    bottom:15px;
-  }
-  100%{
-    transform: scale(1);
-    filter: brightness(300%) saturate(250%);
-    bottom:0px;
-  }
-}
-@keyframes brightenandtransform{
-  0%{
-    filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
-    transform: scale(1);
-  }
-  50%{
-    filter:brightness(300%) drop-shadow(3px 3px 1px rgb(75, 75, 75));
-    transform: scale(1.1);
-  }
-  100%{
-    filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
-    transform: scale(1);
-  }
-}
-@keyframes brighten{
-  0%{
-    filter: brightness(300%) saturate(250%);
-    transform:scale(1.2);
-    bottom:4px;
-  }
-  100%{
-    filter: brightness(300%) saturate(250%);
-    bottom:4px;
-    transform: scale(1.2);
-  }
-}
+
 

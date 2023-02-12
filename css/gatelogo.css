@@ -1,0 +1,133 @@
+/*----------------class selectors------------------*/
+.bottomaptitude:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomcasting:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomenglish:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomenggmech:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomfluidmechanics{
+  position: relative;
+}
+.bottomfluidmechanics:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomheattransfer{
+  padding-left:3px;
+  padding-right:4px;
+}
+.bottomheattransfer:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomicengine:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomindustrialengineering:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottommaterialscience:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottommaintenance:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottommachinedesign:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottommaths:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottommetalcutting:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottommetalforming:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottompowerplant:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomproduction:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomrac:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomsom:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomtheoryofmachines:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomthermo:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomvibrations:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomwelding:hover{
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.gate{
+  position:relative;
+  background-color: rgba(236, 236, 236, 0);
+  height:60px;
+  width: 60px;
+  margin:5px;
+  border-radius: 20%;
+  border: 2px solid #138c00;
+}
+.Gate-Shortnotes{
+  background-color: black;
+  width:100%;
+  height:fit-content;
+  text-align: center;
+}

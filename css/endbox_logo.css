@@ -1,0 +1,25 @@
+/*----------------class selectors------------------*/
+.bottominstagram:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomgithub:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.bottomlinkedin:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.endbox{
+  height:100px;
+  width:100%;
+  background-color:#000000;
+  text-align: center;
+}

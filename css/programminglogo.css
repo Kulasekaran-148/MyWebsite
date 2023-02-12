@@ -1,0 +1,62 @@
+/*----------------class selectors------------------*/
+.programminglogo{
+  border: 3px solid #138c00;
+  border-radius: 30%;
+  margin-left:5px;
+  margin-right:5px;
+  height: 60px;
+}
+.pro_leetcode:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.pro_kaggle:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.pro_newtonschool:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.pro_w3schools:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.pro_codechef:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.pro_hackerrank:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.pro_hackerearth:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.pro_geeksforgeeks:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.pro_stackoverflow:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
