@@ -29,8 +29,12 @@
 </head>
 <body>
 	<video style="filter:brightness(200%) blur(2px)" class="covervideo" src="videos/matrix-modified.mp4" loop autoplay muted></video>
+	
 	<nav class="navbar navbar-expand-md fixed-top topbar">
-		<div class="container-fluid">
+		<button style="position:absolute; right:10px" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toplinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<img style="height: 30px;" src="images/3bars.png" alt="toggler">
+		</button>
+		<div class="collapse navbar-collapse" id="toplinks">
 			<ul class="navbar-nav ms-auto">
 				<li class="nav-item">
 					<a class="nav-link" href="contacts.html"><img class="coverlogo covercontact" src="images/contacts.png" alt="contact"></a>
@@ -52,10 +56,6 @@
 				</div>
     </div>
   </div>
-	<!-- <div class="coverlinkbox">
-		<a href="contacts.html"><img class="coverlogo covercontact" src="images/contacts.png" alt="contact"></a>
-		<a href="index.html"><img class="coverlogo coverhome" src="images/home_logo.png" alt="home"></a>
-	</div> -->
   <div class="gradbox"></div>
 	<div class="restOfTheContent container-fluid" style="padding:20px;">
 		<center><h1 style="margin-top:0; padding-top:20px;">HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
@@ -726,11 +726,12 @@
 			<li>Also Visit: <a href="https://fontawesome.com/">Fontawesome</a></li>
 			<li>Using Font Awesome website, adding icons to buttons is possible</li>
 			<li>Similar to Bootstrap, the following code has to be added to the head section of the website:</li><br>
-			<li><code class="codeblock">&lt;script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"&gt;</script></code></li>
-			<br><li>The above is JavaScript embed CDN link. For CSS embedding use the below:</li><br>
-			<li><code class="codeblock">&lt;link rel="stylesheet" href="https://kit.fontawesome.com/0da7501024.css" crossorigin="anonymous&gt;"</code></li><br>
-			<li>Cons of using CSS CDN - Blocks the page from loading until all the icons are loaded</li><br>
-			<li>Example: <button class="btn btn-dark"><i class="fa-solid fa-download"></i> Sample button</button> &lt;== Code: <code class="codeblock"> &lt;button class="btn btn-dark">&lt;i class="fa-solid fa-download">&lt;/i> Sample button&lt;/button></code></li>
+			<div class="codeblock container"><code>&lt;script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"&gt;/script></code></div>
+			<li>The above is JavaScript embed CDN link. For CSS embedding use the below:</li>
+			<div class="codeblock container"><code>&lt;link rel="stylesheet" href="https://kit.fontawesome.com/0da7501024.css" crossorigin="anonymous&gt;"</code></div>
+			<li>Cons of using CSS CDN - Blocks the page from loading until all the icons are loaded</li>
+			<li>Example: <button class="btn btn-dark"><i class="fa-solid fa-download"></i> Sample button</button> &lt;== Code:</li>
+			<div class="codeblock container"><code>&lt;button class="btn btn-dark">&lt;i class="fa-solid fa-download">&lt;/i> Sample button&lt;/button></code></div>
 		</ul>
 	</div>
 	<div class="Useful links">
