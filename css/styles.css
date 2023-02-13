@@ -11,7 +11,16 @@ body{
   color:#ffffff;
   font-family: 'Gabriela', serif;
   margin:0px;
-  font-size: 1vw;
+}
+@media (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
 }
 h1,h2,h3,h5,th,b{
   color:#138c00;
