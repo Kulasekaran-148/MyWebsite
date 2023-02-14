@@ -11,15 +11,29 @@ body{
   color:#ffffff;
   font-family: 'Gabriela', serif;
   margin:0px;
+  font-size: 16px;
+}
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 479px) {
+  body {
+    font-size: 12px;
+  }
 }
 h1,h2,h3,h5,th,b{
   color:#138c00;
   filter:brightness(150%);
-  font-size: 1.5vw;
 }
 table,th,td{
   border: 1px solid white;
   border-collapse: collapse;
+  padding:5px;
 }
 thead,tbody{
   text-align:center;
@@ -41,24 +55,29 @@ ul{
   margin-top:10px;
   margin-bottom:10px;
 }
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .coverarea{
   width:100%;
-  height:400px;
+  height:fit-content;
   background-color: rgba(255, 255, 0, 0);
   text-align: center;
 }
 .covercontents{
   background-color: rgba(0, 100, 0, 0);
-  text-align: center;
-  height:350px;
+  height:fit-content;
   width: max-content;
-  display:inline-block;
-  margin-top: 140px;
+  display:Inline-block;
+  text-align: center;
+  margin-top: 30px;
 }
 .coverdetails{
   width:fit-content;
   height:max-content;
   background-color: rgba(255, 191, 101, 0);
+  text-align: center;
 }
 .covercontact:hover{
   position:relative;
@@ -89,14 +108,6 @@ ul{
   height:37px;
   padding-right: 15px;
 }
-.coverlinkbox{
-  height:max-content;
-  background-color: rgba(0, 139, 139, 0);
-  width:max-content;
-  position:absolute;
-  right:20px;
-  top:10px;
-}
 .coverlogo{
   padding-right:5px;
   position:relative;
@@ -113,9 +124,10 @@ ul{
   left:0;
   width:100%;
   z-index: -1;
+  filter: blur(2px) brightness(200%);
 }
 .gradbox{
-  height:100px;
+  height:30px;
   width:100%;
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0));
 }
@@ -126,7 +138,6 @@ ul{
   background-color: rgba(255, 0, 0, 0);
   display:inline-block;
   width:fit-content;
-  padding:10px 0 0 0;
   margin:0;
   filter:drop-shadow(3px 3px 1px gray)
 }
