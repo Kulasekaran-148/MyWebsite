@@ -35,6 +35,10 @@ table,th,td{
   border-collapse: collapse;
   padding:5px;
 }
+th,td{
+  padding-top:10px;
+  padding-bottom:10px;
+}
 thead,tbody{
   text-align:center;
 }
@@ -107,6 +111,7 @@ ul{
   position: relative;
   height:37px;
   padding-right: 15px;
+  margin-right:10px;
 }
 .coverlogo{
   padding-right:5px;
@@ -130,6 +135,15 @@ ul{
   height:30px;
   width:100%;
   background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0));
+}
+.link{
+  height:25px;
+  display:inline;
+  filter:brightness(200%)
+}
+.link:hover{
+  filter:hue-rotate(250deg);
+  height:30px;
 }
 .Myname{
   font-family: 'Tangerine',serif;
