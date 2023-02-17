@@ -55,9 +55,10 @@ ul{
   border-radius: 15px;
   border-color: #252525;
   border:solid 2px;
+  width:fit-content;
+  height: fit-content;
+  margin: 20px auto;
   padding:10px;
-  margin-top:10px;
-  margin-bottom:10px;
 }
 .container-fluid{
   padding-left: 0px;
