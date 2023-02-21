@@ -57,8 +57,8 @@
     </div>
   </div>
   <div class="gradbox"></div>
-	<div class="restOfTheContent container-fluid" style="padding:20px;">
-		<center><h1 style="margin-top:0; padding-top:20px;">HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
+	<div class="restOfTheContent container-fluid">
+		<center><h1>HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
 		<hr><center><h2>Introduction to HTML</h2></center><hr>
 		<ol>
 			<li>HTML</li>
@@ -237,6 +237,7 @@
 			<li>github will take some time and then refresh the page. There will be a link shown. This link can be shared with anyone and they can see the website without needing any of the files</li>
 		</ol>
 		<hr>
+		<!-- =========================================================================================================== -->
 
 		<center><h1>CSS - <b class="heading">C</b>ascading <b class="heading">S</b>tyle <b class="heading">S</b>heet</h1></center>
 
@@ -555,10 +556,12 @@
 				<li>This is opposite to what float does. Suppose if only heading is to be wrapped around an image and the paragraph should be at the bottom of the image, by changing the clear property of the text to <b>clear:left</b> will bring it down to the image</li>
 			</ul>
 		</ol>
-		<hr><hr>
+		<hr>
+		<!-- =========================================================================================================== -->
 
-		<center><h1>Introduction to Bootstrap</h1></center>
-		<hr><h2><center>What is bootstrap</center></h2><hr>
+		<center><h1>BOOTSTRAP FRONTEND FRAMEWORK</h1></center>
+
+		<hr><center><h2>Introduction to Bootstrap</h2></center><hr>
 		<ul>
 			<li>Bootstrap is a Front-end library</li>
 			<li>Javascript, CSS, HTML are some of the front end stack</li>
@@ -695,15 +698,7 @@
 					<li>Col-4 takes up 33.3% of the width</li>
 					<li>Col-3 takes up 25.0% of the width</li>
 					<li>Col-2 takes up 20.0% of the width</li>
-					<li>From the code below and its output, its easy to under how simple its to create tables using bootstrap.</li>
 				</ul>
-			</li>
-			<div style="text-align: center; padding:15px 0 15px 0">
-				Code: <br>
-				<img class="codeblock" style="height:400px; display:inline-block; margin:0 auto 2 auto;" src="codeimgs/bootstrap_columns.png" alt="columns_code"> <br>
-				Output: <br>
-				<img class="codeblock container" style="width:800px;" src="codeimgs/bootstrap_columns_ouptut.png" alt="columns_code_output">
-			</div>
 			<ul>
 				<li>But still, when changing the width of the screen, the columns stay the same and are not responsive</li>
 				<li>To make it responsive, mention the size in the class when creating the columns. For example, instead of <code>col-6</code>, mention it as <code>col-md-6</code>. This will keep two columns of size 6 next to each other when the screen is large and medium (laptop and tablet), and when screen is (small) phone sized, it will stack on top of one another</li>
@@ -728,7 +723,7 @@
 			<li>Similar to Bootstrap, the following code has to be added to the head section of the website:</li>
 			<div class="codeblock container"><code>&lt;script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"&gt;/script></code></div>
 			<li>The above is JavaScript embed CDN link. For CSS embedding use the below:</li>
-			<div class="codeblock container"><code>&lt;link rel="stylesheet" href="https://kit.fontawesome.com/0da7501024.css" crossorigin="anonymous&gt;"</code></div>
+			<div class="codeblock container"><code>&lt;link rel="stylesheet" href="https://kit.fontawesome.com/0da7501024.css" crossorigin="anonymous"&gt;</code></div>
 			<li>Cons of using CSS CDN - Blocks the page from loading until all the icons are loaded</li>
 			<li>Example: <button class="btn btn-dark"><i class="fa-solid fa-download"></i> Sample button</button> &lt;== Code:</li>
 			<div class="codeblock container"><code>&lt;button class="btn btn-dark">&lt;i class="fa-solid fa-download">&lt;/i> Sample button&lt;/button></code></div>
@@ -756,6 +751,27 @@
 			<li>But by enclosing the divs with the class="cards" inside a div with a <b>class="card-deck"</b>, they are stacked next to each other</li>
 			<li>There is a website called <a href="https://bootsnipp.com/">Bootsnipp <img class="link" src="images/link.png"></a> that has all sorts of examples using bootstrap</li>
 		</ul>
+		<hr><h2><center>CSS Z-index stacking order</center></h2><hr>
+			<ul>
+				<li>The Z-index property in CSS helps to position the elements on top of each other and control which element should sit on which</li>
+				<li>The default z-index value for all the elements is 0</li>
+				<li><b>Z-index will not work when position is set to static and by default all the elements in HTML are static</b></li>
+			</ul>
+		<hr><h2><center>Media Query breakpoints</center></h2><hr>
+			<ul>
+				<li>For reference: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Media queries @MDN <img class="link" src="images/link.png" alt=""></a></li>
+				<li>Media queries are an important tool that lets users to control the properties of the element based on the width of the viewport</li>
+				<li style="line-height: 55px;">Syntax: <code style="color:deeppink">@media &lt;type&gt; &lt;feature&gt;</code></li>
+				<li>For eg. Things will be shown differently when viewing the same page on a desktop vs mobile. The positioning and sizing will get affected and things can get awkward so easily</li>
+				<li>Creating mobile-friendly websites are a must. Even, google search engine ranks the site based on whether it is mobile friendly or not</li>
+				<li>To check if the site is mobile-friendly, visit: <a href="https://search.google.com/test/mobile-friendly">mobile-friendly <img class="link" src="images/link.png" alt=""></a></li>
+				<li>Many sites create a separate page for when users are using the site through small screen devices. For eg. Facebook has a separate page set for mobile. The facebook's URL when viewed from a mobile will have a <b>m.facebook</b> instead of just facebook. The m stands for mobile obviously</li>
+				<li>But instead of creating separate webpages for separate devices, CSS Media queries can be used to achieve the same goal</li>
+				<li>For eg. with <code style="color:deeppink">@media print{h1{color:"red" }}</code> we can make the h1 texts have a color of red only when it is printed and they will appear with default color when viewed upon</li>
+				<li>To change the property depending on screen-size,</li>
+				<div class="codeblock container"><code>&lt;@media screen (max-width:700px){font-size:15px}&gt;</code></div>
+				<li>What the above code does is, it sets the size of the fonts to 15px, when the viewport's width is less than or equal to 700px</li>
+			</ul>
 	</div>
 
 	<div class="Useful links">

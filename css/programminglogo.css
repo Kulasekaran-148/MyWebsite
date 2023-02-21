@@ -1,9 +1,10 @@
 /*----------------class selectors------------------*/
 .programminglogo{
-  border: 3px solid #138c00;
-  border-radius: 30%;
+  border: 2px solid #138c00;
+  border-radius: 20%;
   margin-left:5px;
   margin-right:5px;
+  margin-top:10px;
   height: 60px;
 }
 .pro_leetcode:hover{

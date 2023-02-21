@@ -1,9 +1,0 @@
-/* Class Selectors */
-.frame{
-  background-color: rgba(255, 0, 0, 0);
-  height:fit-content;
-  width:100%;
-  margin: 10px;
-  display: inline-block;
-  text-align: center;
-}

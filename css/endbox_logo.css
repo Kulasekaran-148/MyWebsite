@@ -1,4 +1,17 @@
 /*----------------class selectors------------------*/
+.bottomlogo{
+  margin: 10px 10px;
+}
+@media (max-width:700px){
+  .bottomlogo{
+    height:45px;
+  }
+}
+@media (min-width:701px){
+  .bottomlogo{
+    height:40px;
+  }
+}
 .bottominstagram:hover{
   position:relative;
   animation-name: float;
