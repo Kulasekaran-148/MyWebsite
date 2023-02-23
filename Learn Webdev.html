@@ -69,7 +69,6 @@
 					<li>HyperText = Parts of text that link to other documents</li>
 					<li>Markup Language = HTML Tags. People used to mark parts of a text with certain rules to denote which needs to be italicized, bold, etc., similarly HTML is a markup language that uses HTML tags to do the same.</li>
 				</ul>
-			<li>HTML tags</li>
 		</ol>
 		<hr><center><h2>Anatomy of HTML Tag</h2></center><hr>
 		<ol>
@@ -775,7 +774,7 @@
 				<div class="codeblock"><code>&lt;@media screen (max-width:700px){font-size:15px}&gt;</code></div>
 				<li>What the above code does is, it sets the size of the fonts to 15px, when the viewport's width is less than or equal to 700px</li>
 			</ul>
-		<hr><h2><center>Code Refactoring - Be a better programmer</center></h2>
+		<hr><h2><center>Code Refactoring - Be a better programmer</center></h2><hr>
 			<ul>
 				<li>As a better programmer, you should be <b>DRY</b> - Don't Repeat Yourself, instead of being <b>WET</b> - We Enjoy Typing</li>
 				<li>Code Refactoring:</li>
@@ -810,8 +809,174 @@
 					<li>In the css, if <b>.container h1</b> was used, then the customization will get applied to all h1 elements that has a parent with class <b>container</b></li>
 				</ol>
 			</ul>
+		<hr><h2><center>CSS selector priorities</center></h2><hr>
+		<ul>
+			<li>Inline styling has priority over all other</li>
+			<li>ids have priority over classes</li>
+			<li>classes have priority over elements</li>
+			<li>Prioritization is based on the specificity</li>
+			<li>Iniside a selector in CSS, if the same property is mentioned twice, then the last one will get applied</li>
+		</ul>
 	</div>
-
+	<!-- =========================================================================================================== -->
+	<hr>
+	<h1><center>Creating a Website that people love</center></h1>
+	<hr><h2><center>Web design principles</center></h2><hr>
+	<ol>
+		<li>Color Theory</li>
+		<li>Typography</li>
+		<li>UI Design</li>
+		<li>UX Design</li>
+	</ol>
+	<ul>
+		<li>Visit: <a href="https://www.dailyui.co/">Daily UI site <img class="link" src="images/link.png" alt=""></a> This site provides daily UI challenges for 100days. Its free to sign up</li>
+		<li>Visit: <a href="https://collectui.com/">Collect UI site <img class="link" src="images/link.png" alt=""></a> This site collects inspirations from the above daily UI site</li>
+		<li>Use <a href="https://www.canva.com/">Canva site <img class="link" src="images/link.png" alt=""></a> to quickly make UI designs</li>
+		<li>Using Canva's publishing features, the created UI can be easily published as a webpage that is scrollable</li>
+	</ul>
+	<hr><h2><center>Color theory</center></h2><hr>
+		<ul>
+			<li>What do they represent?</li>
+			<ol>
+				<li><span style="color:red">RED</span> - energy, love</li>
+				<li><span style="color:yellow">YELLOW</span> - joy, intellect, attention</li>
+				<li><span style="color:GREEN">GREEN</span> - freshness, safety, growth</li>
+				<li><span style="color:BLUE">BLUE</span> - stability, trust, serenity</li>
+				<li><span style="color:violet">PURPLE</span> - royalty, wealth, femininity</li>
+			</ol>
+			<li>Combining colors</li>
+			<ol>
+				<li>Analogous colors</li>
+					<ul>
+					<li>Combining colors that are next to each other on a color wheel</li>
+					<li>They look harmonious</li>
+					<li>But they don't stand out</li>
+					</ul>
+				<li>Complimentary colors</li>
+					<ul>
+					For making colors to stand out, choose two colors that are opposite to each other on the color wheel
+					</ul>
+				<li>Triatic color</li>
+					<ul>
+						<li>Using an equilateral triangle inside the color wheel</li>
+					</ul>
+			</ol>
+			<li>Head over to <a href="https://color.adobe.com/">Adobe color <img class="link" src="images/link.png" alt=""></a> to mix and get various color palettes</li>
+		</ul>
+	<hr><h2><center>Typography</center></h2><hr>
+	<ul>
+		<li>There are two large font families: Serif, and Sans-serif</li>
+		<ol>
+			<li>Serif</li>
+			<ul>
+				<li>Serif font family is old and potrays authority</li>
+				<li>Its further subdivided into: OldStyle, Transitional, Modern and Slab-serif</li>
+				<li>The difference between the thickest and thinnest part of a font says how aged it is</li>
+			</ul>
+			<li>Sans-serif</li>
+			<ul>
+				<li>Sans-Serif family potrays straight-forwardness and friendliness</li>
+			</ul>
+		</ol>
+	</ul>
+	<hr><h2><center>UX design</center></h2><hr>
+		<ul>
+			<li>UX is User Experience</li>
+			<ol>
+				<li>Simplicity</li>
+				<li>Consistency</li>
+				<li>F-layout - the way user's eye skims through a site has been analysed to be the shape of the letter F</li>
+				<li>Multi-platform design</li>
+				<li>Don't bait people - Dark UX patterns</li>
+			</ol>
+		</ul>
+	<hr><h2><center>UI design</center></h2><hr>
+		<ul>
+			<li>Sizing</li>
+			<li>Optimal line width</li>
+			<li>Choosing the right color</li>
+			<li>Alignment</li>
+			<li>think about Audience</li>
+		</ul>
+	<!-- =========================================================================================================== -->
+	
+	<hr><h1><center>JAVASCRIPT</center></h1>
+	<hr><h2><center>Introduction to JavaScript</center></h2><hr>
+		<ul>
+		<li>In the beginning there was a browser called <b>mosaic</b> which was worked upon by mark andreessen - one of the principle inventors of Netscape navigator</li>
+		<li>After completing university, mark worked on netscape and netscape was big success holding over 80% of the browser market</li>
+		<li>Then there was huge browser war between netscape and internet explorer. And netscape lost</li>
+		<li>But lot of netscape's technology was transported to <b>firefox</b></li>
+		<li>around the year 1995, HTML website were all just simple layouts without any function</li>
+		<li>Whenever a website needed functionality, it had to send the input back to the server and the server responses back with the ouput after the calculations</li>
+		<li>The team at netscape wanted something more dynamic. In order to achieve this, the server has to be taken away and the logic needs to be able to run on the broswer itself</li>
+		<li>They needed a scripting language and te language needed to be simple and easy to understand</li>
+		<li>So, they contacted <b>Brendan eich</b> and he was able to create that required language in under 10days. That language is none other than the <b>javascript</b></li>
+		<li>Nowadays, Javascript is used in mostly all websites. without javascript the webstie loses its function. In chrome, the power of javascript can be visualized by turning it off in the settings and trying to load youtube or any other site. Youtube won't load</li>
+		<li>An interesting side effect of Java script is that, <b>without javascript Ads can't load</b></li>
+		<li>At first Javascript was actually named as <b>Live script</b>. The people at microsoft tried to reverse engineer the program and ended up with something called <b>Jscript</b></li>
+		<li>Then there were many versions of Java script and it started confusions</li>
+		<li>So the Europeans did what they do best and standardized the script and named it as <b>ECMA script</b>. ECMA stands for European Computer Manufacturers Association</li>
+		<li>Java and Javascript has as much similarities as a Car and a Carpet</li>
+		<li>The main difference between them is that Java is a compiled language and Javascript is an interpreted programming language</li>
+		</ul>
+	<hr><h2><center>Javascript alerts</center></h2><hr>
+		<ul>
+			<li>Open chrome -> Dev tools -> console tab</li>
+			<li>Add the following code and press enter: <code>alert("hello");</code></li>
+			<li>A pop will appear with the message inside the double quotes</li>
+			<li>In the above code, <b>alert</b> is the function and <b>hello</b> inside the double quotes is the message/argument and <b>;</b> represents the end of the command</li>
+			<li>The one downside in using the chrome console is when enter is pressed the commands will get executed. So if hello and world needs to be displayed as two separate alerts press enter while holding down shift to type the next alert in the next line</li>
+			<li>But the above method is cumbersome. there is a better way of doing it.</li>
+			<li>Go to chrome -> dev tools -> sources tab -> click on <b>>></b> -> snippets<b> and create a file named index.js</b></li>
+			<li>press ctrl+enter to execute or click on the play button</li>
+			<li>Visit: <a href="https://github.com/rwaldron/idiomatic.js/">Best JS practices<img class="link" src="images/link.png" alt=""></a></li>
+		</ul>
+	<hr><h2><center>Datatypes</center></h2><hr>
+		<ol>
+			<li>String</li>
+			<li>Numbers</li>
+			<li>Boolean</li>
+		</ol>
+		<ul>
+			<li>There is a keyword called <b>typeof()</b> which outputs the datatype of the argument in the stdout</li>
+		</ul>
+	<hr><h2><center>Variable</center></h2><hr>
+		<ul>
+			<li>Inside the snippet tab create a new snippet</li>
+			<li>Add the following : <code>prompt("What is your name?");</code></li>
+			<li>When the above command is executed, a popup window will display with the message as well a text box to type something</li>
+			<li>If something was typed and entered, it would not have been saved anywhere. It would have been lost</li>
+			<li>To save the informaton, a keyword called <b>var</b> is used</li>
+			<li>Add: <code>var MyName="john";</code> in the index.js and execute it. After execution. type "MyName"; and press enter. It will output <b>john</b></li>
+			<li>the var keyword is needed to use only once. It is used to create a variable. Once the variable is created, the keyword need no be used again to change its content</li>
+		</ul>
+	<hr><h2><center>Naming conventions</center></h2><hr>
+		<ul>
+			<li>Give meaningful variable names</li>
+			<li>keywords must not be used as variable name</li>
+			<li>Underscore is the only special char allowed in variable name</li>
+			<li>Can't begin with numbers but can contain numbers</li>
+			<li>variable name must be a single word</li>
+			<li>Keep variable names camelcased</li>
+		</ul>
+	<hr><h2><center>String length</center></h2><hr>
+		<ul>
+			<li><code>var name="john";</code></li>
+			<li><code>name.length;</code></li>
+			<li>The above code when executed will output the result <b>4</b></li>
+		</ul>
+	<hr><h2><center>String slicing</center></h2><hr>
+		<ul>
+			<li><code>var name="john parker"</code></li>
+			<li><code>name.slice(0,2)</code> will ouput <b>jo</b></li>
+			<li><code>name.slice(3,7)</code> will ouput <b>n pa</b></li>
+		</ul>
+	<hr><h2><center>Changing case</center></h2><hr>
+		<ul>
+			<li><code>name.toUpperCase();</code>changes every lowercase letter in the variable name to uppercase</li>
+			<li><code>name.toLowerCase();</code>changes every uppercase letter in the variable name to lowercase</li>
+		</ul>
 	<div class="Useful links">
 		<center><hr><h2>Useful Links:</h2><hr></center>
 		<ul>
@@ -822,13 +987,16 @@
 		<hr>
 		<p style="padding-top: 5px;"><center>
 			<a href="https://www.instagram.com/ur_known_stranger.offl/">
-					<img class="bottominstagram bottomlogo" src="images/Instagram.png" alt="instagramLogo">
+				<img class="bottominstagram bottomlogo" src="images/Instagram.png" alt="instagramLogo">
 			</a>
 			<a href="https://www.linkedin.com/in/kulasekaran148/">
-					<img class="bottomlinkedin bottomlogo" src="images/linkedin.png" alt="linkedinLogo">
+				<img class="bottomlinkedin bottomlogo" src="images/linkedin.png" alt="linkedinLogo">
 			</a>
 			<a href="https://github.com/Kulasekaran-148">
-					<img class="bottomgithub bottomlogo" src="images/github.png" alt="githubLogo">
+				<img class="bottomgithub bottomlogo" src="images/github.png" alt="githubLogo">
+			</a>
+			<a href="https://dribbble.com/Kulasekaran148">
+				<img class="bottomdribble bottomlogo" src="images/dribble.png" alt="dribble_logo">	
 			</a>
 		</center></p>
 		<h1><center>© 2023 Kulasekaran.S</center></h1>
