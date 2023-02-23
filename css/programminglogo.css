@@ -73,3 +73,9 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+.pro_codingninja:hover{
+  position:relative;
+  animation-name: float;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

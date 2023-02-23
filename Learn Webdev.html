@@ -37,7 +37,7 @@
 		<div class="collapse navbar-collapse" id="toplinks">
 			<ul class="navbar-nav ms-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="contacts.html"><img class="coverlogo covercontact" src="images/contacts.png" alt="contact"></a>
+					<a class="nav-link" href="#endbox"><img class="coverlogo covercontact" src="images/contacts.png" alt="contact"></a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="index.html"><img class="coverlogo coverhome" src="images/home_logo.png" alt="home"></a>
@@ -160,6 +160,7 @@
 					<li>But if they are in different directory, then the full path of the image is to be entered</li>
 					<li>Apart from the <b>src</b> attribute, there is another attribute called as <b>alt</b> which stands for <b>alternative text</b> which is used to display a text in case if a browser can't locate or render the image</li>
 					<li>the <b>alt</b> tag also helps in search optimization and increases ranking of the website by making it easier for google to fetch relevant information</li>
+					<li>Also provide an attribute called <b>title=""</b> to get a text displayed when cursor is hovered over the image</li>
 				</ul>
 		</ol>
 		<hr><center><h2>HTML Links and Anchor Tags</h2></center><hr>
@@ -323,6 +324,8 @@
 				<li>They both are used to specifically target the customization across the elements. But classes target a specifig group of elements whereas Ids target a single unique element</li>
 				<li>A tag can have more than one class name. for example, If all the dog class images needs to be circular, it can be done as: <b>class="dogs circular"</b> And then can be targeted as: <b>.circular{border-radius:100%;}</b></li>
 				<li>But a tag can't have two Ids. If more than one id was included, it won't be considered as a valid id and its customizations will not get applied. This is another difference between classes and ids</li>
+				<li>One of the uses of class is for easier and simple navigation inside the same page. In many website, there will be a bar at the top with different sections like: Home, contacts, downloads, etc., These sections can have their separate html pages or its content can be on the same page as them.</li>
+				<li>For example, when the contents are on the same page, for easier navigation, in the href of these sections, the id of these contents can be provided and so when clicked upon, the page will automatically scroll to the position of these section. This is another advantage of using ID</li>
 			</ul>
 			<li>psuedo classes</li>
 			<ul>
@@ -666,7 +669,7 @@
 				<li>The toggler is a simple button with three horizontal lines. when clicked on it will show the contents inside it as a drop-down list</li>
 				<li>
 					Add the following into the code: <br>
-					<div class="codeblock container">
+					<div class="codeblock">
 						<code>
 							&lt;button class = "navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="toplinks" aria-controls<br>
 							&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br>
@@ -721,12 +724,12 @@
 			<li>Also Visit: <a href="https://fontawesome.com/">Fontawesome <img class="link" src="images/link.png"></a></li>
 			<li>Using Font Awesome website, adding icons to buttons is possible</li>
 			<li>Similar to Bootstrap, the following code has to be added to the head section of the website:</li>
-			<div class="codeblock container"><code>&lt;script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"&gt;/script></code></div>
+			<div class="codeblock"><code>&lt;script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"&gt;/script></code></div>
 			<li>The above is JavaScript embed CDN link. For CSS embedding use the below:</li>
-			<div class="codeblock container"><code>&lt;link rel="stylesheet" href="https://kit.fontawesome.com/0da7501024.css" crossorigin="anonymous"&gt;</code></div>
+			<div class="codeblock"><code>&lt;link rel="stylesheet" href="https://kit.fontawesome.com/0da7501024.css" crossorigin="anonymous"&gt;</code></div>
 			<li>Cons of using CSS CDN - Blocks the page from loading until all the icons are loaded</li>
 			<li>Example: <button class="btn btn-dark"><i class="fa-solid fa-download"></i> Sample button</button> &lt;== Code:</li>
-			<div class="codeblock container"><code>&lt;button class="btn btn-dark">&lt;i class="fa-solid fa-download">&lt;/i> Sample button&lt;/button></code></div>
+			<div class="codeblock"><code>&lt;button class="btn btn-dark">&lt;i class="fa-solid fa-download">&lt;/i> Sample button&lt;/button></code></div>
 		</ul>
 
 		<hr><hr>
@@ -769,8 +772,43 @@
 				<li>But instead of creating separate webpages for separate devices, CSS Media queries can be used to achieve the same goal</li>
 				<li>For eg. with <code style="color:deeppink">@media print{h1{color:"red" }}</code> we can make the h1 texts have a color of red only when it is printed and they will appear with default color when viewed upon</li>
 				<li>To change the property depending on screen-size,</li>
-				<div class="codeblock container"><code>&lt;@media screen (max-width:700px){font-size:15px}&gt;</code></div>
+				<div class="codeblock"><code>&lt;@media screen (max-width:700px){font-size:15px}&gt;</code></div>
 				<li>What the above code does is, it sets the size of the fonts to 15px, when the viewport's width is less than or equal to 700px</li>
+			</ul>
+		<hr><h2><center>Code Refactoring - Be a better programmer</center></h2>
+			<ul>
+				<li>As a better programmer, you should be <b>DRY</b> - Don't Repeat Yourself, instead of being <b>WET</b> - We Enjoy Typing</li>
+				<li>Code Refactoring:</li>
+				<ol>
+					<li>Readability - Easier to read for a third person</li>
+					<li>Modularity - Easier to locate error</li>
+					<li>Efficiency - More efficient to load and run and all devices</li>
+					<li>Length - don't repeat</li>
+				</ol>
+				<li>There is a funny section in stack exchange called <a href="https://codegolf.stackexchange.com/">Code golf <img class="link" src="images/link.png" alt=""></a> where people try to solve a problem using the most min number of lines possible</li>
+			</ul>
+		<hr><h2><center>Combining CSS Selectors</center></h2><hr>
+			<ul>
+				<li>Focus on the code below:</li>
+			</ul>
+			<div class="codeblock"><code>&lt;div class="container title"&gt;<br>
+				&lt;h1&gt; Hello there &lt;/h1&gt;<br>
+				&lt;/div&gt;<br><br>
+				&lt;div class="container"&gt;<br>
+				&lt;h1 class="title"&gt; Hi it's me &lt;/h1&gt;<br>
+				&lt;/div&gt;<br><br>
+				&lt;div class="container"&gt;<br>
+				&lt;h1&gt; I'm Here !!! &lt;/h1&gt;<br>
+				&lt;p&gt; This is fun &lt;/p&gt;<br>
+				&lt;/div&gt;
+			</code></div>
+			<ul>
+				<li>In the above code, there are 3 divs. By combining different selectors of the div, the elements inside the div can be customized speficifically</li>
+				<ol>
+					<li>In the css, if <b>.container.title</b> was used, then the customization will get applied to an element that has both the classes <b>container</b> and <b>title</b></li>
+					<li>In the css, if <b>.container .title</b> was used then the customization will get applied to an element that has the class <b>title</b> and has a parent element with the class <b>container</b></li>
+					<li>In the css, if <b>.container h1</b> was used, then the customization will get applied to all h1 elements that has a parent with class <b>container</b></li>
+				</ol>
 			</ul>
 	</div>
 
@@ -780,7 +818,7 @@
 			<li><a href="https://www.maths.nottingham.ac.uk/plp/pmadw/lm.html">Incorporating LaTeX in HTML</a></li>
 		</ul>
 	</div>
-	<div class="endbox">
+	<div id="endbox" class="endbox">
 		<hr>
 		<p style="padding-top: 5px;"><center>
 			<a href="https://www.instagram.com/ur_known_stranger.offl/">
