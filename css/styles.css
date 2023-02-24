@@ -49,10 +49,10 @@ h2{
   text-align: center;
 }
 .edubox{
-  width:480px;
+  width:460px;
   font-size: 20px;
   display:inline-block;
-  margin:10px auto;
+  margin:20px auto;
   border: 2px solid white;
 }
 .eduicon{
