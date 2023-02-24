@@ -17,7 +17,7 @@
 .covervideo{
   position:absolute;
   z-index: -1;
-  filter:blur(2px) brightness(150%);
+  filter:blur(1px) brightness(150%);
   top:0;
   left:0;
   position: fixed;
@@ -62,9 +62,14 @@
   font-family: 'Tangerine',serif;
   font-size: 75px;
   background-color: rgba(0, 128, 0, 0);
-  height:fit-content
+  height:80px;
 }
 .mybio{
-  font-size:25px;
+  font-size:40px;
   background-color: rgba(255, 0, 0, 0);
+  color:#138c00;
+  filter:brightness(200%);
+  animation-name: brightenandtransform;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }

@@ -1,15 +1,12 @@
 @keyframes float{
   0%{
-    transform: scale(1);
     filter: brightness(300%) saturate(250%);
     bottom:0px;
   }
   50%{
-    transform: scale(1.1);
     bottom:15px;
   }
   100%{
-    transform: scale(1);
     filter: brightness(300%) saturate(250%);
     bottom:0px;
   }
@@ -26,5 +23,22 @@
   100%{
     filter:brightness(100%) drop-shadow(3px 3px 1px rgba(75, 75, 75, 0));
     transform: scale(1);
+  }
+}
+@keyframes flash{
+  0%{
+    filter:brightness(100%)
+  }
+  25%{
+    filter:brightness(200%)
+  }
+  50%{
+    filter: brightness(400%);
+  }
+  75%{
+    filter: brightness(200%);
+  }
+  100%{
+    filter: brightness(100%);
   }
 }
