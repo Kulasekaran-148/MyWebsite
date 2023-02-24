@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/revampstyles.css">
     <link rel="stylesheet" href="css/endbox_logo.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/skills.css">
 
   <!-- GOOGLE FONTS -->
 		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
@@ -27,52 +29,65 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
-
-  <!-- INTERNAL CSS -->
-    <style>
-    </style>
 </head>
 <body>
+  <!-- BOOTSTRAP SCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--//////////////////////////////////////////////////////// -->
   <nav class="navbar navbar-expand-md bg-dark fixed-top">
-    <a class="navbar-brand" href="revamp.html"><img src="Myicon.ico" alt="myicon"></a>
+    <a class="navbar-brand" href="revamp.html"><img src="Myicon.ico" ></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topbar">
       <span><img style="height:30px" src="images/toggler.png"></span>
     </button>
     <div class="collapse navbar-collapse" id="topbar">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#education">Education</a>
+          <a class="nav-link" href="#coverarea">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#skills">Skills</a>
+          <a class="nav-link" href="#education">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#skills">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#achievements">Achievements</a>
+          <a class="nav-link" href="#projects">Achievements</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#interest">Interest</a>
+          <a class="nav-link" href="#achievements">Interest</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#VAC">Courses</a>
+          <a class="nav-link" href="#interest">VAC</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#hobbies">Hobbies</a>
+          <a class="nav-link" href="#VAC">Hobbies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="#hobbies">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
   <!--//////////////////////////////////////////////////////// -->
   <div id="coverarea">
-
+    <div class="covervideo">
+      <video src="videos/matrix-modified.mp4" loop autoplay muted></video>
+    </div>
+    <div id="coverdetails">
+      <div class="pic_container">
+        <img id="mypic" src="images/kulasekaran.jpg" alt="">
+      </div>
+      <div class="myname">I'm Kulasekaran</div>
+      <div class="mybio">A Web Developer</div>
+    </div>
   </div>
+  <div class="gradbox"></div>
   <!--//////////////////////////////////////////////////////// -->
-  <div id="education" class="section centered">
+  <div class="allsections">
+  
+  <div id="education" class="section">
     <h2><center>EDUCATION</center></h2>
     <div class="row">
       <div class="edubox col-lg-3 col-md-2 col-sm-1">
@@ -81,6 +96,7 @@
           <ul>
             <li>B.E. Mechatronics Engineering</li>
             <li>Kongu Engineering College, Perundurai, Erode </li>
+            <li>Autonomous college</li>
             <li>CGPA : 8.88 | YOP : 2022</li>
           </ul>
         </div>
@@ -112,7 +128,62 @@
   <hr size="3">
   <!--//////////////////////////////////////////////////////// -->
   <div class="section" id="skills">
-    <h2><center>Skills</center></h2>
+    <h2><center>SKILLS</center></h2>
+    <div class="row">
+      <div class="card col-lg-4 col-md-2 col-sm-1">
+        <img class="card-img-top" src="images/comp_tech.jpg">
+        <div class="card-body">
+          <h5 class="card-title">Programming skills</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Python</li>
+            <li class="list-group-item">C Language</li>
+            <li class="list-group-item">Java</li>
+            <li class="list-group-item">Verilog</li>
+            <li class="list-group-item">CSS Javascript</li>
+            <li class="list-group-item">LaTeX</li>
+            <li class="list-group-item">Shell Scripting</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card col-lg-4 col-md-2 col-sm-1">
+        <img class="card-img-top" src="images/modelling.png">
+        <div class="card-body">
+          <h5 class="card-title">Modelling & Rendering skills</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Solidworks</li>
+            <li class="list-group-item">AutoCAD</li>
+            <li class="list-group-item">Fusion360</li>
+            <li class="list-group-item">KeyShot</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card col-lg-4 col-md-2 col-sm-1">
+        <img class="card-img-top" src="images/circuitry.png">
+        <div class="card-body">
+          <h5 class="card-title">Electronics & Circuitry</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Arduino</li>
+            <li class="list-group-item">Raspberry Pi</li>
+            <li class="list-group-item">ESP</li>
+            <li class="list-group-item">FPGA</li>
+            <li class="list-group-item">PCB design</li>
+            <li class="list-group-item">Soldering</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card col-lg-4 col-md-2 col-sm-1">
+        <img class="card-img-top" src="images/other_skills.png">
+        <div class="card-body">
+          <h5 class="card-title">Other skills</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Phtoshop</li>
+            <li class="list-group-item">Video Editing</li>
+            <li class="list-group-item">Typing</li>
+            <li class="list-group-item">MS Office</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
   <hr size="3">
   <!--//////////////////////////////////////////////////////// -->
@@ -129,7 +200,7 @@
   </div>
   <hr size="3">
   <!--//////////////////////////////////////////////////////// -->
-  <div class="section centered" id="interest">
+  <div class="section" id="interest">
     <h2>Areas of Interest</h2>
       Software Development <br>
       Web Development <br>
@@ -142,12 +213,22 @@
   </div>
   <hr size="3">
   <!--//////////////////////////////////////////////////////// -->
-  <div class="section centered" id="hobbies">
+  <div class="section" id="hobbies">
     <h2>Hobbies</h2>
     Virtual Photography <a href="https://www.instagram.com/w.a.s.d._pixels/"><img class="link" src="images/link.png" alt="link"></a><br>
     Modding in Games (GTA5, Minecraft texture creation) <a href="https://patreon.com/user?u=82228512&utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=creatorshare_creator&utm_content=join_link"><img class="link" src="images/link.png" alt="link"></a><br>
     Playing musical instruments: Keyboard, Flute, Guitar <a href="https://www.instagram.com/ur_known_stranger.offl/"><img class="link" src="images/link.png" alt="link"></a><br>
     Pencil Sketching <a href="https://www.instagram.com/ur_known_stranger.offl/"><img class="link" src="images/link.png" alt="link"></a>
+  </div>
+  <hr size="3">
+  <!--//////////////////////////////////////////////////////// -->
+  <div class="section" id="Programming_profiles">
+    <h2>Programming Profiles</h2>
+  </div>
+  <hr size="3">
+  <!--//////////////////////////////////////////////////////// -->
+  <div class="section" id="GateNotes">
+    <h2>Gate ME Notes</h2>
   </div>
   <hr size="3">
   <!--//////////////////////////////////////////////////////// -->
@@ -170,6 +251,7 @@
   </div>
   <hr size="3">
   <!--//////////////////////////////////////////////////////// -->
+  </div>
   <center><h1>© 2023 Kulasekaran.S</h1></center>
 </body>
 </html>

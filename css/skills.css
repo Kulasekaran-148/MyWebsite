@@ -1,0 +1,15 @@
+.card{
+  background-color: black;
+  border: 2px solid white;
+  padding:0;
+  margin:5px auto;
+  display:inline-block;
+  width:350px;
+}
+.card-img-top{
+  height:180px;
+}
+.list-group-item{
+  background-color: black;
+  color:white;
+}
