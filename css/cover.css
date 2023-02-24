@@ -20,6 +20,32 @@
   filter:blur(2px) brightness(150%);
   top:0;
   left:0;
+  position: fixed;
+}
+.covericon{
+  height:40px;
+  margin:0 10px;
+  display:inline-block;
+}
+.covercontact:hover{
+  filter: brightness(300%) saturate(250%);
+  transform: scale(1.1);
+}
+.coverhome:hover{
+  filter: brightness(300%) saturate(250%);
+  transform: scale(1.1);
+}
+.covergithub:hover{
+  filter: brightness(300%) saturate(250%);
+  transform: scale(1.1);
+}
+.coverlinkedin:hover{
+  filter: brightness(300%) saturate(250%);
+  transform: scale(1.1);
+}
+.coverweb:hover{
+  filter: brightness(300%) saturate(250%);
+  transform: scale(1.1);
 }
 .gradbox{
   height:30px;

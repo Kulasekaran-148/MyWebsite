@@ -6,6 +6,13 @@
   display:inline-block;
   width:350px;
 }
+.card-body{
+  text-align: center;
+}
+.card-title{
+  color:#138c00;
+  filter:brightness(200%)
+}
 .card-img-top{
   height:180px;
 }

@@ -1,64 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Web Development</title>
-	<!-- BOOTSTRAP -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-		
-	<!-- CSS STYLESHEETS-->
-	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/gatelogo.css">
-	<link rel="stylesheet" href="css/endbox_logo.css">
-	<link rel="stylesheet" href="css/programminglogo.css">
-	<link rel="stylesheet" href="css/animations.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Web Development</title>
 
-	<!-- FONTAWESOME -->
-	<script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"></script>
+  <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
-	<!-- ICON -->
-	<link rel="icon" href="Myicon.ico">
+  <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"></script>
 
-	<!-- GOOGLE FONTS -->
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
-	
+  <!-- ICON -->
+    <link rel="icon" href="Myicon.ico">
+  
+  <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/programminglogo.css">
+    <link rel="stylesheet" href="css/gatelogo.css">
+
+  <!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+
+		<!-- INTERNAL CSS -->
+			<style>
+				li{
+					margin-top:5px;
+					margin-bottom:5px;
+				}
+				h1,h2{
+					filter:brightness(200%)
+				}
+			</style>
 </head>
 <body>
-	<video class="covervideo" src="videos/matrix-modified.mp4" loop autoplay muted></video>
-	<nav class="navbar navbar-expand-md fixed-top topbar">
-		<button style="position:absolute; right:10px" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toplinks" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<img style="height: 30px;" src="images/3bars.png" alt="toggler">
-		</button>
-		<div class="collapse navbar-collapse" id="toplinks">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="#endbox"><img class="coverlogo covercontact" src="images/contacts.png" alt="contact"></a>
+	<!-- BOOTSTRAP SCRIPT -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--//////////////////////////////////////////////////////// -->
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+    <a class="nav-link" href="index.html"><img title="Home" class="covericon coverhome" src="images/home.png"></a>
+    <a class="nav-link" href="https://github.com/Kulasekaran-148"><img title="github" class="covericon covergithub" src="images/github.png"></a>
+    <a class="nav-link" href="https://www.linkedin.com/in/kulasekaran148/"><img title="LinkedIn" class="covericon coverlinkedin" src="images/linkedin.png">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topbar">
+      <span><img style="height:30px" src="images/toggler.png"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="topbar">
+      <ul class="navbar-nav ms-auto">
+				<li class="nav-link">
+					<a href="#HTML">HTML</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="index.html"><img class="coverlogo coverhome" src="images/home_logo.png" alt="home"></a>
+				<li class="nav-link">
+					<a href="#Beginner_CSS">Introduction to CSS</a>
 				</li>
-			</ul>
-		</div>
-	</nav>
-  <div class="coverarea">
-    <div class="covercontents">
-      <div class="coverMyPic">
-					<img class="Mypic" src="images/KULASEKARAN.jpg" alt="">
-				</div>
-				<div class="coverdetails">
-					<h1 class="Myname">I'm Kulasekaran</h1>
-					<h1 class="oneLineBioText">A Web Developer</h1>
-				</div>
+				<li class="nav-link">
+					<a href="#Intermedia_CSS">Intermediate CSS</a>
+				</li>
+				<li class="nav-link">
+					<a href="#Beginner_Bootstrap">Introduction to Bootstrap</a>
+				</li>
+				<li class="nav-link">
+					<a href="#Intermediate_Bootstrap">Intermediate Bootstrap</a>
+				</li>
+				<li class="nav-link">
+					<a href="#Design_Principles">Design Principles</a>
+				</li>
+				<li class="nav-link">
+					<a href="#Beginner_Javascript">Introduction to Javascript</a>
+				</li>
+    </div>
+  </nav>
+  <!--//////////////////////////////////////////////////////// -->
+  <div id="coverarea">
+    <div class="covervideo">
+      <video src="videos/matrix-modified.mp4" loop autoplay muted></video>
+    </div>
+    <div id="coverdetails">
+      <div class="pic_container">
+        <img id="mypic" src="images/kulasekaran.jpg" alt="">
+      </div>
+      <div class="myname">I'm Kulasekaran</div>
+      <div class="mybio">A Web Developer</div>
     </div>
   </div>
-  <div class="gradbox"></div>
-	<div class="restOfTheContent container-fluid">
-		<center><h1>HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
+  <!-- <div class="gradbox"></div> -->
+	<!--//////////////////////////////////////////////////////// -->
+	<div class="allsections">
+		<div id="HTML">
+			<center><h1>HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
 		<hr><center><h2>Introduction to HTML</h2></center><hr>
 		<ol>
 			<li>HTML</li>
@@ -237,768 +277,752 @@
 			<li>github will take some time and then refresh the page. There will be a link shown. This link can be shared with anyone and they can see the website without needing any of the files</li>
 		</ol>
 		<hr>
-		<!-- =========================================================================================================== -->
-
-		<center><h1>CSS - <b class="heading">C</b>ascading <b class="heading">S</b>tyle <b class="heading">S</b>heet</h1></center>
-
-		<hr><center><h2>33. Introduction to CSS</h2></center><hr>
-		<ul>
-			<li>CSS is used to style the website to make it look more appealing which can't be done with HTML alon. Also, CSS along can't do anything without a base HTML</li>
-		</ul>
-		<hr><h2><center>Inline CSS</center></h2><hr> 
-		<ol>
-			<li>Changing Background color using css</li>
-				<ul>
-					<li>use <b>"background-colo: colorname;"</b> inside the body tag of the html document to change the background color of the whole page</li>
-					<li>Visit this link: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">changing Bg-color using css <img class="link" src="images/link.png"></a> to learn more about this <b>backgroud-color</b> attribute</li>
-					<li>You can also change the background color with hexvalue, RGB, HSL, control transparency of the background color by including the alpha channel, etc.,</li>
-					<li>Visit <a href="https://colorhunt.co/">Colorhunt.co <img class="link" src="images/link.png"></a> website to find interesting color palettes created and liked by artists and fetch their hex values</li>
-					<li>Install the vscode extension called <b>pigment</b> to visualize the color when you type its value in the editor</li>
-					<li>Also visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Css Color mdn <img class="link" src="images/link.png"></a> site to know what name of the color to specify according to its hexvalue</li>
-				</ul>
-		</ol>
-		<hr><h2><center>Internal CSS</center></h2><hr>
-		<ul>
-			<li>Instead of changing the whole color of the page, what if only the horizontal rule's colors need to be changed.</li>
-			<li>adding the <b>"background-color: colorname;"</b> inside each and every &lt;hr&gt; tag is cumbersome</li>
-			<li>This is where the <b>Internal CSS</b> comes into the picture</li>
-		</ul>
-		<ol>
-			<li>Internal CSS</li>
+		</div>
+		<!--//////////////////////////////////////////////////////// -->
+		<div id="Beginner_CSS">
+			<center><h1>CSS - <b class="heading">C</b>ascading <b class="heading">S</b>tyle <b class="heading">S</b>heet</h1></center>
+			<hr><center><h2>33. Introduction to CSS</h2></center><hr>
 			<ul>
-				<li>Create <b>&lt;style&gt; &lt;/style&gt;</b> inside the <b>head</b> section of the html</li>
-				<li>Inside this <b>&lt;style&gt; &lt;/style&gt;</b> specific sections of the page can be edited.</li>
-				<li>For Example, to change the bg colors of the level 1 headings alone, type <b>h1{background-color:colorname}</b></li>
-				<li>Visit: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">Border-style <img class="link" src="images/link.png"></a>
-				</li>
-				<li>The customizations above mentioned only applies to the html file that is being worked on. To make it global, that is, to make it get applied to all its sister pages, it needs to be in a external css</li>
+				<li>CSS is used to style the website to make it look more appealing which can't be done with HTML alon. Also, CSS along can't do anything without a base HTML</li>
 			</ul>
-		</ol>
-		<hr><h2><center>External CSS</center></h2><hr>
-		<ol>
-			<li>Creating an external stylesheet</li>
-			<ul>
-				<li>Create a folder named <b>css</b> in the root folder of the html files</li>
-				<li>Create a file named <b>styles.css</b></li>
-				<li>Cut and paste the data inside the &lt;style&gt; &lt;/style&gt; into the <b>styles.css</b> file</li>
-				<li>Now on every html document's head section, add a <b>link</b> tag</li>
-				<li>This link tag has two attributes: <b>rel</b> meaning relation and <b>href</b></li>
-				<li>set the <b>rel="stylesheet"</b> and <b>href="css/styles.css"</b></li>
-				<li>This will modify the appearance of all the html files that has this link in their head section</li>
-			</ul>
-		</ol>
-		<hr><h2><center>Debugging in CSS</center></h2><hr>
-		<ul>
-			<li>Always use Chrome's web developer tools to check for bugs in the website</li>
-			<li>Inline css overrides Internal css as well as external css</li>
-			<li>style precedence is like: <b>Inline > Internal > External</b></li>
-		</ul>
-		<hr><h2><center>The Anatomy of CSS Syntax</center></h2><hr>
-		<ul>
-			<li><b>Selector{property:value;}</b></li>
-			<li>It is always best practice to have the properties in the <b>styles.css</b> file arranged in alphabetical order for each element. Helps a lot while debugging</li>
-		</ul>
-		<hr><h2><center>CSS Selectors</center></h2><hr>
-		<ol>
-			<li>Class Selectors</li>
-			<ul>
-				<li><a href="https://emojipedia.org/">EmojiPedia <img class="link" src="images/link.png"></a></li>
-				<li>The above site lets users use different kinds of emoji from various operating systems</li>
-				<li>When an img customization is present in a <b>styles.css</b> file, that customization will get applied to all the images that is on the website</li>
-				<li>To apply different customization to different types of images, For eg: Having the Background color of images that has a dog as red and having the background color of images that has a cat as green, we need to include a <b>class</b> attribute inside the <b>img</b> tag and then target customizations based on classes and not on tags</li>
-				<li>Lets have two classes as <b>dogs</b> and <b>cats</b></li>
-				<li>In the <b>styles.css</b> file, add <b>.dogs{background-color:red;}</b> and <b>.cats{background-color:green;}</b></li>
-				<li>The dot(<b>.</b>) in front represent that the following is a class and not a tag</li>
-				<li><b>Note: </b>commenting in CSS is done within <b>/* */</b>. Have them on different line for multiline commenting.</li>
-			</ul>
-		</ol>
-		<hr><h2><center>Classes vs. Ids</center></h2><hr>
-		<ol>
-			<li>Id selectors</li>
-			<ul>
-				<li>Use the <b>#</b> symbol to target Ids</li>
-				<li><b>Note:</b>The customization based on Classes and Ids will override that of the general tag customization. Meaning, Even if for example, an img tag customization is already present, a specific class customization of the img will override the general one</li>
-				<li>The difference between classes and ids is that, classes can be instanced at more than one places. But Ids cane be instanced only once</li>
-				<li>For example, if there is a h1 tag with the id="heading", then this id="heading" can't be instanced anywhere else on the code. But the classes="dogs" can be instanced any number of time</li>
-				<li>They both are used to specifically target the customization across the elements. But classes target a specifig group of elements whereas Ids target a single unique element</li>
-				<li>A tag can have more than one class name. for example, If all the dog class images needs to be circular, it can be done as: <b>class="dogs circular"</b> And then can be targeted as: <b>.circular{border-radius:100%;}</b></li>
-				<li>But a tag can't have two Ids. If more than one id was included, it won't be considered as a valid id and its customizations will not get applied. This is another difference between classes and ids</li>
-				<li>One of the uses of class is for easier and simple navigation inside the same page. In many website, there will be a bar at the top with different sections like: Home, contacts, downloads, etc., These sections can have their separate html pages or its content can be on the same page as them.</li>
-				<li>For example, when the contents are on the same page, for easier navigation, in the href of these sections, the id of these contents can be provided and so when clicked upon, the page will automatically scroll to the position of these section. This is another advantage of using ID</li>
-			</ul>
-			<li>psuedo classes</li>
-			<ul>
-				<li>The psuedo classes are used to perfom a change in the element when the user, say for example, hovers the mounse pointer over an element (but not clicking it)</li>
-				<li><b>Note: </b>The psudo classes begin with a <b>colon(:)</b> in front. The syntax is <b>tag name:pseudo class</b></li>
-				<li>For example, There is a pseudo class called <b>:hover</b>. It can be used to make changes to an element only when it is being hovered. To do this:</li>
-				<ol type="i">
-					<li>Go to styles.css</li>
-					<li>img:hover{background-color:blue;}</li>
-				</ol>
-				<li>This will change the background of the image to blue only when the mouse cursor is brought on top of any image.</li>
-				<li><b>Note:</b> The hover customization doesn't work if an inline CSS syling is present as it has the most precedence</li>
-				<li>Check this: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">site <img class="link" src="images/link.png"></a> to learn more about different pseudo classes available</li>
-
-			</ul>
-		</ol>
-		<hr>
-
-		<center><h1>Intermediate CSS</h1></center>
-		<hr><h2><center>Favicons</center></h2><hr>
-		<ul>
-			<li>A Favicon is a small icon that appears next to the title of the website in the tab bar of the browser</li>
-			<li>Head over to: <a href="https://favicon.io/">Favicon <img class="link" src="images/link.png"></a> to create custom favicons</li>
-			<li>The format of favicon has the extension <b>.ico</b></li>
-			<li>In order to change the favicon of the site, create a <b>link</b> in the <b>head</b>section of the site.</li>
-			<li>Instead of the <b>rel="stylesheet"</b> change it to <b>rel="icon"</b> and in the href give the location of the icon file</li>
-		</ul>
-		<hr><h2><center>HTML Divs</center></h2><hr>
-		<ol>
-			<li>The Div element</li>
-			<ul>
-				<li>Its called the Content division element, which divides the page into several divisions and let's customizing the layout of each of them separately</li>
-				<li>Div is an HTML element and it doesn't do much of anything without CSS</li>
-				<li>Div by default has a height of 0px Unless anyother height is specified or has contents inside it</li>
-			</ul>
-		</ol>
-		<hr><h2><center>Box Model of Website styling</center></h2><hr>
-		<ul>
-			<li>The box model of css: <b>margin, border, padding, content</b></li>
-			<li>When a text is displayed in a website, that text has a bounding box, which has a width and height, let's assume 100px each</li>
-			<li>Padding the the space between the content of the text and its border</li>
-			<li>The space between borders of two adjacent elements is called as the margin</li>
-		</ul>
-		<hr><h2><center>CSS Display Property</center></h2><hr>
-		<ul>
-			<li>The display property has 4 values: <b>Block, Inline, Inline-block, None</b></li>
-		</ul>
-		<ol>
-			<li>Block elements</li>
-			<ul>
-				<li>Block elements are those which take up the whole width of the viewport unlike imgaes.</li>
-				<li>So when two paragraphs are inserted, they naturally occur as in new lines, since paragraphs, headings, etc., are block elements</li>
-			</ul>
-		</ol>
-		<ul>
-			<li>Say, for example, if the "pro" part in a sentence called "a programmer" needs to be underlined, it wont work if it was done as: <b>&lt;p&gt; a&lt;/p&gt; &lt;p class="pro"&gt; pro&lt;/p&gt; &lt;p&gt;grammer&lt;/p&gt;</b> and in the css as: <b>.pro{text-decoration:underline;}</b></li>
-		</ul>
-		<ol start="2">
-			<li>Span Tag - Inline Block elements</li>
-			<ul>
-				<li>To achieve that, a tag called <b>span</b> needs to be used</li>
-				<li>It is achieved as follows: <b>&lt;p&gt; a &lt;span class="pro"&gt;pro&lt;/span&gt;grammer&lt;/p&gt;</b> and then the Css modification of the class <b>pro</b></li>
-				<li>Span tag will be very useful in formatting one part of the text. Just like the <b>div</b> tag, span tag don't do very much unless they are used in conjunction with css</li>
-				<li>Some common inline elements:
-					<ul><li>spans</li><li>images</li><li>Anchors</li></ul>
-				</li>
-				<li>Spans seem like they have the advantage since they can be stacked next to each other unlike the block elements, so one may think that why block elements are needed anyway</li>
-				<li>The reason is that, unlike block elements, Inline block element's width can't be adjusted</li>
-				<li>On the other hand, even if the width of the block element's are adjustable, it still doesn't let other elements to sit next to it</li>
-				<li>chaning the <b>display</b> value of a block element to <b>inline </b> doesn't do any good because the width can't be changed once it becomes <b>inline</b></li>
-			</ul>
-			<li>Inline-block elements</li>
-				<ul>
-					<li>This is where Inline - block elements come in which give in the best of both worlds</li>
-					<li>They can be stacked next to each other and still their widths can be modified</li>
-				</ul>
-			<li>None elements</li>
-				<ul>
-					<li>This display type is like it deletes the element with the display property as <b>none</b></li>
-					<li>Imagine a situation in which a quiz is being attended on a site. To hide/show the answer at the click of a button can be made by changing the display property to <b>none</b> and back</li>
-				</ul>
-		</ol>
-		<ul>
-			<li>There is another property called <b>visibility</b> which when set to hidden will simply hide the element, but the element is still on the website. But when display is set to <b>none</b>, the element stops existing in the site and its place can be occupied by another element</li>
-		</ul>
-		<hr><h2><center>CSS Static and Relative positioning</center></h2><hr>
-		<ol>
-			<li>Position property</li>
-				<ol>
-					<li>Static</li>
-						<ul>
-							<li>The default positioning of all elements</li>
-						</ul>
-					<li>Relative</li>
+			<hr><h2><center>Inline CSS</center></h2><hr> 
+			<ol>
+				<li>Changing Background color using css</li>
 					<ul>
-						<li>This positions the element relative to how it would have been positioned had it been static. Say an img would have appeared at 0 margin on the left. if its attribute was changed to <b>position: relative; left: 30px;</b>. Then the image would appear with a gap of 30px on the left</li>
-						<li>Just by changing the position of an element to relative, no changes will be made unless it is accompanied with one of the four coordinates that mention the change</li>
-						<li>The coordinates order is: <b>Top, Bottom, Left, Right</b></li>
-						<li><b>NOTE:</b>When an element gets pushed due to relative positioning, it doesn't affect the position of any other element when it gets shifted.</li>
-						<li><b>NOTE:</b>Even after the element's change in position, its old posiition is still occupied by the same element. Its like the element hid itself in its original position and moved its copy to the new position, that is relative to the old one</li>
+						<li>use <b>"background-colo: colorname;"</b> inside the body tag of the html document to change the background color of the whole page</li>
+						<li>Visit this link: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-color">changing Bg-color using css <img class="link" src="images/link.png"></a> to learn more about this <b>backgroud-color</b> attribute</li>
+						<li>You can also change the background color with hexvalue, RGB, HSL, control transparency of the background color by including the alpha channel, etc.,</li>
+						<li>Visit <a href="https://colorhunt.co/">Colorhunt.co <img class="link" src="images/link.png"></a> website to find interesting color palettes created and liked by artists and fetch their hex values</li>
+						<li>Install the vscode extension called <b>pigment</b> to visualize the color when you type its value in the editor</li>
+						<li>Also visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">Css Color mdn <img class="link" src="images/link.png"></a> site to know what name of the color to specify according to its hexvalue</li>
 					</ul>
-					<li>Absolute</li>
-					<li>Fixed</li>
-				</ol>
-		</ol>
-		<hr><h2><center>Absolute Positioning</center></h2><hr>
-		<ol>
-			<li>
-				Absolute Positioning
-				<ul>
-					<li>In abosulte positioning an element is positioned with respect to its parent</li>
-					<li>For example, if an image was contained within a div, and the img's position was <b>absolute</b> and had <b>right: 30px;</b> then the img will be shifted to position such that it has 30px right margin from the right end of the div's box</li>
-					<li>Unlike relative positioning, which leaves a ghost of the element behind so it won't affect the other element's positions, absolute positioning does affect the position of other elements when an element gets moved</li>
-				</ul>
-			</li>
-			<li>
-				Fixed Positioning
-				<ul>
-					<li>
-						When an element's position is fixed, it will be still visible even when scrolling throught the page. Like the top bars or the side bars that has the items like contacts, profile being visible even when the page is scrolled down
-					</li>
-				</ul>
-			</li>
-
-		</ol>
-		<hr><h2><center>The dark art of centering elements</center></h2><hr>
-		<ol>
-			<li>
-				Text align property
-				<ul>
-					<li>In the external css, inside the body tag selector, put <b>text-align:center;</b></li>
-					<li>This will make all the Inline-block elements like images and the full width block elements like the texts to be aligned at the center of the webpage</li>
-				</ul>
-			</li>
-		</ol>
-		<ul>
-			<li>To center the elements that are not Inline or not of full width, there is another method which uses <b>margin: 0 auto 0 auto</b> which means margin top is 0, margin right is auto, margin bottom is 0 and margin left is auto</li>
-			<li>It can also be set by <b>margin: 0 auto</b>, which means margin top and bottom are zero and margin left and right are auto</li>
-		</ul>
-		<hr><h2><center>Font styling in CSS</center></h2><hr>
-		<ol>
-			<li>Common CSS Font families
-				<ol>
-					<li>Cursive</li>
-					<li>Fantasy</li>
-					<li>inherit</li>
-					<li>monospace
-						<ul>
-							<li>This is used mostly for coding as in this font all the letters of a word will be of equal width.</li>
-						</ul>
-					</li>
-					<li>sans-serif
-						<li>Letter don't have tiny feet linke structures</li>
-						<li>The default sans-serif font for most browswers is the arial font</li>
-					</li>
-					<li>serif
-						<ul>
-							<li>For most browsers, the default serif is the Times font</li>
-							<li>Letters have tiny feet like structures</li>
-						</ul>
-					</li>
-				</ol>
-			</li>
-		</ol>
-		<ul>
-			<li>
-				It's always recommended to use websafe fonts because, when a special font is used for a website, if the user's system or the browser doesn't have that font installed, then it can't render that font and will render the default one, which will make the website look different for them instead of how it should.
-			</li>
-			<li><a href="https://www.cssfontstack.com">CssFontStack.com <img class="link" src="images/link.png"></a> Visit this site to know which fonts are most commonly used across different operating systems</li>
-			<li>On this site, when a font is copied, a font stack actually gets copied. For eg. <b>font-family: "helvetica neue",helvetica,arial,sans-serif</b></li>
-			<li>The above will work like, if the system has the <b>helvetica neue</b> then it will get displayed, or else the one next to it and so on.</li>
-		</ul>
-		<ol start="2">
-				<li>Font embedding</li>
-				<ul>
-					<li>But there is a way to use the font that seems good and still make it get displayed whether or not the user's system's able to render it.
-					<li>Use: <a href="https://fonts.google.com/">Google fonts <img class="link" src="images/link.png"></a></li>
-					<li>To embed the font, copy the font's link on the site and past it in the head section of the html file</li>
-					<li>Then go into the css section and paste the text in the <b>CSS rules to specify</b> box in the site, into the element's style</li>
-				</ul>
-			</li>
-			
-
-		</ol>
-		<hr><h2><center>Adding content to the site</center></h2><hr>
-		<ul>
-			<li><a href="https://www.lipsum.com/">Lorem Ipsum <img class="link" src="images/link.png"></a> - Facts about it.</li>
-			<li>Have a look at: <a href="https://www.flaticon.com/">Flaticon <img class="link" src="images/link.png"></a>, to use cool icons for the site</li>
-			<li>We can also use GIFs for the site from : <a href="https://giphy.com/">Giphy.com <img class="link" src="images/link.png"></a></li>
-		</ul>
-		<hr><h2><center>CSS Sizing</center></h2><hr>
-		<ul>
-			<li><b>NOTE:</b> When a font size of a text is hardcoded in the html, even if the user change the font settings in the browser, say from medium to large, that harcoded element's font alone will remain same and the rest of the texts in the page will change size.</li>
-			<li>That's because, using px and mentioning font size will the lock the font's size</li> 
+			</ol>
+			<hr><h2><center>Internal CSS</center></h2><hr>
 			<ul>
-				<li>Dynamic Font Sizing
+				<li>Instead of changing the whole color of the page, what if only the horizontal rule's colors need to be changed.</li>
+				<li>adding the <b>"background-color: colorname;"</b> inside each and every &lt;hr&gt; tag is cumbersome</li>
+				<li>This is where the <b>Internal CSS</b> comes into the picture</li>
+			</ul>
+			<ol>
+				<li>Internal CSS</li>
+				<ul>
+					<li>Create <b>&lt;style&gt; &lt;/style&gt;</b> inside the <b>head</b> section of the html</li>
+					<li>Inside this <b>&lt;style&gt; &lt;/style&gt;</b> specific sections of the page can be edited.</li>
+					<li>For Example, to change the bg colors of the level 1 headings alone, type <b>h1{background-color:colorname}</b></li>
+					<li>Visit: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">Border-style <img class="link" src="images/link.png"></a>
+					</li>
+					<li>The customizations above mentioned only applies to the html file that is being worked on. To make it global, that is, to make it get applied to all its sister pages, it needs to be in a external css</li>
+				</ul>
+			</ol>
+			<hr><h2><center>External CSS</center></h2><hr>
+			<ol>
+				<li>Creating an external stylesheet</li>
+				<ul>
+					<li>Create a folder named <b>css</b> in the root folder of the html files</li>
+					<li>Create a file named <b>styles.css</b></li>
+					<li>Cut and paste the data inside the &lt;style&gt; &lt;/style&gt; into the <b>styles.css</b> file</li>
+					<li>Now on every html document's head section, add a <b>link</b> tag</li>
+					<li>This link tag has two attributes: <b>rel</b> meaning relation and <b>href</b></li>
+					<li>set the <b>rel="stylesheet"</b> and <b>href="css/styles.css"</b></li>
+					<li>This will modify the appearance of all the html files that has this link in their head section</li>
+				</ul>
+			</ol>
+			<hr><h2><center>Debugging in CSS</center></h2><hr>
+			<ul>
+				<li>Always use Chrome's web developer tools to check for bugs in the website</li>
+				<li>Inline css overrides Internal css as well as external css</li>
+				<li>style precedence is like: <b>Inline > Internal > External</b></li>
+			</ul>
+			<hr><h2><center>The Anatomy of CSS Syntax</center></h2><hr>
+			<ul>
+				<li><b>Selector{property:value;}</b></li>
+				<li>It is always best practice to have the properties in the <b>styles.css</b> file arranged in alphabetical order for each element. Helps a lot while debugging</li>
+			</ul>
+			<hr><h2><center>CSS Selectors</center></h2><hr>
+			<ol>
+				<li>Class Selectors</li>
+				<ul>
+					<li><a href="https://emojipedia.org/">EmojiPedia <img class="link" src="images/link.png"></a></li>
+					<li>The above site lets users use different kinds of emoji from various operating systems</li>
+					<li>When an img customization is present in a <b>styles.css</b> file, that customization will get applied to all the images that is on the website</li>
+					<li>To apply different customization to different types of images, For eg: Having the Background color of images that has a dog as red and having the background color of images that has a cat as green, we need to include a <b>class</b> attribute inside the <b>img</b> tag and then target customizations based on classes and not on tags</li>
+					<li>Lets have two classes as <b>dogs</b> and <b>cats</b></li>
+					<li>In the <b>styles.css</b> file, add <b>.dogs{background-color:red;}</b> and <b>.cats{background-color:green;}</b></li>
+					<li>The dot(<b>.</b>) in front represent that the following is a class and not a tag</li>
+					<li><b>Note: </b>commenting in CSS is done within <b>/* */</b>. Have them on different line for multiline commenting.</li>
+				</ul>
+			</ol>
+			<hr><h2><center>Classes vs. Ids</center></h2><hr>
+			<ol>
+				<li>Id selectors</li>
+				<ul>
+					<li>Use the <b>#</b> symbol to target Ids</li>
+					<li><b>Note:</b>The customization based on Classes and Ids will override that of the general tag customization. Meaning, Even if for example, an img tag customization is already present, a specific class customization of the img will override the general one</li>
+					<li>The difference between classes and ids is that, classes can be instanced at more than one places. But Ids cane be instanced only once</li>
+					<li>For example, if there is a h1 tag with the id="heading", then this id="heading" can't be instanced anywhere else on the code. But the classes="dogs" can be instanced any number of time</li>
+					<li>They both are used to specifically target the customization across the elements. But classes target a specifig group of elements whereas Ids target a single unique element</li>
+					<li>A tag can have more than one class name. for example, If all the dog class images needs to be circular, it can be done as: <b>class="dogs circular"</b> And then can be targeted as: <b>.circular{border-radius:100%;}</b></li>
+					<li>But a tag can't have two Ids. If more than one id was included, it won't be considered as a valid id and its customizations will not get applied. This is another difference between classes and ids</li>
+					<li>One of the uses of class is for easier and simple navigation inside the same page. In many website, there will be a bar at the top with different sections like: Home, contacts, downloads, etc., These sections can have their separate html pages or its content can be on the same page as them.</li>
+					<li>For example, when the contents are on the same page, for easier navigation, in the href of these sections, the id of these contents can be provided and so when clicked upon, the page will automatically scroll to the position of these section. This is another advantage of using ID</li>
+				</ul>
+				<li>psuedo classes</li>
+				<ul>
+					<li>The psuedo classes are used to perfom a change in the element when the user, say for example, hovers the mounse pointer over an element (but not clicking it)</li>
+					<li><b>Note: </b>The psudo classes begin with a <b>colon(:)</b> in front. The syntax is <b>tag name:pseudo class</b></li>
+					<li>For example, There is a pseudo class called <b>:hover</b>. It can be used to make changes to an element only when it is being hovered. To do this:</li>
+					<ol type="i">
+						<li>Go to styles.css</li>
+						<li>img:hover{background-color:blue;}</li>
+					</ol>
+					<li>This will change the background of the image to blue only when the mouse cursor is brought on top of any image.</li>
+					<li><b>Note:</b> The hover customization doesn't work if an inline CSS syling is present as it has the most precedence</li>
+					<li>Check this: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">site <img class="link" src="images/link.png"></a> to learn more about different pseudo classes available</li>
+
+				</ul>
+			</ol>
+			<hr>
+		</div>
+		<!--//////////////////////////////////////////////////////// -->
+		<div id="Intermedia_CSS">
+			<center><h1>Intermediate CSS</h1></center>
+			<hr><h2><center>Favicons</center></h2><hr>
+			<ul>
+				<li>A Favicon is a small icon that appears next to the title of the website in the tab bar of the browser</li>
+				<li>Head over to: <a href="https://favicon.io/">Favicon <img class="link" src="images/link.png"></a> to create custom favicons</li>
+				<li>The format of favicon has the extension <b>.ico</b></li>
+				<li>In order to change the favicon of the site, create a <b>link</b> in the <b>head</b>section of the site.</li>
+				<li>Instead of the <b>rel="stylesheet"</b> change it to <b>rel="icon"</b> and in the href give the location of the icon file</li>
+			</ul>
+			<hr><h2><center>HTML Divs</center></h2><hr>
+			<ol>
+				<li>The Div element</li>
+				<ul>
+					<li>Its called the Content division element, which divides the page into several divisions and let's customizing the layout of each of them separately</li>
+					<li>Div is an HTML element and it doesn't do much of anything without CSS</li>
+					<li>Div by default has a height of 0px Unless anyother height is specified or has contents inside it</li>
+				</ul>
+			</ol>
+			<hr><h2><center>Box Model of Website styling</center></h2><hr>
+			<ul>
+				<li>The box model of css: <b>margin, border, padding, content</b></li>
+				<li>When a text is displayed in a website, that text has a bounding box, which has a width and height, let's assume 100px each</li>
+				<li>Padding the the space between the content of the text and its border</li>
+				<li>The space between borders of two adjacent elements is called as the margin</li>
+			</ul>
+			<hr><h2><center>CSS Display Property</center></h2><hr>
+			<ul>
+				<li>The display property has 4 values: <b>Block, Inline, Inline-block, None</b></li>
+			</ul>
+			<ol>
+				<li>Block elements</li>
+				<ul>
+					<li>Block elements are those which take up the whole width of the viewport unlike imgaes.</li>
+					<li>So when two paragraphs are inserted, they naturally occur as in new lines, since paragraphs, headings, etc., are block elements</li>
+				</ul>
+			</ol>
+			<ul>
+				<li>Say, for example, if the "pro" part in a sentence called "a programmer" needs to be underlined, it wont work if it was done as: <b>&lt;p&gt; a&lt;/p&gt; &lt;p class="pro"&gt; pro&lt;/p&gt; &lt;p&gt;grammer&lt;/p&gt;</b> and in the css as: <b>.pro{text-decoration:underline;}</b></li>
+			</ul>
+			<ol start="2">
+				<li>Span Tag - Inline Block elements</li>
+				<ul>
+					<li>To achieve that, a tag called <b>span</b> needs to be used</li>
+					<li>It is achieved as follows: <b>&lt;p&gt; a &lt;span class="pro"&gt;pro&lt;/span&gt;grammer&lt;/p&gt;</b> and then the Css modification of the class <b>pro</b></li>
+					<li>Span tag will be very useful in formatting one part of the text. Just like the <b>div</b> tag, span tag don't do very much unless they are used in conjunction with css</li>
+					<li>Some common inline elements:
+						<ul><li>spans</li><li>images</li><li>Anchors</li></ul>
+					</li>
+					<li>Spans seem like they have the advantage since they can be stacked next to each other unlike the block elements, so one may think that why block elements are needed anyway</li>
+					<li>The reason is that, unlike block elements, Inline block element's width can't be adjusted</li>
+					<li>On the other hand, even if the width of the block element's are adjustable, it still doesn't let other elements to sit next to it</li>
+					<li>chaning the <b>display</b> value of a block element to <b>inline </b> doesn't do any good because the width can't be changed once it becomes <b>inline</b></li>
+				</ul>
+				<li>Inline-block elements</li>
+					<ul>
+						<li>This is where Inline - block elements come in which give in the best of both worlds</li>
+						<li>They can be stacked next to each other and still their widths can be modified</li>
+					</ul>
+				<li>None elements</li>
+					<ul>
+						<li>This display type is like it deletes the element with the display property as <b>none</b></li>
+						<li>Imagine a situation in which a quiz is being attended on a site. To hide/show the answer at the click of a button can be made by changing the display property to <b>none</b> and back</li>
+					</ul>
+			</ol>
+			<ul>
+				<li>There is another property called <b>visibility</b> which when set to hidden will simply hide the element, but the element is still on the website. But when display is set to <b>none</b>, the element stops existing in the site and its place can be occupied by another element</li>
+			</ul>
+			<hr><h2><center>CSS Static and Relative positioning</center></h2><hr>
+			<ol>
+				<li>Position property</li>
 					<ol>
-						<li>Use %
+						<li>Static</li>
 							<ul>
-								<li><b>NOTE: </b>100% in font-size means 16px</li>
-								<li>So, if 90px is needed, then (90/16)*100%, that is 562.5%is needed</li>
+								<li>The default positioning of all elements</li>
+							</ul>
+						<li>Relative</li>
+						<ul>
+							<li>This positions the element relative to how it would have been positioned had it been static. Say an img would have appeared at 0 margin on the left. if its attribute was changed to <b>position: relative; left: 30px;</b>. Then the image would appear with a gap of 30px on the left</li>
+							<li>Just by changing the position of an element to relative, no changes will be made unless it is accompanied with one of the four coordinates that mention the change</li>
+							<li>The coordinates order is: <b>Top, Bottom, Left, Right</b></li>
+							<li><b>NOTE:</b>When an element gets pushed due to relative positioning, it doesn't affect the position of any other element when it gets shifted.</li>
+							<li><b>NOTE:</b>Even after the element's change in position, its old posiition is still occupied by the same element. Its like the element hid itself in its original position and moved its copy to the new position, that is relative to the old one</li>
+						</ul>
+						<li>Absolute</li>
+						<li>Fixed</li>
+					</ol>
+			</ol>
+			<hr><h2><center>Absolute Positioning</center></h2><hr>
+			<ol>
+				<li>
+					Absolute Positioning
+					<ul>
+						<li>In abosulte positioning an element is positioned with respect to its parent</li>
+						<li>For example, if an image was contained within a div, and the img's position was <b>absolute</b> and had <b>right: 30px;</b> then the img will be shifted to position such that it has 30px right margin from the right end of the div's box</li>
+						<li>Unlike relative positioning, which leaves a ghost of the element behind so it won't affect the other element's positions, absolute positioning does affect the position of other elements when an element gets moved</li>
+					</ul>
+				</li>
+				<li>
+					Fixed Positioning
+					<ul>
+						<li>
+							When an element's position is fixed, it will be still visible even when scrolling throught the page. Like the top bars or the side bars that has the items like contacts, profile being visible even when the page is scrolled down
+						</li>
+					</ul>
+				</li>
+
+			</ol>
+			<hr><h2><center>The dark art of centering elements</center></h2><hr>
+			<ol>
+				<li>
+					Text align property
+					<ul>
+						<li>In the external css, inside the body tag selector, put <b>text-align:center;</b></li>
+						<li>This will make all the Inline-block elements like images and the full width block elements like the texts to be aligned at the center of the webpage</li>
+					</ul>
+				</li>
+			</ol>
+			<ul>
+				<li>To center the elements that are not Inline or not of full width, there is another method which uses <b>margin: 0 auto 0 auto</b> which means margin top is 0, margin right is auto, margin bottom is 0 and margin left is auto</li>
+				<li>It can also be set by <b>margin: 0 auto</b>, which means margin top and bottom are zero and margin left and right are auto</li>
+			</ul>
+			<hr><h2><center>Font styling in CSS</center></h2><hr>
+			<ol>
+				<li>Common CSS Font families
+					<ol>
+						<li>Cursive</li>
+						<li>Fantasy</li>
+						<li>inherit</li>
+						<li>monospace
+							<ul>
+								<li>This is used mostly for coding as in this font all the letters of a word will be of equal width.</li>
 							</ul>
 						</li>
-						<li>Use em
+						<li>sans-serif
+							<li>Letter don't have tiny feet linke structures</li>
+							<li>The default sans-serif font for most browswers is the arial font</li>
+						</li>
+						<li>serif
 							<ul>
-								<li>em, is the phonetic pronounciation of the letter 'M'. It is no longer used in current days. In em <b>NOTE:</b> 1em = 16px</li>
-								<li>90px=5.625em</li>
+								<li>For most browsers, the default serif is the Times font</li>
+								<li>Letters have tiny feet like structures</li>
 							</ul>
 						</li>
 					</ol>
 				</li>
-				<li><b>NOTE: </b>With zooming, it doesn't matter if the text is dynamically or statically sized cause zooming will scale up the whole site</li>
-				<li><b>NOTE: </b>say for example, the body tag has a font-size customized as 2em and then the h1 tag has the font size customized as 5em, then in the end the h1 tag will appear as 7em as it inherits the base font-size from its parent, which is the body. And its the same with using percentages. <b> But when the body tag says the font should be 20px and the h1 tag says it needs to 90px, then it will be 90px only</b></li>
-				<li>To avoid, such situation, there is a feature in the CSS3, the one that is being used, is called <b>rem</b> - Root em</li>
-				<li>The rem is used to ignore all the parent settings.</li>
-			</ul>
-		</ul>
-		<hr><h2><center>CSS Float and Clear</center></h2><hr>
-		<ul>
-			<li>The Line height - This property is used to change the height between the lines in a paragraph. It doesn't have any units</li>
-		</ul>
-		<ol>
-			<li>Float
-				<ul>
-					<li>There is a div containing a pragraph and an image. The image is on top of the text.</li>
-					<li>By changing the float property of an img tag to, say <b>left</b>, the text which was at the bottom of the image, will now wrap around the image, meaning the image will float on the left, there will be text to the right of it and also to the bottom of it, if the paragraph's height is more than that of the image. Kind of what we see in school books</li>
-				</ul>
-			</li>
-			<li>Clear</li>
-			<ul>
-				<li>This is opposite to what float does. Suppose if only heading is to be wrapped around an image and the paragraph should be at the bottom of the image, by changing the clear property of the text to <b>clear:left</b> will bring it down to the image</li>
-			</ul>
-		</ol>
-		<hr>
-		<!-- =========================================================================================================== -->
-
-		<center><h1>BOOTSTRAP FRONTEND FRAMEWORK</h1></center>
-
-		<hr><center><h2>Introduction to Bootstrap</h2></center><hr>
-		<ul>
-			<li>Bootstrap is a Front-end library</li>
-			<li>Javascript, CSS, HTML are some of the front end stack</li>
-			<li>.NET, Ruby, PHP, NodeJS, Java, SQL are some of the backend stack</li>
-			<li>While the front end give the appearance, the backend provides the functionality to the webpage</li>
-			<li>Bootstrap was deveoped by <b>twitter</b> and is an open source tool</li>
-			<li>One main advantage of incorporating Bootstrap is that it makes the website <b>responsive</b>, meaning, the website will alter its appearance automatically depending on the device its being viewed upon from so that the contents will appear as it should and not as broken</li>
-			<li>It makes the website to have adaptable layout</li>
-			<li>Remember at the start of the tutorial <b>codepen.io</b> was used as online editor? Now instead of that, <a href="https://www.codeply.com/">Codeply <img class="link" src="images/link.png"></a> will be used, as it supports front-end frameworks like bootstrap unlike codepen</li>
-			<li>To get a styled button with a hover state, many lines of CSS code is required. But it can be achieved in just <b>two words</b> using bootstrap</li>
-			<li>In the HTML file, create a button using the <b>button</b> tag and give its class name as follows: <b>btn-primary</b></li>
-			<li>This <b>btn-primary</b> is a pre-defined class in bootstrap for a blue colored button with a hover state</li>
-			<li>In bootstrap, <b>primary=blue</b>, <b>dark=black</b>. So, for a black colored button, give the class name as <b>btn-dark</b></li>
-			<li>Another example is <b>btn-outline-dark</b>, which is button with white fill - black text - black outline that gets filled with black when hovered over</li>
-			<li>The size can also be alterd by having class name as <b>btn-lg</b></li>
-			<li>Head over to <a href="https://getbootstrap.com/">Bootstrap <img class="link" src="images/link.png"></a> website and download the bootstrap files as zip (not the software), and inside the zip there will be a folder named <b>css</b> and inside it a file named <b>bootstrap.css</b>. This file containes lot of predefined classes inside it that are ready to be used on any website</li>
-			<li>Do visite the examples section as well as the docs section in the bootstrap website in order to understand well while using bootstrap</li>
-		</ul>
-		<hr><h2><center>Bootstrap installation</center></h2><hr>
-		<ul>
-			<li>To install or incoporate Bootstrap into the website, in the head section of the html include a link with the relation as <b>stylesheet</b>. It is important to put this cdn link above the custom created <b>styles.css</b> stylesheet link for the previous customizations to still work</li>
-			<li>For the <b>href</b> head to the <a href="https://getbootstrap.com/">bootstrap <img class="link" src="images/link.png"></a> site and copy the cdn link. cdn stands for <b>C</b>ontent <b>D</b>elivery <b>N</b>etwork</li>
-			<li>It was learnt in the one of the previous lessons that the Internet is not working via satellites but via underground fibre optic Inter-continental cables laid down all over the world</li>
-			<li>It can be checked out in the site: <a href="https://www.submarinecablemap.com/">submarine Cable Map <img class="link" src="images/link.png"></a></li>
-			<li>The point where these cables touch the land will be probaly a data center and there will be other interior data centers as well on the land</li>
-			<li>The cdn of the bootstrap starts with <b>maxcdn</b>, which means bootstrap is using <a href="https://www.stackpath.com/maxcdn/">MaxCDN <img class="link" src="images/link.png"></a> as their website host, which has a lot of data points set across the world and that means a website made with bootstrap has a lower latency and is easier to load from anywhere in the world</li>
-			<li>And since a large number of websites already uses bootstrap framework, its very likely that the user must've loaded a bootstrap oriented website in their device at some point in time and if they haven't cleared their cache yet, then the bootstrap.css file will be probably stored in their device and will get applied easily once they load the site</li>
-		</ul>
-		<hr><center><h2>Web Design 101 - Wireframign</h2></center><hr>
-		<ol>
-			<li>
-				Wireframing
-				<ul>
-					<li>Wireframes are low fidelity representation of the website design. It is the first step that should be done when designing a website from scratch</li>
-					<li>It is meant to be done with pencil and paper and roughly sketch out the layout of where things should be</li>
-					<li></li>
-					<li><a href="https://sneakpeekit.com/">SneakPeekIt <img class="link" src="images/link.png"></a> is a cool site that lets users download wireframe template sheet that can be printed out and drawn upon</li>
-					<li>Another way is to use the industry standard tool called <a href="https://balsamiq.com/">Balsamiq <img class="link" src="images/link.png"></a>. It is not a free tool.</li>
-				</ul>
-			</li>
-			<li>
-				Mockup
-				<ul>
-					<li>This is kind of opposite of wireframing</li>
-					<li>
-						Its like taking a screenshot of the website from the future
-					</li>
-				</ul>
-			</li>
-		</ol>
-		<ul>
-			<li>Visit: <a href="https://www.awwwards.com/">awwwards <img class="link" src="images/link.png"></a> for examples of cool website designs</li>
-			<li>Also visit: <a href="https://ui-patterns.com/">UI-Design patterns <img class="link" src="images/link.png"></a></li>
-			<li>Also visit: <a href="https://dribbble.com/">Dribble <img class="link" src="images/link.png"></a> for Inspiration</li>
-		</ul>
-		<hr><center><h2>Boostrap NavBar</h2></center><hr>
-		<ol>
-			<li>Navigational bar</li>
-			<ul>
-				<li>create a nav element by using &lt;nav&gt; &lt;/nav&gt;</li>
-				<li>Give it a class name of <b>navbar</b></li>
-				<li>Then create an unordered list inside the nav and give the list a class name of <b>navbar-nav</b></li>
-				Then create an item by using the <b>li</b> and give it a class name of <b>nav-item</b>
-				<li>Finally create an anchor element inside the item and give it a class name of <b>nav-link</b></li>
-				<li>As usual give the href of the anchor tag the appropriate link</li>
-				<li>An appropriate navbar has been created</li>
-				<li>But this <b>navbar</b> class will make the navbar items get stacked on top of each other as more elements are added into it. But that's not how a normal navbar looks like</li>
-				<li>to make the items get arranged next to each other, give an additional class name of <b>navbar-expand-lg</b> next to the already existing <b>navbar</b> class in the nav element</li>
-				<li>When using <b>lg (large)</b>, the navbar will be horizontal on laptop like large width devices and will appear vertical when viewed in smarphone like low width devices</li>
-				<li>Instead of <b>lg</b>, which means large width devices like laptop, if <b>md (medium)</b> was used, then for both laptop and say tablets, the navbar will be horizontal and for smarphones it will be vertical</li>
-				<li>To make the navbar appear more clearly, a background class can be added along with the two already added classes. Add <b>bg-light</b> for a very subtle light background navbar</li>
-				<li>By default, the navbar items will look blue in color, and this can be changed by adding one more class called <b>navbar-light</b> to make them appear with black text color</li>
-			</ul>
-			<li>classes - colors</li>
+			</ol>
 			<ul>
 				<li>
-					primary - blue
+					It's always recommended to use websafe fonts because, when a special font is used for a website, if the user's system or the browser doesn't have that font installed, then it can't render that font and will render the default one, which will make the website look different for them instead of how it should.
 				</li>
-				<li>secondary - gray</li>
-				<li>success - green</li>
-				<li>danger - red</li>
-				<li>warning - yellow</li>
-				<li>info - light blue</li>
-				<li>light - white</li>
-				<li>dark - black</li>
-				<li>link - text will be blue with underline</li>
+				<li><a href="https://www.cssfontstack.com">CssFontStack.com <img class="link" src="images/link.png"></a> Visit this site to know which fonts are most commonly used across different operating systems</li>
+				<li>On this site, when a font is copied, a font stack actually gets copied. For eg. <b>font-family: "helvetica neue",helvetica,arial,sans-serif</b></li>
+				<li>The above will work like, if the system has the <b>helvetica neue</b> then it will get displayed, or else the one next to it and so on.</li>
 			</ul>
-			<li>.navbar-brand</li>
-			<ul>
-				<li>An element with the class as <b>navbar-brand</b> will appear on the top left corner of the page</li>
-			</ul>
-			<li>ms-auto</li>
-			<ul>
-				<li>From all the above things, the navbar will look with the brand and the three links, all arranged one after the other. But this looks a bit clumsy. To push the links onto the right and keep the brand alone on the left, add a class to the ul tag of the navbar
+			<ol start="2">
+					<li>Font embedding</li>
+					<ul>
+						<li>But there is a way to use the font that seems good and still make it get displayed whether or not the user's system's able to render it.
+						<li>Use: <a href="https://fonts.google.com/">Google fonts <img class="link" src="images/link.png"></a></li>
+						<li>To embed the font, copy the font's link on the site and past it in the head section of the html file</li>
+						<li>Then go into the css section and paste the text in the <b>CSS rules to specify</b> box in the site, into the element's style</li>
+					</ul>
 				</li>
-				<li>Add <b>ms-auto</b>. This will create a margin from the start of the unordered list and auto means, it will push the contents to the right as much as possible. m - margin</li>
-			</ul>
-			<li>toggler</li>
+				
+
+			</ol>
+			<hr><h2><center>Adding content to the site</center></h2><hr>
 			<ul>
-				<li>Now, the three links are on the righ the navbar with the brand on the left of the navbar. But when the screen size gets so small that its not possible to see all the four of them in a single line, the navbar will get bigger in height and make the links appear vertical</li>
-				<li>But it will be better if all the three links are visible inside a drop-down list. Well that's what a <b>toggler</b> is for</li>
-				<li>The toggler is a simple button with three horizontal lines. when clicked on it will show the contents inside it as a drop-down list</li>
+				<li><a href="https://www.lipsum.com/">Lorem Ipsum <img class="link" src="images/link.png"></a> - Facts about it.</li>
+				<li>Have a look at: <a href="https://www.flaticon.com/">Flaticon <img class="link" src="images/link.png"></a>, to use cool icons for the site</li>
+				<li>We can also use GIFs for the site from : <a href="https://giphy.com/">Giphy.com <img class="link" src="images/link.png"></a></li>
+			</ul>
+			<hr><h2><center>CSS Sizing</center></h2><hr>
+			<ul>
+				<li><b>NOTE:</b> When a font size of a text is hardcoded in the html, even if the user change the font settings in the browser, say from medium to large, that harcoded element's font alone will remain same and the rest of the texts in the page will change size.</li>
+				<li>That's because, using px and mentioning font size will the lock the font's size</li> 
+				<ul>
+					<li>Dynamic Font Sizing
+						<ol>
+							<li>Use %
+								<ul>
+									<li><b>NOTE: </b>100% in font-size means 16px</li>
+									<li>So, if 90px is needed, then (90/16)*100%, that is 562.5%is needed</li>
+								</ul>
+							</li>
+							<li>Use em
+								<ul>
+									<li>em, is the phonetic pronounciation of the letter 'M'. It is no longer used in current days. In em <b>NOTE:</b> 1em = 16px</li>
+									<li>90px=5.625em</li>
+								</ul>
+							</li>
+						</ol>
+					</li>
+					<li><b>NOTE: </b>With zooming, it doesn't matter if the text is dynamically or statically sized cause zooming will scale up the whole site</li>
+					<li><b>NOTE: </b>say for example, the body tag has a font-size customized as 2em and then the h1 tag has the font size customized as 5em, then in the end the h1 tag will appear as 7em as it inherits the base font-size from its parent, which is the body. And its the same with using percentages. <b> But when the body tag says the font should be 20px and the h1 tag says it needs to 90px, then it will be 90px only</b></li>
+					<li>To avoid, such situation, there is a feature in the CSS3, the one that is being used, is called <b>rem</b> - Root em</li>
+					<li>The rem is used to ignore all the parent settings.</li>
+				</ul>
+			</ul>
+			<hr><h2><center>CSS Float and Clear</center></h2><hr>
+			<ul>
+				<li>The Line height - This property is used to change the height between the lines in a paragraph. It doesn't have any units</li>
+			</ul>
+			<ol>
+				<li>Float
+					<ul>
+						<li>There is a div containing a pragraph and an image. The image is on top of the text.</li>
+						<li>By changing the float property of an img tag to, say <b>left</b>, the text which was at the bottom of the image, will now wrap around the image, meaning the image will float on the left, there will be text to the right of it and also to the bottom of it, if the paragraph's height is more than that of the image. Kind of what we see in school books</li>
+					</ul>
+				</li>
+				<li>Clear</li>
+				<ul>
+					<li>This is opposite to what float does. Suppose if only heading is to be wrapped around an image and the paragraph should be at the bottom of the image, by changing the clear property of the text to <b>clear:left</b> will bring it down to the image</li>
+				</ul>
+			</ol>
+			<hr>
+		</div>
+		<!--//////////////////////////////////////////////////////// -->
+		<div id="Beginner_Bootstrap">
+			<center><h1>BOOTSTRAP FRONTEND FRAMEWORK</h1></center>
+			<hr><center><h2>Introduction to Bootstrap</h2></center><hr>
+			<ul>
+				<li>Bootstrap is a Front-end library</li>
+				<li>Javascript, CSS, HTML are some of the front end stack</li>
+				<li>.NET, Ruby, PHP, NodeJS, Java, SQL are some of the backend stack</li>
+				<li>While the front end give the appearance, the backend provides the functionality to the webpage</li>
+				<li>Bootstrap was deveoped by <b>twitter</b> and is an open source tool</li>
+				<li>One main advantage of incorporating Bootstrap is that it makes the website <b>responsive</b>, meaning, the website will alter its appearance automatically depending on the device its being viewed upon from so that the contents will appear as it should and not as broken</li>
+				<li>It makes the website to have adaptable layout</li>
+				<li>Remember at the start of the tutorial <b>codepen.io</b> was used as online editor? Now instead of that, <a href="https://www.codeply.com/">Codeply <img class="link" src="images/link.png"></a> will be used, as it supports front-end frameworks like bootstrap unlike codepen</li>
+				<li>To get a styled button with a hover state, many lines of CSS code is required. But it can be achieved in just <b>two words</b> using bootstrap</li>
+				<li>In the HTML file, create a button using the <b>button</b> tag and give its class name as follows: <b>btn-primary</b></li>
+				<li>This <b>btn-primary</b> is a pre-defined class in bootstrap for a blue colored button with a hover state</li>
+				<li>In bootstrap, <b>primary=blue</b>, <b>dark=black</b>. So, for a black colored button, give the class name as <b>btn-dark</b></li>
+				<li>Another example is <b>btn-outline-dark</b>, which is button with white fill - black text - black outline that gets filled with black when hovered over</li>
+				<li>The size can also be alterd by having class name as <b>btn-lg</b></li>
+				<li>Head over to <a href="https://getbootstrap.com/">Bootstrap <img class="link" src="images/link.png"></a> website and download the bootstrap files as zip (not the software), and inside the zip there will be a folder named <b>css</b> and inside it a file named <b>bootstrap.css</b>. This file containes lot of predefined classes inside it that are ready to be used on any website</li>
+				<li>Do visite the examples section as well as the docs section in the bootstrap website in order to understand well while using bootstrap</li>
+			</ul>
+			<hr><h2><center>Bootstrap installation</center></h2><hr>
+			<ul>
+				<li>To install or incoporate Bootstrap into the website, in the head section of the html include a link with the relation as <b>stylesheet</b>. It is important to put this cdn link above the custom created <b>styles.css</b> stylesheet link for the previous customizations to still work</li>
+				<li>For the <b>href</b> head to the <a href="https://getbootstrap.com/">bootstrap <img class="link" src="images/link.png"></a> site and copy the cdn link. cdn stands for <b>C</b>ontent <b>D</b>elivery <b>N</b>etwork</li>
+				<li>It was learnt in the one of the previous lessons that the Internet is not working via satellites but via underground fibre optic Inter-continental cables laid down all over the world</li>
+				<li>It can be checked out in the site: <a href="https://www.submarinecablemap.com/">submarine Cable Map <img class="link" src="images/link.png"></a></li>
+				<li>The point where these cables touch the land will be probaly a data center and there will be other interior data centers as well on the land</li>
+				<li>The cdn of the bootstrap starts with <b>maxcdn</b>, which means bootstrap is using <a href="https://www.stackpath.com/maxcdn/">MaxCDN <img class="link" src="images/link.png"></a> as their website host, which has a lot of data points set across the world and that means a website made with bootstrap has a lower latency and is easier to load from anywhere in the world</li>
+				<li>And since a large number of websites already uses bootstrap framework, its very likely that the user must've loaded a bootstrap oriented website in their device at some point in time and if they haven't cleared their cache yet, then the bootstrap.css file will be probably stored in their device and will get applied easily once they load the site</li>
+			</ul>
+			<hr><center><h2>Web Design 101 - Wireframign</h2></center><hr>
+			<ol>
 				<li>
-					Add the following into the code: <br>
-					<div class="codeblock">
-						<code>
-							&lt;button class = "navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="toplinks" aria-controls<br>
-							&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br>
-							&lt;/button&gt;
-						</code>
-					</div>
+					Wireframing
+					<ul>
+						<li>Wireframes are low fidelity representation of the website design. It is the first step that should be done when designing a website from scratch</li>
+						<li>It is meant to be done with pencil and paper and roughly sketch out the layout of where things should be</li>
+						<li></li>
+						<li><a href="https://sneakpeekit.com/">SneakPeekIt <img class="link" src="images/link.png"></a> is a cool site that lets users download wireframe template sheet that can be printed out and drawn upon</li>
+						<li>Another way is to use the industry standard tool called <a href="https://balsamiq.com/">Balsamiq <img class="link" src="images/link.png"></a>. It is not a free tool.</li>
+					</ul>
 				</li>
-				<li>Then create a div around the contents that are needed to be collapsed upon and give the div a class name that is given in the <b>data-bs-target</b> inside the toggler, in this case it is <b>toplinks</b></li>
-				<li>the <b>fixed-top</b> class can be used inside the navbar to make it fixed to the top so that it won't disappear while scrolling</li>
+				<li>
+					Mockup
+					<ul>
+						<li>This is kind of opposite of wireframing</li>
+						<li>
+							Its like taking a screenshot of the website from the future
+						</li>
+					</ul>
+				</li>
+			</ol>
+			<ul>
+				<li>Visit: <a href="https://www.awwwards.com/">awwwards <img class="link" src="images/link.png"></a> for examples of cool website designs</li>
+				<li>Also visit: <a href="https://ui-patterns.com/">UI-Design patterns <img class="link" src="images/link.png"></a></li>
+				<li>Also visit: <a href="https://dribbble.com/">Dribble <img class="link" src="images/link.png"></a> for Inspiration</li>
 			</ul>
-		</ol>
-		<hr><center><h2>Setting up our new project</h2></center><hr>
-		<ul>
-			<li>
-				When there is content on the site the navbar will not dropdown. To make it drop down, some java script is actually needed to be embedded into the HTML file.
-			</li>
-			<li>
-				a script tag with a cdn link of java script from the bootstrap website is needed to be added to the head section of the html file
-			</li>
-		</ul>
-		<hr><h2><center>Bootstrap grid system</center></h2><hr>
-		<ol>
-			<li>Class="row" and Class="column"
+			<hr><center><h2>Boostrap NavBar</h2></center><hr>
+			<ol>
+				<li>Navigational bar</li>
+				<ul>
+					<li>create a nav element by using &lt;nav&gt; &lt;/nav&gt;</li>
+					<li>Give it a class name of <b>navbar</b></li>
+					<li>Then create an unordered list inside the nav and give the list a class name of <b>navbar-nav</b></li>
+					Then create an item by using the <b>li</b> and give it a class name of <b>nav-item</b>
+					<li>Finally create an anchor element inside the item and give it a class name of <b>nav-link</b></li>
+					<li>As usual give the href of the anchor tag the appropriate link</li>
+					<li>An appropriate navbar has been created</li>
+					<li>But this <b>navbar</b> class will make the navbar items get stacked on top of each other as more elements are added into it. But that's not how a normal navbar looks like</li>
+					<li>to make the items get arranged next to each other, give an additional class name of <b>navbar-expand-lg</b> next to the already existing <b>navbar</b> class in the nav element</li>
+					<li>When using <b>lg (large)</b>, the navbar will be horizontal on laptop like large width devices and will appear vertical when viewed in smarphone like low width devices</li>
+					<li>Instead of <b>lg</b>, which means large width devices like laptop, if <b>md (medium)</b> was used, then for both laptop and say tablets, the navbar will be horizontal and for smarphones it will be vertical</li>
+					<li>To make the navbar appear more clearly, a background class can be added along with the two already added classes. Add <b>bg-light</b> for a very subtle light background navbar</li>
+					<li>By default, the navbar items will look blue in color, and this can be changed by adding one more class called <b>navbar-light</b> to make them appear with black text color</li>
+				</ul>
+				<li>classes - colors</li>
 				<ul>
 					<li>
-						Bootstrap divides the columns into 12 parts. They can be used with class names as <b>col-1</b> till <b>col-12</b>
+						primary - blue
 					</li>
-					<li>Col-6 takes up 50.0% of the width</li>
-					<li>Col-4 takes up 33.3% of the width</li>
-					<li>Col-3 takes up 25.0% of the width</li>
-					<li>Col-2 takes up 20.0% of the width</li>
+					<li>secondary - gray</li>
+					<li>success - green</li>
+					<li>danger - red</li>
+					<li>warning - yellow</li>
+					<li>info - light blue</li>
+					<li>light - white</li>
+					<li>dark - black</li>
+					<li>link - text will be blue with underline</li>
 				</ul>
-			<ul>
-				<li>But still, when changing the width of the screen, the columns stay the same and are not responsive</li>
-				<li>To make it responsive, mention the size in the class when creating the columns. For example, instead of <code>col-6</code>, mention it as <code>col-md-6</code>. This will keep two columns of size 6 next to each other when the screen is large and medium (laptop and tablet), and when screen is (small) phone sized, it will stack on top of one another</li>
-			</ul>
-		</ol>
-		<hr><h2><center>Bootstrap containers</center></h2><hr>
-		<ol>
-			<li>class="Container"</li>
-			<ul>
-				<li>Create a div element with some text content inside it</li>
-				<li>Give the div a class name of <b>container</b></li>
-				<li>Now, since the div has a class of container, it makes the div responsive when the the window is resized or when the content is viewed from different width devices</li>
-			</ul>
-			<li>Class="conatiner-fluid"</li>
-			<ul>fluid container's function is similar to that of the regular container, but <b>fluid containers can take up 100% of the width</b>, whereas the regular ones do not.</ul>
-		</ol>
-		<hr><h2><center>Bootstrap Buttons</center></h2><hr>
-		<ul>
-			<li>For documentation, visit: <a href="https://getbootstrap.com/docs/4.0/components/buttons/">Bootstrap buttons <img class="link" src="images/link.png"></a></li>
-			<li>Also Visit: <a href="https://fontawesome.com/">Fontawesome <img class="link" src="images/link.png"></a></li>
-			<li>Using Font Awesome website, adding icons to buttons is possible</li>
-			<li>Similar to Bootstrap, the following code has to be added to the head section of the website:</li>
-			<div class="codeblock"><code>&lt;script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"&gt;/script></code></div>
-			<li>The above is JavaScript embed CDN link. For CSS embedding use the below:</li>
-			<div class="codeblock"><code>&lt;link rel="stylesheet" href="https://kit.fontawesome.com/0da7501024.css" crossorigin="anonymous"&gt;</code></div>
-			<li>Cons of using CSS CDN - Blocks the page from loading until all the icons are loaded</li>
-			<li>Example: <button class="btn btn-dark"><i class="fa-solid fa-download"></i> Sample button</button> &lt;== Code:</li>
-			<div class="codeblock"><code>&lt;button class="btn btn-dark">&lt;i class="fa-solid fa-download">&lt;/i> Sample button&lt;/button></code></div>
-		</ul>
-
-		<hr><hr>
-		<center><h1>Intermediate Bootstrap</h1></center>
-		<hr><h2><center>Bootstrap Carousel</center></h2><hr>
-		<ul>
-			<li>Documentation: <a href="https://getbootstrap.com/docs/4.0/components/carousel/">Carousel <img class="link" src="images/link.png" alt="link"></a></li>
-			<li>Carousels are like slideshows</li>
-			<li>Boot strap provides 4 types of carousels</li>
-			<ol>
-				<li>Automatic carousel</li>
-				<li>Carousel with manual controls</li>
-				<li>Carousel with manual controls and indicators</li>
-				<li>Carousel with manual controls, indicators and captions</li>
-			</ol>
-		</ul>
-		<hr><h2><center>Bootstrap Cards</center></h2><hr>
-		<ul>
-			<li>Bootstrap cards are mostly used for pricing tables in most websites like Patreon</li>
-			<li>Bootstrap cards generally have three components: Header, Body and Footer</li>
-			<li>By default, cards take up whole width of the viewport like block elements</li>
-			<li>But by enclosing the divs with the class="cards" inside a div with a <b>class="card-deck"</b>, they are stacked next to each other</li>
-			<li>There is a website called <a href="https://bootsnipp.com/">Bootsnipp <img class="link" src="images/link.png"></a> that has all sorts of examples using bootstrap</li>
-		</ul>
-		<hr><h2><center>CSS Z-index stacking order</center></h2><hr>
-			<ul>
-				<li>The Z-index property in CSS helps to position the elements on top of each other and control which element should sit on which</li>
-				<li>The default z-index value for all the elements is 0</li>
-				<li><b>Z-index will not work when position is set to static and by default all the elements in HTML are static</b></li>
-			</ul>
-		<hr><h2><center>Media Query breakpoints</center></h2><hr>
-			<ul>
-				<li>For reference: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Media queries @MDN <img class="link" src="images/link.png" alt=""></a></li>
-				<li>Media queries are an important tool that lets users to control the properties of the element based on the width of the viewport</li>
-				<li style="line-height: 55px;">Syntax: <code style="color:deeppink">@media &lt;type&gt; &lt;feature&gt;</code></li>
-				<li>For eg. Things will be shown differently when viewing the same page on a desktop vs mobile. The positioning and sizing will get affected and things can get awkward so easily</li>
-				<li>Creating mobile-friendly websites are a must. Even, google search engine ranks the site based on whether it is mobile friendly or not</li>
-				<li>To check if the site is mobile-friendly, visit: <a href="https://search.google.com/test/mobile-friendly">mobile-friendly <img class="link" src="images/link.png" alt=""></a></li>
-				<li>Many sites create a separate page for when users are using the site through small screen devices. For eg. Facebook has a separate page set for mobile. The facebook's URL when viewed from a mobile will have a <b>m.facebook</b> instead of just facebook. The m stands for mobile obviously</li>
-				<li>But instead of creating separate webpages for separate devices, CSS Media queries can be used to achieve the same goal</li>
-				<li>For eg. with <code style="color:deeppink">@media print{h1{color:"red" }}</code> we can make the h1 texts have a color of red only when it is printed and they will appear with default color when viewed upon</li>
-				<li>To change the property depending on screen-size,</li>
-				<div class="codeblock"><code>&lt;@media screen (max-width:700px){font-size:15px}&gt;</code></div>
-				<li>What the above code does is, it sets the size of the fonts to 15px, when the viewport's width is less than or equal to 700px</li>
-			</ul>
-		<hr><h2><center>Code Refactoring - Be a better programmer</center></h2><hr>
-			<ul>
-				<li>As a better programmer, you should be <b>DRY</b> - Don't Repeat Yourself, instead of being <b>WET</b> - We Enjoy Typing</li>
-				<li>Code Refactoring:</li>
-				<ol>
-					<li>Readability - Easier to read for a third person</li>
-					<li>Modularity - Easier to locate error</li>
-					<li>Efficiency - More efficient to load and run and all devices</li>
-					<li>Length - don't repeat</li>
-				</ol>
-				<li>There is a funny section in stack exchange called <a href="https://codegolf.stackexchange.com/">Code golf <img class="link" src="images/link.png" alt=""></a> where people try to solve a problem using the most min number of lines possible</li>
-			</ul>
-		<hr><h2><center>Combining CSS Selectors</center></h2><hr>
-			<ul>
-				<li>Focus on the code below:</li>
-			</ul>
-			<div class="codeblock"><code>&lt;div class="container title"&gt;<br>
-				&lt;h1&gt; Hello there &lt;/h1&gt;<br>
-				&lt;/div&gt;<br><br>
-				&lt;div class="container"&gt;<br>
-				&lt;h1 class="title"&gt; Hi it's me &lt;/h1&gt;<br>
-				&lt;/div&gt;<br><br>
-				&lt;div class="container"&gt;<br>
-				&lt;h1&gt; I'm Here !!! &lt;/h1&gt;<br>
-				&lt;p&gt; This is fun &lt;/p&gt;<br>
-				&lt;/div&gt;
-			</code></div>
-			<ul>
-				<li>In the above code, there are 3 divs. By combining different selectors of the div, the elements inside the div can be customized speficifically</li>
-				<ol>
-					<li>In the css, if <b>.container.title</b> was used, then the customization will get applied to an element that has both the classes <b>container</b> and <b>title</b></li>
-					<li>In the css, if <b>.container .title</b> was used then the customization will get applied to an element that has the class <b>title</b> and has a parent element with the class <b>container</b></li>
-					<li>In the css, if <b>.container h1</b> was used, then the customization will get applied to all h1 elements that has a parent with class <b>container</b></li>
-				</ol>
-			</ul>
-		<hr><h2><center>CSS selector priorities</center></h2><hr>
-		<ul>
-			<li>Inline styling has priority over all other</li>
-			<li>ids have priority over classes</li>
-			<li>classes have priority over elements</li>
-			<li>Prioritization is based on the specificity</li>
-			<li>Iniside a selector in CSS, if the same property is mentioned twice, then the last one will get applied</li>
-		</ul>
-	<!-- =========================================================================================================== -->
-		<hr><h1><center>Creating a Website that people love</center></h1>
-		<hr><h2><center>Web design principles</center></h2><hr>
-		<ol>
-			<li>Color Theory</li>
-			<li>Typography</li>
-			<li>UI Design</li>
-			<li>UX Design</li>
-		</ol>
-		<ul>
-			<li>Visit: <a href="https://www.dailyui.co/">Daily UI site <img class="link" src="images/link.png" alt=""></a> This site provides daily UI challenges for 100days. Its free to sign up</li>
-			<li>Visit: <a href="https://collectui.com/">Collect UI site <img class="link" src="images/link.png" alt=""></a> This site collects inspirations from the above daily UI site</li>
-			<li>Use <a href="https://www.canva.com/">Canva site <img class="link" src="images/link.png" alt=""></a> to quickly make UI designs</li>
-			<li>Using Canva's publishing features, the created UI can be easily published as a webpage that is scrollable</li>
-		</ul>
-		<hr><h2><center>Color theory</center></h2><hr>
-			<ul>
-				<li>What do they represent?</li>
-				<ol>
-					<li><span style="color:red">RED</span> - energy, love</li>
-					<li><span style="color:yellow">YELLOW</span> - joy, intellect, attention</li>
-					<li><span style="color:GREEN">GREEN</span> - freshness, safety, growth</li>
-					<li><span style="color:BLUE">BLUE</span> - stability, trust, serenity</li>
-					<li><span style="color:violet">PURPLE</span> - royalty, wealth, femininity</li>
-				</ol>
-				<li>Combining colors</li>
-				<ol>
-					<li>Analogous colors</li>
-						<ul>
-						<li>Combining colors that are next to each other on a color wheel</li>
-						<li>They look harmonious</li>
-						<li>But they don't stand out</li>
-						</ul>
-					<li>Complimentary colors</li>
-						<ul>
-						For making colors to stand out, choose two colors that are opposite to each other on the color wheel
-						</ul>
-					<li>Triatic color</li>
-						<ul>
-							<li>Using an equilateral triangle inside the color wheel</li>
-						</ul>
-				</ol>
-				<li>Head over to <a href="https://color.adobe.com/">Adobe color <img class="link" src="images/link.png" alt=""></a> to mix and get various color palettes</li>
-			</ul>
-		<hr><h2><center>Typography</center></h2><hr>
-		<ul>
-			<li>There are two large font families: Serif, and Sans-serif</li>
-			<ol>
-				<li>Serif</li>
+				<li>.navbar-brand</li>
 				<ul>
-					<li>Serif font family is old and potrays authority</li>
-					<li>Its further subdivided into: OldStyle, Transitional, Modern and Slab-serif</li>
-					<li>The difference between the thickest and thinnest part of a font says how aged it is</li>
+					<li>An element with the class as <b>navbar-brand</b> will appear on the top left corner of the page</li>
 				</ul>
-				<li>Sans-serif</li>
+				<li>ms-auto</li>
 				<ul>
-					<li>Sans-Serif family potrays straight-forwardness and friendliness</li>
+					<li>From all the above things, the navbar will look with the brand and the three links, all arranged one after the other. But this looks a bit clumsy. To push the links onto the right and keep the brand alone on the left, add a class to the ul tag of the navbar
+					</li>
+					<li>Add <b>ms-auto</b>. This will create a margin from the start of the unordered list and auto means, it will push the contents to the right as much as possible. m - margin</li>
+				</ul>
+				<li>toggler</li>
+				<ul>
+					<li>Now, the three links are on the righ the navbar with the brand on the left of the navbar. But when the screen size gets so small that its not possible to see all the four of them in a single line, the navbar will get bigger in height and make the links appear vertical</li>
+					<li>But it will be better if all the three links are visible inside a drop-down list. Well that's what a <b>toggler</b> is for</li>
+					<li>The toggler is a simple button with three horizontal lines. when clicked on it will show the contents inside it as a drop-down list</li>
+					<li>
+						Add the following into the code: <br>
+						<div class="codeblock">
+							<code>
+								&lt;button class = "navbar-toggler-icon" type="button" data-bs-toggle="collapse" data-bs-target="toplinks" aria-controls<br>
+								&lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;<br>
+								&lt;/button&gt;
+							</code>
+						</div>
+					</li>
+					<li>Then create a div around the contents that are needed to be collapsed upon and give the div a class name that is given in the <b>data-bs-target</b> inside the toggler, in this case it is <b>toplinks</b></li>
+					<li>the <b>fixed-top</b> class can be used inside the navbar to make it fixed to the top so that it won't disappear while scrolling</li>
 				</ul>
 			</ol>
-		</ul>
-		<hr><h2><center>UX design</center></h2><hr>
+			<hr><center><h2>Setting up our new project</h2></center><hr>
 			<ul>
-				<li>UX is User Experience</li>
+				<li>
+					When there is content on the site the navbar will not dropdown. To make it drop down, some java script is actually needed to be embedded into the HTML file.
+				</li>
+				<li>
+					a script tag with a cdn link of java script from the bootstrap website is needed to be added to the head section of the html file
+				</li>
+			</ul>
+			<hr><h2><center>Bootstrap grid system</center></h2><hr>
+			<ol>
+				<li>Class="row" and Class="column"
+					<ul>
+						<li>
+							Bootstrap divides the columns into 12 parts. They can be used with class names as <b>col-1</b> till <b>col-12</b>
+						</li>
+						<li>Col-6 takes up 50.0% of the width</li>
+						<li>Col-4 takes up 33.3% of the width</li>
+						<li>Col-3 takes up 25.0% of the width</li>
+						<li>Col-2 takes up 20.0% of the width</li>
+					</ul>
+				<ul>
+					<li>But still, when changing the width of the screen, the columns stay the same and are not responsive</li>
+					<li>To make it responsive, mention the size in the class when creating the columns. For example, instead of <code>col-6</code>, mention it as <code>col-md-6</code>. This will keep two columns of size 6 next to each other when the screen is large and medium (laptop and tablet), and when screen is (small) phone sized, it will stack on top of one another</li>
+				</ul>
+			</ol>
+			<hr><h2><center>Bootstrap containers</center></h2><hr>
+			<ol>
+				<li>class="Container"</li>
+				<ul>
+					<li>Create a div element with some text content inside it</li>
+					<li>Give the div a class name of <b>container</b></li>
+					<li>Now, since the div has a class of container, it makes the div responsive when the the window is resized or when the content is viewed from different width devices</li>
+				</ul>
+				<li>Class="conatiner-fluid"</li>
+				<ul>fluid container's function is similar to that of the regular container, but <b>fluid containers can take up 100% of the width</b>, whereas the regular ones do not.</ul>
+			</ol>
+			<hr><h2><center>Bootstrap Buttons</center></h2><hr>
+			<ul>
+				<li>For documentation, visit: <a href="https://getbootstrap.com/docs/4.0/components/buttons/">Bootstrap buttons <img class="link" src="images/link.png"></a></li>
+				<li>Also Visit: <a href="https://fontawesome.com/">Fontawesome <img class="link" src="images/link.png"></a></li>
+				<li>Using Font Awesome website, adding icons to buttons is possible</li>
+				<li>Similar to Bootstrap, the following code has to be added to the head section of the website:</li>
+				<div class="codeblock"><code>&lt;script src="https://kit.fontawesome.com/0da7501024.js" crossorigin="anonymous"&gt;/script></code></div>
+				<li>The above is JavaScript embed CDN link. For CSS embedding use the below:</li>
+				<div class="codeblock"><code>&lt;link rel="stylesheet" href="https://kit.fontawesome.com/0da7501024.css" crossorigin="anonymous"&gt;</code></div>
+				<li>Cons of using CSS CDN - Blocks the page from loading until all the icons are loaded</li>
+				<li>Example: <button class="btn btn-dark"><i class="fa-solid fa-download"></i> Sample button</button> &lt;== Code:</li>
+				<div class="codeblock"><code>&lt;button class="btn btn-dark">&lt;i class="fa-solid fa-download">&lt;/i> Sample button&lt;/button></code></div>
+			</ul>
+			<hr><hr>
+		</div>
+		<!--//////////////////////////////////////////////////////// -->
+		<div id="Intermediate_Bootstrap">
+			<center><h1>Intermediate Bootstrap</h1></center>
+			<hr><h2><center>Bootstrap Carousel</center></h2><hr>
+			<ul>
+				<li>Documentation: <a href="https://getbootstrap.com/docs/4.0/components/carousel/">Carousel <img class="link" src="images/link.png" alt="link"></a></li>
+				<li>Carousels are like slideshows</li>
+				<li>Boot strap provides 4 types of carousels</li>
 				<ol>
-					<li>Simplicity</li>
-					<li>Consistency</li>
-					<li>F-layout - the way user's eye skims through a site has been analysed to be the shape of the letter F</li>
-					<li>Multi-platform design</li>
-					<li>Don't bait people - Dark UX patterns</li>
+					<li>Automatic carousel</li>
+					<li>Carousel with manual controls</li>
+					<li>Carousel with manual controls and indicators</li>
+					<li>Carousel with manual controls, indicators and captions</li>
 				</ol>
 			</ul>
-		<hr><h2><center>UI design</center></h2><hr>
+			<hr><h2><center>Bootstrap Cards</center></h2><hr>
 			<ul>
-				<li>Sizing</li>
-				<li>Optimal line width</li>
-				<li>Choosing the right color</li>
-				<li>Alignment</li>
-				<li>think about Audience</li>
+				<li>Bootstrap cards are mostly used for pricing tables in most websites like Patreon</li>
+				<li>Bootstrap cards generally have three components: Header, Body and Footer</li>
+				<li>By default, cards take up whole width of the viewport like block elements</li>
+				<li>But by enclosing the divs with the class="cards" inside a div with a <b>class="card-deck"</b>, they are stacked next to each other</li>
+				<li>There is a website called <a href="https://bootsnipp.com/">Bootsnipp <img class="link" src="images/link.png"></a> that has all sorts of examples using bootstrap</li>
 			</ul>
-		<!-- =========================================================================================================== -->
-		
-		<hr><h1><center>JAVASCRIPT</center></h1>
-		<hr><h2><center>Introduction to JavaScript</center></h2><hr>
+			<hr><h2><center>CSS Z-index stacking order</center></h2><hr>
+				<ul>
+					<li>The Z-index property in CSS helps to position the elements on top of each other and control which element should sit on which</li>
+					<li>The default z-index value for all the elements is 0</li>
+					<li><b>Z-index will not work when position is set to static and by default all the elements in HTML are static</b></li>
+				</ul>
+			<hr><h2><center>Media Query breakpoints</center></h2><hr>
+				<ul>
+					<li>For reference: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Media queries @MDN <img class="link" src="images/link.png" alt=""></a></li>
+					<li>Media queries are an important tool that lets users to control the properties of the element based on the width of the viewport</li>
+					<li style="line-height: 55px;">Syntax: <code style="color:deeppink">@media &lt;type&gt; &lt;feature&gt;</code></li>
+					<li>For eg. Things will be shown differently when viewing the same page on a desktop vs mobile. The positioning and sizing will get affected and things can get awkward so easily</li>
+					<li>Creating mobile-friendly websites are a must. Even, google search engine ranks the site based on whether it is mobile friendly or not</li>
+					<li>To check if the site is mobile-friendly, visit: <a href="https://search.google.com/test/mobile-friendly">mobile-friendly <img class="link" src="images/link.png" alt=""></a></li>
+					<li>Many sites create a separate page for when users are using the site through small screen devices. For eg. Facebook has a separate page set for mobile. The facebook's URL when viewed from a mobile will have a <b>m.facebook</b> instead of just facebook. The m stands for mobile obviously</li>
+					<li>But instead of creating separate webpages for separate devices, CSS Media queries can be used to achieve the same goal</li>
+					<li>For eg. with <code style="color:deeppink">@media print{h1{color:"red" }}</code> we can make the h1 texts have a color of red only when it is printed and they will appear with default color when viewed upon</li>
+					<li>To change the property depending on screen-size,</li>
+					<div class="codeblock"><code>&lt;@media screen (max-width:700px){font-size:15px}&gt;</code></div>
+					<li>What the above code does is, it sets the size of the fonts to 15px, when the viewport's width is less than or equal to 700px</li>
+				</ul>
+			<hr><h2><center>Code Refactoring - Be a better programmer</center></h2><hr>
+				<ul>
+					<li>As a better programmer, you should be <b>DRY</b> - Don't Repeat Yourself, instead of being <b>WET</b> - We Enjoy Typing</li>
+					<li>Code Refactoring:</li>
+					<ol>
+						<li>Readability - Easier to read for a third person</li>
+						<li>Modularity - Easier to locate error</li>
+						<li>Efficiency - More efficient to load and run and all devices</li>
+						<li>Length - don't repeat</li>
+					</ol>
+					<li>There is a funny section in stack exchange called <a href="https://codegolf.stackexchange.com/">Code golf <img class="link" src="images/link.png" alt=""></a> where people try to solve a problem using the most min number of lines possible</li>
+				</ul>
+			<hr><h2><center>Combining CSS Selectors</center></h2><hr>
+				<ul>
+					<li>Focus on the code below:</li>
+				</ul>
+				<div class="codeblock"><code>&lt;div class="container title"&gt;<br>
+					&lt;h1&gt; Hello there &lt;/h1&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class="container"&gt;<br>
+					&lt;h1 class="title"&gt; Hi it's me &lt;/h1&gt;<br>
+					&lt;/div&gt;<br><br>
+					&lt;div class="container"&gt;<br>
+					&lt;h1&gt; I'm Here !!! &lt;/h1&gt;<br>
+					&lt;p&gt; This is fun &lt;/p&gt;<br>
+					&lt;/div&gt;
+				</code></div>
+				<ul>
+					<li>In the above code, there are 3 divs. By combining different selectors of the div, the elements inside the div can be customized speficifically</li>
+					<ol>
+						<li>In the css, if <b>.container.title</b> was used, then the customization will get applied to an element that has both the classes <b>container</b> and <b>title</b></li>
+						<li>In the css, if <b>.container .title</b> was used then the customization will get applied to an element that has the class <b>title</b> and has a parent element with the class <b>container</b></li>
+						<li>In the css, if <b>.container h1</b> was used, then the customization will get applied to all h1 elements that has a parent with class <b>container</b></li>
+					</ol>
+				</ul>
+			<hr><h2><center>CSS selector priorities</center></h2><hr>
 			<ul>
-			<li>In the beginning there was a browser called <b>mosaic</b> which was worked upon by mark andreessen - one of the principle inventors of Netscape navigator</li>
-			<li>After completing university, mark worked on netscape and netscape was big success holding over 80% of the browser market</li>
-			<li>Then there was huge browser war between netscape and internet explorer. And netscape lost</li>
-			<li>But lot of netscape's technology was transported to <b>firefox</b></li>
-			<li>around the year 1995, HTML website were all just simple layouts without any function</li>
-			<li>Whenever a website needed functionality, it had to send the input back to the server and the server responses back with the ouput after the calculations</li>
-			<li>The team at netscape wanted something more dynamic. In order to achieve this, the server has to be taken away and the logic needs to be able to run on the broswer itself</li>
-			<li>They needed a scripting language and te language needed to be simple and easy to understand</li>
-			<li>So, they contacted <b>Brendan eich</b> and he was able to create that required language in under 10days. That language is none other than the <b>javascript</b></li>
-			<li>Nowadays, Javascript is used in mostly all websites. without javascript the webstie loses its function. In chrome, the power of javascript can be visualized by turning it off in the settings and trying to load youtube or any other site. Youtube won't load</li>
-			<li>An interesting side effect of Java script is that, <b>without javascript Ads can't load</b></li>
-			<li>At first Javascript was actually named as <b>Live script</b>. The people at microsoft tried to reverse engineer the program and ended up with something called <b>Jscript</b></li>
-			<li>Then there were many versions of Java script and it started confusions</li>
-			<li>So the Europeans did what they do best and standardized the script and named it as <b>ECMA script</b>. ECMA stands for European Computer Manufacturers Association</li>
-			<li>Java and Javascript has as much similarities as a Car and a Carpet</li>
-			<li>The main difference between them is that Java is a compiled language and Javascript is an interpreted programming language</li>
+				<li>Inline styling has priority over all other</li>
+				<li>ids have priority over classes</li>
+				<li>classes have priority over elements</li>
+				<li>Prioritization is based on the specificity</li>
+				<li>Iniside a selector in CSS, if the same property is mentioned twice, then the last one will get applied</li>
 			</ul>
-		<hr><h2><center>Javascript alerts</center></h2><hr>
-			<ul>
-				<li>Open chrome -> Dev tools -> console tab</li>
-				<li>Add the following code and press enter: <code>alert("hello");</code></li>
-				<li>A pop will appear with the message inside the double quotes</li>
-				<li>In the above code, <b>alert</b> is the function and <b>hello</b> inside the double quotes is the message/argument and <b>;</b> represents the end of the command</li>
-				<li>The one downside in using the chrome console is when enter is pressed the commands will get executed. So if hello and world needs to be displayed as two separate alerts press enter while holding down shift to type the next alert in the next line</li>
-				<li>But the above method is cumbersome. there is a better way of doing it.</li>
-				<li>Go to chrome -> dev tools -> sources tab -> click on <b>>></b> -> snippets<b> and create a file named index.js</b></li>
-				<li>press ctrl+enter to execute or click on the play button</li>
-				<li>Visit: <a href="https://github.com/rwaldron/idiomatic.js/">Best JS practices<img class="link" src="images/link.png" alt=""></a></li>
-			</ul>
-		<hr><h2><center>Datatypes</center></h2><hr>
+		</div>
+		<!--//////////////////////////////////////////////////////// -->
+		<div id="Design_Principles">
+			<hr><h1><center>Creating a Website that people love</center></h1>
+			<hr><h2><center>Web design principles</center></h2><hr>
 			<ol>
-				<li>String</li>
-				<li>Numbers</li>
-				<li>Boolean</li>
+				<li>Color Theory</li>
+				<li>Typography</li>
+				<li>UI Design</li>
+				<li>UX Design</li>
 			</ol>
 			<ul>
-				<li>There is a keyword called <b>typeof()</b> which outputs the datatype of the argument in the stdout</li>
+				<li>Visit: <a href="https://www.dailyui.co/">Daily UI site <img class="link" src="images/link.png" alt=""></a> This site provides daily UI challenges for 100days. Its free to sign up</li>
+				<li>Visit: <a href="https://collectui.com/">Collect UI site <img class="link" src="images/link.png" alt=""></a> This site collects inspirations from the above daily UI site</li>
+				<li>Use <a href="https://www.canva.com/">Canva site <img class="link" src="images/link.png" alt=""></a> to quickly make UI designs</li>
+				<li>Using Canva's publishing features, the created UI can be easily published as a webpage that is scrollable</li>
 			</ul>
-		<hr><h2><center>Variable</center></h2><hr>
+			<hr><h2><center>Color theory</center></h2><hr>
+				<ul>
+					<li>What do they represent?</li>
+					<ol>
+						<li><span style="color:red">RED</span> - energy, love</li>
+						<li><span style="color:yellow">YELLOW</span> - joy, intellect, attention</li>
+						<li><span style="color:GREEN">GREEN</span> - freshness, safety, growth</li>
+						<li><span style="color:BLUE">BLUE</span> - stability, trust, serenity</li>
+						<li><span style="color:violet">PURPLE</span> - royalty, wealth, femininity</li>
+					</ol>
+					<li>Combining colors</li>
+					<ol>
+						<li>Analogous colors</li>
+							<ul>
+							<li>Combining colors that are next to each other on a color wheel</li>
+							<li>They look harmonious</li>
+							<li>But they don't stand out</li>
+							</ul>
+						<li>Complimentary colors</li>
+							<ul>
+							For making colors to stand out, choose two colors that are opposite to each other on the color wheel
+							</ul>
+						<li>Triatic color</li>
+							<ul>
+								<li>Using an equilateral triangle inside the color wheel</li>
+							</ul>
+					</ol>
+					<li>Head over to <a href="https://color.adobe.com/">Adobe color <img class="link" src="images/link.png" alt=""></a> to mix and get various color palettes</li>
+				</ul>
+			<hr><h2><center>Typography</center></h2><hr>
 			<ul>
-				<li>Inside the snippet tab create a new snippet</li>
-				<li>Add the following : <code>prompt("What is your name?");</code></li>
-				<li>When the above command is executed, a popup window will display with the message as well a text box to type something</li>
-				<li>If something was typed and entered, it would not have been saved anywhere. It would have been lost</li>
-				<li>To save the informaton, a keyword called <b>var</b> is used</li>
-				<li>Add: <code>var MyName="john";</code> in the index.js and execute it. After execution. type "MyName"; and press enter. It will output <b>john</b></li>
-				<li>the var keyword is needed to use only once. It is used to create a variable. Once the variable is created, the keyword need no be used again to change its content</li>
+				<li>There are two large font families: Serif, and Sans-serif</li>
+				<ol>
+					<li>Serif</li>
+					<ul>
+						<li>Serif font family is old and potrays authority</li>
+						<li>Its further subdivided into: OldStyle, Transitional, Modern and Slab-serif</li>
+						<li>The difference between the thickest and thinnest part of a font says how aged it is</li>
+					</ul>
+					<li>Sans-serif</li>
+					<ul>
+						<li>Sans-Serif family potrays straight-forwardness and friendliness</li>
+					</ul>
+				</ol>
 			</ul>
-		<hr><h2><center>Naming conventions</center></h2><hr>
-			<ul>
-				<li>Give meaningful variable names</li>
-				<li>keywords must not be used as variable name</li>
-				<li>Underscore is the only special char allowed in variable name</li>
-				<li>Can't begin with numbers but can contain numbers</li>
-				<li>variable name must be a single word</li>
-				<li>Keep variable names camelcased</li>
-			</ul>
-		<hr><h2><center>String length</center></h2><hr>
-			<ul>
-				<li><code>var name="john";</code></li>
-				<li><code>name.length;</code></li>
-				<li>The above code when executed will output the result <b>4</b></li>
-			</ul>
-		<hr><h2><center>String slicing</center></h2><hr>
-			<ul>
-				<li><code>var name="john parker"</code></li>
-				<li><code>name.slice(0,2)</code> will ouput <b>jo</b></li>
-				<li><code>name.slice(3,7)</code> will ouput <b>n pa</b></li>
-			</ul>
-		<hr><h2><center>Changing case</center></h2><hr>
-			<ul>
-				<li><code>name.toUpperCase();</code>changes every lowercase letter in the variable name to uppercase</li>
-				<li><code>name.toLowerCase();</code>changes every uppercase letter in the variable name to lowercase</li>
-			</ul>
-	</div>
-	<div class="Useful links">
-		<center><hr><h2>Useful Links:</h2><hr></center>
-		<ul>
-			<li><a href="https://www.maths.nottingham.ac.uk/plp/pmadw/lm.html">Incorporating LaTeX in HTML</a></li>
-		</ul>
-	</div>
-	<div id="endbox" class="endbox">
-		<hr>
-		<p style="padding-top: 5px;"><center>
-			<a href="https://www.instagram.com/ur_known_stranger.offl/">
-				<img class="bottominstagram bottomlogo" src="images/Instagram.png" alt="instagramLogo">
-			</a>
-			<a href="https://www.linkedin.com/in/kulasekaran148/">
-				<img class="bottomlinkedin bottomlogo" src="images/linkedin.png" alt="linkedinLogo">
-			</a>
-			<a href="https://github.com/Kulasekaran-148">
-				<img class="bottomgithub bottomlogo" src="images/github.png" alt="githubLogo">
-			</a>
-			<a href="https://dribbble.com/Kulasekaran148">
-				<img class="bottomdribble bottomlogo" src="images/dribble.png" alt="dribble_logo">	
-			</a>
-		</center></p>
-		<h1><center>© 2023 Kulasekaran.S</center></h1>
+			<hr><h2><center>UX design</center></h2><hr>
+				<ul>
+					<li>UX is User Experience</li>
+					<ol>
+						<li>Simplicity</li>
+						<li>Consistency</li>
+						<li>F-layout - the way user's eye skims through a site has been analysed to be the shape of the letter F</li>
+						<li>Multi-platform design</li>
+						<li>Don't bait people - Dark UX patterns</li>
+					</ol>
+				</ul>
+			<hr><h2><center>UI design</center></h2><hr>
+				<ul>
+					<li>Sizing</li>
+					<li>Optimal line width</li>
+					<li>Choosing the right color</li>
+					<li>Alignment</li>
+					<li>think about Audience</li>
+				</ul>
+		</div>
+		<!--//////////////////////////////////////////////////////// -->
+		<div id="Beginner_Javascript">
+			<hr><h1><center>JAVASCRIPT</center></h1>
+			<hr><h2><center>Introduction to JavaScript</center></h2><hr>
+				<ul>
+				<li>In the beginning there was a browser called <b>mosaic</b> which was worked upon by mark andreessen - one of the principle inventors of Netscape navigator</li>
+				<li>After completing university, mark worked on netscape and netscape was big success holding over 80% of the browser market</li>
+				<li>Then there was huge browser war between netscape and internet explorer. And netscape lost</li>
+				<li>But lot of netscape's technology was transported to <b>firefox</b></li>
+				<li>around the year 1995, HTML website were all just simple layouts without any function</li>
+				<li>Whenever a website needed functionality, it had to send the input back to the server and the server responses back with the ouput after the calculations</li>
+				<li>The team at netscape wanted something more dynamic. In order to achieve this, the server has to be taken away and the logic needs to be able to run on the broswer itself</li>
+				<li>They needed a scripting language and te language needed to be simple and easy to understand</li>
+				<li>So, they contacted <b>Brendan eich</b> and he was able to create that required language in under 10days. That language is none other than the <b>javascript</b></li>
+				<li>Nowadays, Javascript is used in mostly all websites. without javascript the webstie loses its function. In chrome, the power of javascript can be visualized by turning it off in the settings and trying to load youtube or any other site. Youtube won't load</li>
+				<li>An interesting side effect of Java script is that, <b>without javascript Ads can't load</b></li>
+				<li>At first Javascript was actually named as <b>Live script</b>. The people at microsoft tried to reverse engineer the program and ended up with something called <b>Jscript</b></li>
+				<li>Then there were many versions of Java script and it started confusions</li>
+				<li>So the Europeans did what they do best and standardized the script and named it as <b>ECMA script</b>. ECMA stands for European Computer Manufacturers Association</li>
+				<li>Java and Javascript has as much similarities as a Car and a Carpet</li>
+				<li>The main difference between them is that Java is a compiled language and Javascript is an interpreted programming language</li>
+				</ul>
+			<hr><h2><center>Javascript alerts</center></h2><hr>
+				<ul>
+					<li>Open chrome -> Dev tools -> console tab</li>
+					<li>Add the following code and press enter: <code>alert("hello");</code></li>
+					<li>A pop will appear with the message inside the double quotes</li>
+					<li>In the above code, <b>alert</b> is the function and <b>hello</b> inside the double quotes is the message/argument and <b>;</b> represents the end of the command</li>
+					<li>The one downside in using the chrome console is when enter is pressed the commands will get executed. So if hello and world needs to be displayed as two separate alerts press enter while holding down shift to type the next alert in the next line</li>
+					<li>But the above method is cumbersome. there is a better way of doing it.</li>
+					<li>Go to chrome -> dev tools -> sources tab -> click on <b>>></b> -> snippets<b> and create a file named index.js</b></li>
+					<li>press ctrl+enter to execute or click on the play button</li>
+					<li>Visit: <a href="https://github.com/rwaldron/idiomatic.js/">Best JS practices<img class="link" src="images/link.png" alt=""></a></li>
+				</ul>
+			<hr><h2><center>Datatypes</center></h2><hr>
+				<ol>
+					<li>String</li>
+					<li>Numbers</li>
+					<li>Boolean</li>
+				</ol>
+				<ul>
+					<li>There is a keyword called <b>typeof()</b> which outputs the datatype of the argument in the stdout</li>
+				</ul>
+			<hr><h2><center>Variable</center></h2><hr>
+				<ul>
+					<li>Inside the snippet tab create a new snippet</li>
+					<li>Add the following : <code>prompt("What is your name?");</code></li>
+					<li>When the above command is executed, a popup window will display with the message as well a text box to type something</li>
+					<li>If something was typed and entered, it would not have been saved anywhere. It would have been lost</li>
+					<li>To save the informaton, a keyword called <b>var</b> is used</li>
+					<li>Add: <code>var MyName="john";</code> in the index.js and execute it. After execution. type "MyName"; and press enter. It will output <b>john</b></li>
+					<li>the var keyword is needed to use only once. It is used to create a variable. Once the variable is created, the keyword need no be used again to change its content</li>
+				</ul>
+			<hr><h2><center>Naming conventions</center></h2><hr>
+				<ul>
+					<li>Give meaningful variable names</li>
+					<li>keywords must not be used as variable name</li>
+					<li>Underscore is the only special char allowed in variable name</li>
+					<li>Can't begin with numbers but can contain numbers</li>
+					<li>variable name must be a single word</li>
+					<li>Keep variable names camelcased</li>
+				</ul>
+			<hr><h2><center>String length</center></h2><hr>
+				<ul>
+					<li><code>var name="john";</code></li>
+					<li><code>name.length;</code></li>
+					<li>The above code when executed will output the result <b>4</b></li>
+				</ul>
+			<hr><h2><center>String slicing</center></h2><hr>
+				<ul>
+					<li><code>var name="john parker"</code></li>
+					<li><code>name.slice(0,2)</code> will ouput <b>jo</b></li>
+					<li><code>name.slice(3,7)</code> will ouput <b>n pa</b></li>
+				</ul>
+			<hr><h2><center>Changing case</center></h2><hr>
+				<ul>
+					<li><code>name.toUpperCase();</code>changes every lowercase letter in the variable name to uppercase</li>
+					<li><code>name.toLowerCase();</code>changes every uppercase letter in the variable name to lowercase</li>
+				</ul>
+		</div>
 	</div>
 </body>
 </html> 

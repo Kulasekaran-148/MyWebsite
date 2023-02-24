@@ -28,15 +28,3 @@
     transform: scale(1);
   }
 }
-@keyframes brighten{
-  0%{
-    filter: brightness(300%) saturate(250%);
-    transform:scale(1.2);
-    bottom:4px;
-  }
-  100%{
-    filter: brightness(300%) saturate(250%);
-    bottom:4px;
-    transform: scale(1.2);
-  }
-}

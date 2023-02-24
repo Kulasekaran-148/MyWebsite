@@ -1,130 +1,67 @@
-/*------------------Tag selectors------------------*/
-a{
-  color:lightgreen;
+a,b,h1,h2{
+  color:#138c00;
   text-decoration: none;
 }
 a:hover{
-  color:red;
+  filter: brightness(200%);
 }
 body{
   background-color: rgb(0, 0, 0);
-  color:#ffffff;
+  color:white;
   font-family: 'Gabriela', serif;
-  margin:1px;
 }
-@media (max-width:700px){
-  body{
-    font-size:35px;
-  }
-}
-@media (min-width:700px){
-  body{
-    font-size:20px;
-  }
-}
-h1,h2,h3,h5,th,b{
-  color:#138c00;
-  filter:brightness(150%);
-}
-h1{
-  padding-top:0px;
-}
-table,th,td{
-  border: 1px solid white;
-  border-collapse: collapse;
-  padding:5px;
-  padding-top:10px;
-  padding-bottom:10px;
-}
-thead,tbody{
-  text-align:center;
-}
-ul{
-  list-style-type: disc;
+h2{
+  margin:20px 0;
 }
 
-/*----------------class selectors------------------*/
-.codeblock{
-  background-color: rgb(0, 0, 0);
-  border-radius: 8px;
-  border-color: #252525;
-  border:solid 2px;
-  padding: 15px;
-  margin:15px auto;
-  width:fit-content;
+/* ID selectors */
+#education{
+  background-color: rgba(0, 255, 255, 0);
 }
-.coverarea{
-  width:100%;
-  height:fit-content;
-  background-color: rgba(255, 255, 0, 0);
+#skills{
+  background-color: rgba(255, 145, 0, 0);
+}
+#projects{
+  background-color: rgba(255, 0, 0, 0);
+}
+#achievements{
+  background-color: rgba(187, 0, 255, 0);
+}
+#interest{
+  background-color: rgba(153, 205, 50, 0);
+}
+#VAC{
+  background-color: rgba(255, 255, 255, 0);
+}
+#hobbies{
+  background-color: rgba(255, 127, 80, 0);
+}
+#contact{
+  background-color: rgba(100, 148, 237, 0);
+}
+
+/* CLASS SELECTORS */
+.allsections{
+  padding:10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.centered{
   text-align: center;
 }
-.covercontents{
-  background-color: rgba(0, 100, 0, 0);
-  height:fit-content;
-  width: max-content;
-  display:Inline-block;
-  text-align: center;
-  margin-top: 30px;
-}
-.coverdetails{
-  width:fit-content;
-  height:max-content;
-  background-color: rgba(255, 191, 101, 0);
-  text-align: center;
-}
-.covercontact:hover{
-  position:relative;
-  animation:brighten;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.coverhome:hover{
-  position:relative;
-  animation:brighten;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.coverweb:hover{
-  position:relative;
-  animation:brighten;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.coverhome{
-  height:40px;
-}
-.covercontact{
-  height:40px;
-}
-.coverweb{
-  position: relative;
-  height:37px;
-  padding-right: 15px;
-  margin-right:10px;
-}
-.coverlogo{
-  padding-right:5px;
-  position:relative;
-  top:3px;
-  filter:brightness(200%);
-}
-.my_pic_holder_div{
-  background-color: rgba(0, 0, 255, 0);
+.edubox{
+  width:480px;
+  font-size: 20px;
   display:inline-block;
+  margin:10px auto;
+  border: 2px solid white;
 }
-.covervideo{
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  z-index: -1;
-  filter: blur(2px) brightness(200%);
+.eduicon{
+  height:100px;
+  float:left;
+  margin:20px 30px 20px 10px;
 }
-.gradbox{
-  height:30px;
-  width:100%;
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0));
+.edutext{
+  text-align: left;
 }
 .link{
   height:25px;
@@ -135,64 +72,16 @@ ul{
   filter:hue-rotate(250deg);
   height:30px;
 }
-.Myname{
-  font-family: 'Tangerine',serif;
+.nav-link {
   color:white;
-  background-color: rgba(255, 0, 0, 0);
-  margin:0;
-  height:fit-content;
-  width:fit-content;
 }
-@media (max-width:700px){
-  .Myname {
-  font-size:60px;
-  }
+.navbar {
+  padding:10px;
 }
-@media (min-width:700px){
-  .Myname{
-    font-size:90px;
-  }
-}
-.Mypic{
-  border-radius:100%;
-}
-@media (max-width:700px){
-  .Mypic {
-    height:150px;
-  }
-}
-@media (min-width:700px){
-  .Mypic{
-    height:200px;
-  }
-}
-.oneLineBioText{
-  margin:0;
-  padding:0;
-  color:#138c00;
-  background-color: rgba(255, 166, 0, 0);
-  filter:drop-shadow(3px 3px 1px rgb(75, 75, 75));
+.navbar-collapse{
   text-align: center;
 }
-.oneLineBioText:hover{
-  animation-name: brightenandtransform;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-.revgradbox{
-  height:max-content;
+.section{
+  height:fit-content;
   width:100%;
-  background-image: linear-gradient(to top, rgba(255,0,0,0), rgb(0, 0, 0));
 }
-.restOfTheContent{
-background-color: rgb(0, 0, 0);
-padding:10px;
-}
-.topbar{
-  height: 80px;
-  background-image: linear-gradient(to top, transparent, black);
-  margin-top:0px;
-  padding:0px;
-}
-
-
