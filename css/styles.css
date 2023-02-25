@@ -47,7 +47,10 @@ h2{
 /* CLASS SELECTORS */
 .allsections{
   padding:10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.btn:hover{
+  filter: brightness(200%);
 }
 .centered{
   text-align: center;
@@ -72,9 +75,6 @@ h2{
   animation-name: flash;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
-}
-.link:hover{
-  filter:brightness(500%)
 }
 .nav-link {
   color:white;
