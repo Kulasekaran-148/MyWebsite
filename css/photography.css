@@ -1,0 +1,24 @@
+.cover{
+  width:100%;
+  height:500px;
+}
+.coverimg{
+  filter:blur(1px) brightness(45%);
+  position: fixed;
+  z-index: -1;
+}
+.navbar-brand img{
+  margin-left:10px;
+  margin-bottom:10px;
+  animation-name: color_cycle_shadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+#odyssey{
+  background-color: white;
+  width:60%;
+  height:700px;
+  position: absolute;
+  top:150px;
+  left:20px;
+}
