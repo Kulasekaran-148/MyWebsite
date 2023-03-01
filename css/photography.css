@@ -1,24 +1,88 @@
+.card{
+  background-color: transparent;
+  margin:10px auto;
+  height:fit-content;
+  border:none;
+}
+@media (max-width:700px){
+  .card{
+    width:90%;
+  }
+}
+@media (min-width:701px) and (max-width:1200px){
+  .card{
+    width:45%;
+  }
+}
+@media (min-width:1101px){
+  .card{
+    width:30%;
+  }
+}
+.card-img-top{
+  width:100%;
+  height:fit-content;
+  padding:0;
+  margin:0 auto;
+  background-color: rgba(255, 0, 0, 0);
+}
+.card-img-top div{
+  display:inline;
+}
+.card-img-top img{
+  border-radius: 20px;
+}
+.card-img-top:hover{
+  filter:brightness(60%);
+}
+.card-title{
+  text-align: center;
+  font-size: 1.45rem;
+}
 .cover{
   width:100%;
-  height:500px;
+  height:100px;
 }
 .coverimg{
-  filter:blur(1px) brightness(45%);
+  filter:blur(1px) brightness(30%);
   position: fixed;
   z-index: -1;
 }
-.navbar-brand img{
-  margin-left:10px;
-  margin-bottom:10px;
+.main-img img{
+  width:100%;
+  margin-bottom: 10px;
+  border:2px solid black;
+}
+.odyssey_num{
+  left:76%;
+  bottom:60px;
+}
+.side img{
+  width:32.5%;
+  margin:0 auto;
+  border:2px solid black;
+}
+.navbar-brand{
   animation-name: color_cycle_shadow;
-  animation-duration: 10s;
+  animation-duration:10s;
   animation-iteration-count: infinite;
 }
-#odyssey{
-  background-color: white;
-  width:60%;
-  height:700px;
-  position: absolute;
-  top:150px;
-  left:20px;
+.row{
+  margin:0px auto;
+}
+
+/* ELEMENT SELECTORS */
+a:hover{
+  filter:none;
+}
+h5{
+  color:rgb(255, 255, 255);
+  filter:drop-shadow(2px 2px 3px black);
+  font-size: 2.5rem;
+  font-family:Arial, Helvetica, sans-serif;
+  display:inline-block;
+  position:relative;
+}
+p{
+  margin:20px auto 3px auto;
 }
