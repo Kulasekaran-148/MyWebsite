@@ -1,0 +1,40 @@
+/* CLASS SELECTORS */
+@media (max-width:1100px){
+  .imgs{
+    width:45%;
+    margin:10px;
+  }
+}
+@media (min-width:1101px){
+  .imgs{
+    width:23%;
+    margin:8px;
+  }
+}
+@media (max-width:500px){
+  h1{
+    font-size: 1.6rem;
+  }
+}
+.gallery{
+  text-align: center;
+  margin:0;
+  padding:0;
+}
+.imgs{
+  aspect-ratio: 16/9;
+  border-radius: 20px;
+  display: inline;
+}
+.page-title{
+  margin:0 auto;
+  width:fit-content;
+}
+
+/* ELEMENT SELECTORS */
+h1{
+  color:white;
+  font-family: 'Tilt Prism', cursive;
+  display:inline-block;
+}
+
