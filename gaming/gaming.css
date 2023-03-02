@@ -24,9 +24,13 @@
 .gallery img{
   cursor: pointer;
 }
+.gallery:focus-within img:not(:focus) {
+  filter: blur(2px) brightness(40%);
+}
 .gallery img:focus{
   position:relative;
   width:92%;
+  filter:drop-shadow(0 0 10px black);
 }
 .imgs{
   aspect-ratio: 16/9;
