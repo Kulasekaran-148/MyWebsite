@@ -19,7 +19,7 @@
 .gallery{
   text-align: center;
   margin:0;
-  padding:0;
+  padding:100px 0 0 0;
 }
 .imgs{
   aspect-ratio: 16/9;
@@ -30,11 +30,7 @@
   margin:0 auto;
   width:fit-content;
 }
-
 /* ELEMENT SELECTORS */
-h1{
-  color:white;
-  font-family: 'Tilt Prism', cursive;
-  display:inline-block;
-}
+
+
 

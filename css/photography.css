@@ -1,12 +1,18 @@
 .card{
   background-color: transparent;
-  margin:10px auto;
   height:fit-content;
+  padding:0;
   border:none;
+  margin:0 auto;
+}
+.parent-card{
+  height:auto;
+  padding:0;
+  margin:0;
 }
 @media (max-width:700px){
   .card{
-    width:90%;
+    width:95%;
   }
 }
 @media (min-width:701px) and (max-width:1200px){
@@ -21,16 +27,11 @@
 }
 .card-img-top{
   width:100%;
-  height:fit-content;
-  padding:0;
-  margin:0 auto;
+  text-align: center;
   background-color: rgba(255, 0, 0, 0);
 }
-.card-img-top div{
-  display:inline;
-}
 .card-img-top img{
-  border-radius: 20px;
+  aspect-ratio: 16/9;
 }
 .card-img-top:hover{
   filter:brightness(60%);
@@ -41,26 +42,33 @@
 }
 .cover{
   width:100%;
-  height:100px;
+  height:100%;
 }
 .coverimg{
   filter:blur(1px) brightness(30%);
   position: fixed;
   z-index: -1;
 }
-.main-img img{
+.main-img{
   width:100%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   border:2px solid black;
+  border-top-right-radius:30px;
+  border-top-left-radius:30px;
 }
 .odyssey_num{
-  left:76%;
-  bottom:60px;
+  left:77%;
+  bottom:65px;
 }
-.side img{
-  width:32.5%;
-  margin:0 auto;
+.side{
+  width:32%;
   border:2px solid black;
+}
+.side-img-1{
+  border-bottom-left-radius:30px;
+}
+.side-img-3{
+  border-bottom-right-radius:30px;
 }
 .navbar-brand{
   animation-name: color_cycle_shadow;
@@ -69,19 +77,23 @@
 }
 .row{
   margin:0px auto;
+  padding-top:100px;
 }
 /* ELEMENT SELECTORS */
 a:hover{
   filter:none;
+}
+h1{
+  color:white;
+  font-family: 'Tilt Prism', cursive;
+  display:inline-block;
 }
 h5{
   color:rgb(255, 255, 255);
   filter:drop-shadow(2px 2px 3px black);
   font-size: 2.5rem;
   font-family:Arial, Helvetica, sans-serif;
-  display:inline-block;
   position:relative;
-}
-p{
-  margin:20px auto 3px auto;
+  width:fit-content;
+  margin:0;
 }
