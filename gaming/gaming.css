@@ -21,6 +21,13 @@
   margin:0;
   padding:100px 0 0 0;
 }
+.gallery img{
+  cursor: pointer;
+}
+.gallery img:focus{
+  position:relative;
+  width:92%;
+}
 .imgs{
   aspect-ratio: 16/9;
   border-radius: 20px;

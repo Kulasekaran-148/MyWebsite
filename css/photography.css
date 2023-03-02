@@ -70,7 +70,7 @@
 .side-img-3{
   border-bottom-right-radius:30px;
 }
-.navbar-brand{
+nav img{
   animation-name: color_cycle_shadow;
   animation-duration:10s;
   animation-iteration-count: infinite;
