@@ -1,14 +1,14 @@
 @keyframes float{
   0%{
     filter: brightness(300%) saturate(250%);
-    bottom:0px;
+    transform: scale(1);
   }
   50%{
-    bottom:15px;
+    transform: scale(1.2);
   }
   100%{
     filter: brightness(300%) saturate(250%);
-    bottom:0px;
+    transform:scale(1);
   }
 }
 @keyframes brightenandtransform{
