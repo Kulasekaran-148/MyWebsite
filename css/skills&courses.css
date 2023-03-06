@@ -1,3 +1,7 @@
+#VAC ul{
+  text-align: left;
+}
+
 @media (max-width:700px){
   .card{
     width:45%;
@@ -32,4 +36,10 @@
 .list-group-item{
   background-color: black;
   color:white;
+}
+.vac_logo{
+  height:30px;
+  aspect-ratio: 1/1;
+  margin:5px;
+  padding:0;
 }
