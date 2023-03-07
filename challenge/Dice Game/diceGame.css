@@ -1,0 +1,48 @@
+/* ID SELECTORS */
+
+/* CLASS SELECTORS */
+.endbox{
+ background-color: rgba(255, 0, 0, 0); 
+ position:absolute;
+ bottom:20px;
+ left:50%;
+ transform:translateX(-50%)
+}
+.nav-img{
+  height:30px;
+}
+.dice{
+  height:50px;
+}
+.goback{
+  border:1px solid white;
+  border-radius:20%;
+  padding:5px;
+  height:40px;
+}
+.goback:hover{
+  border:1px solid black;
+  filter:brightness(0%) contrast(100%);
+}
+.result{
+  margin-top:20px;
+}
+/* ELEMENT SELECTORS */
+body{
+  color:white;
+  text-align: center;
+}
+h1{
+  margin:0 auto;
+  filter:none;
+  color:white;
+  display:Inline;
+}
+th,td{
+  border:1px solid white;
+  padding:30px;
+  text-align: center;
+}
+table{
+  margin:200px auto 0 auto;
+}

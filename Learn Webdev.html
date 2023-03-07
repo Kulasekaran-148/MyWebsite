@@ -1063,14 +1063,67 @@
 					<li>The DOM model converts the html code into a tree structure so that it can be used to make the website interactive for the user</li>
 					<li>HTML tree generator extensions are available for chrome that can be downloaded to visualize what DOM does to a website. <a href="https://chrome.google.com/webstore/detail/html-tree-generator/dlbbmhhaadfnbbdnjalilhdakfmiffeg">Download <img class="link" src="images/link.png"></a></li>
 					<li>Consider a html document with head section and body section. The head will be the first child of the document and body will be the last child of the document</li>
-					<li>To access the first child of the document, use: <code>document().firstElementChild()</code></li>
-					<li>To access the last child of the document, use: <code>document().lastElementChild()</code></li>
+					<li>To access the first child of the document, use: <code>document.firstElementChild()</code></li>
+					<li>To access the last child of the document, use: <code>document.lastElementChild()</code></li>
 					<li>Consider, that the body section has a h1 element with "Hello" as its content</li>
-					<li>This "Hello" can be changed by using the following js code: <code>document().lastElementChild().firstElementChild().innerHTML = "GoodBye"</code></li>
-					<li>Not only content, styles can also be manipulated using js code. For eg. at first the content was by default black in color. To change its color to red, use: <code>document().lastElementChild().firstElementChild().style.color = "red"</code></li>
+					<li>This "Hello" can be changed by using the following js code: <code>document.lastElementChild().firstElementChild().innerHTML = "GoodBye"</code></li>
+					<li>Not only content, styles can also be manipulated using js code. For eg. at first the content was by default black in color. To change its color to red, use: <code>document.lastElementChild().firstElementChild().style.color = "red"</code></li>
 					<li>Inside the DOM, objects can have <b>properties</b> and <b>methods</b></li>
 					<li>Properties are charateristics of an object</li>
 					<li>Methods are things that an object can do</li>
+				</ul>
+			<hr><h2><center>Selecting elements with JS</center></h2><hr>
+				<ul>
+					<li>use <code>document.getElementsByTagName("");</code> will return all the elements with the matching tag name inside an array</li>
+					<li>Consider there are three li items in the body section of the document. Now if the third item in the list has to be of color green, it can be done by the following: <code>document.getElementsByTagName("li")[2].style.color = "green"</code></li>
+					<li>Elements can also be selected by their class names, use: <code>document.getElementsByClassName("");</code></li>
+					<li>And similary, to get element by its ID, use: <code>document.getElementById("")</code>. NOTE: in this code, its mentioned as <b>element</b> and not <b>element(s)</b>. Since IDs are unique</li>
+					<li>While the rest of the two methods return an array, the ID method returns only one item</li>
+					<li>There is another thing called <b>querySelector</b> and it works like this: <code>document.querySelector("")</code>Inside the quotations, either class or Id or element can be mentioned. querySelector also returns a single item. Even if there was more than one item that satisfies the querySelector string, only the first occurence of such matching item will be returned</li>
+					<li>To return all the items that match the querySelector, use: <code>docuemnt.querySelectorAll("")</code> and this would return a list of all such items</li>
+				</ul>
+			<hr><h2><center>Chaning styles using JS instead of CSS</center></h2><hr>
+				<ul>
+					<li>All methods should be in camelcased in JS. For example, if the font size was set as 10px for a h1 element using CSS, the same can be set using JS like this: <code>document.querySelector("h1").style.fontSize="10px"</code>. Note that the values are always insde the double quotation marks.</li>
+				</ul>
+			<hr><h2><center>JS vs CSS</center></h2><hr>
+				<ul>
+					<li>A website is built with HTML which gives it its strucutre</li>
+					<li>CSS gives the website its beautification</li>
+					<li>JS gives the website its behaviour or funcitonality</li>
+					<li>In the last topic, querySelectors were used to change the appearance of the element in the website directly, which is bad practice. Although it is possible via JS, the apperane must be taken care only by CSS.</li>
+					<li>But there is a method called <b>classList</b> which returns the list of classes that an element has</li>
+					<li>Consider there is a button with a class="btn". Using JS a class can be appended to this button. <code>document.querySelector("btn").classList.add("invisible")</code></li>
+					<li>The above code will the add the class "invisible" to the button along with the class "btn" which is already there. Now, a css selector with the name of "invisible" can be created inside the css file and manipulate the property of display:hidden;</li>
+					<li>Using the above technique, the JS can be indirectly used to alter the behaviour(apperance) of the webpage, while CSS is still doing the work in the background, and it will be easy when debugging</li>
+					<li>Similarly, the class can be removed by using <code>.remove("invisble")</code></li>
+					<li>There is anothe method called <code>.toggle("invisible")</code> which applies the class if its not already there and removes the class if its there</li>
+				</ul>
+			<hr><h2><center>Text manipulation using JS</center></h2><hr>
+				<ol>
+					<li>InnerHTML method
+						<ul>
+							<li>Consider the code: <code>&lt;h1&gt;&lt;strong&gt;Hello&lt;/strong&gt;&lt;h1&gt;</code></li>
+							<li>In the above HTML, if <code>document.querySelector("h1").innerHTML();</code> was used, then it would return "&lt;strong&gt;Hello&lt;/strong&gt;"</li>
+							<li>So innerHTML can be used to add code on the fly</li>
+						</ul>
+					</li>
+					<li>textContent method
+						<ul>
+							<li>Whereas the textContent(); method would only return the "Hello"</li>
+							<li>textContent can be used to add / modify content on the fly</li>
+						</ul>
+					</li>
+				</ol>
+			<hr><h2><center>Manipulating attributes of HTML elements</center></h2><hr>
+				<ul>
+					<li>using <code>.attributes();</code>, will return the array with all the attributes that the element has the html code</li>
+					<li>using <code>.getAttribute("attributeName")</code> will return the value that the attribute of the element has.</li>
+					<li>using <code>.setAttrubute("attributeName","value")</code>, will set the value of that attribute of that element</li>
+				</ul>
+			<hr><h2><center>Dice Game Challenge</center></h2><hr>
+				<ul>
+					<li><a href="challenge/Dice Game/diceGame.html">Dice Game <img class="link" src="images/link.png"></a></li>
 				</ul>
 		</div>
 	</div>

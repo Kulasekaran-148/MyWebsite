@@ -43,6 +43,9 @@
   filter: brightness(300%) saturate(250%);
   transform: scale(1.1);
 }
+.covermail{
+  height:30px;
+}
 .covermail:hover{
   filter: brightness(300%) saturate(250%);
   transform: scale(1.1);
