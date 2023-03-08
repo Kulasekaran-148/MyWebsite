@@ -72,6 +72,15 @@
 				<li class="nav-link btn btn-dark">
 					<a href="#dom">DOM</a>
 				</li>
+				<li class="nav-link btn btn-dark">
+					<a class="challenge" href="#dicegame">Dice Game</a>
+				</li>
+				<li class="nav-link btn btn-dark">
+					<a href="#Advanced_JS">Advanced Javascript & DOM Manipulation</a>
+				</li>
+				<li class="nav-link btn btn-dark">
+					<a class="challenge" href="#drumkit">Drum Kit</a>
+				</li>
     </div>
   </nav>
   <!--//////////////////////////////////////////////////////// -->
@@ -1121,11 +1130,31 @@
 					<li>using <code>.getAttribute("attributeName")</code> will return the value that the attribute of the element has.</li>
 					<li>using <code>.setAttrubute("attributeName","value")</code>, will set the value of that attribute of that element</li>
 				</ul>
-			<hr><h2><center>Dice Game Challenge</center></h2><hr>
+			<hr><h2 id="dicegame"><center>Dice Game Challenge</center></h2><hr>
 				<ul>
 					<li><a href="challenge/Dice Game/diceGame.html">Dice Game <img class="link" src="images/link.png"></a></li>
 				</ul>
 		</div>
+		<!-- /////////////////////////////////////////////////////// -->
+		<div class="section" id="Advanced_JS">
+			<hr><center><h1>Advanced Javascript & DOM Manipulation</h1></center>
+			<hr><h2><center>Adding Event listeners</center></h2><hr>
+				<ul>
+					<li><code>document.querySelector("button").addEventListener("click",func);</code></li>
+					<li><code>func(){alert("Hello");}</code></li>
+					<li>The above code waits for the first button element to be left clicked and when it happens, it calls the javascript function named <b>func</b></li>
+					<li>Note that normally when calling a function, the syntax would be to have <b>()</b> at the end of the function name. But in the above code, only <b>func</b> is written instead of <b>func()</b></li>
+					<li>If for instead, <b>func()</b> was written, then what would happen is that when the event listener is being added to the page, automatically the function will get called. But the function should get called only upon the click of the button.</li>
+					<li>There is another method called the usage of <b>Anonymous function</b> meaning the function doesn't need to have a name</li>
+					<li>Consider the above code. Now if the function didn't have the name func and still it was required to be called only at the click of the button, then it can be done as: <code>document.querySelector("button").addEvenetListener("click",function () {alert("Hello");});</code></li>
+					<li>Even though the <b>()</b> is used, since its an anonymous funciton, it won't be called until the click occurs</li>
+				</ul>
+			<hr><h2 id="drumkit"><center>Drum kit</center></h2>
+				<ul>
+					<li><a href="challenge/Drum Kit/drumkit.html">Drum Kit <img class="link" src="images/link.png"></a></li>
+				</ul>
+		</div>
+
 	</div>
 </body>
 </html> 

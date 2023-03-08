@@ -35,6 +35,12 @@
 .centered{
   text-align: center;
 }
+.challenge{
+  color:deepskyblue;
+  animation-name:glow;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+}
 .edubox{
   width:460px;
   display:inline-block;
