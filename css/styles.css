@@ -76,12 +76,15 @@
   scroll-margin-top: 100px;
 }
 /* ELEMENT SELECTORS */
-a,b,h1,h2{
+a,h1,h2{
   color:#138c00;
   text-decoration: none;
 }
 a:hover{
   filter: brightness(200%);
+}
+b{
+  color:blueviolet;
 }
 body{
   background-color: rgb(0, 0, 0);
