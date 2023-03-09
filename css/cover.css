@@ -14,13 +14,13 @@
   background-color: rgba(255, 255, 0, 0);
   margin:140px auto 0 auto;
 }
-.covervideo{
+.bg{
   position:absolute;
   z-index: -1;
-  filter:blur(1px) brightness(150%);
+  filter:blur(1px) brightness(70%);
   top:0;
   left:0;
-  position: fixed;
+  object-fit: fill;
 }
 .covericon{
   height:40px;
