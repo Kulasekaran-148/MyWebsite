@@ -1,6 +1,9 @@
 /* ID SELECTORS */
 
 /* CLASS SELECTORS */
+.clicked{
+  filter:brightness(150%) drop-shadow(0 0 1px white);
+}
 .drumkit{
   margin-top:30px;
 }

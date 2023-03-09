@@ -7,90 +7,123 @@ var medtom = new Audio('sounds/med-tom.mp3')
 var floortom = new Audio('sounds/floor-tom.mp3')
 var bassdrum = new Audio('sounds/bassdrum.mp3')
 
-document.getElementById("snare").addEventListener("click",function () {
+const snarebtn = document.getElementById("snare");
+const hitombtn = document.getElementById("hi-tom");
+const medtombtn = document.getElementById("med-tom");
+const floortombtn = document.getElementById("floor-tom");
+const bassdrumbtn = document.getElementById("bass-drum");
+const hihatbtn = document.getElementById("hi-hat");
+const crashcymbalbtn = document.getElementById("crash-cymbal");
+const ridecymbalbtn = document.getElementById("ride-cymbal");
+
+snarebtn.addEventListener("click",function () {
   snare.currentTime=0;
   snare.play();
 });
 document.addEventListener("keydown", function(event) {
-  if(event.keyCode===65){
-    snare.currentTime = 0;
-    snare.play();
+  if(event.key==="a"){
+    snarebtn.click();
+    snarebtn.classList.add("clicked");
+    setTimeout(function(){
+      snarebtn.classList.remove("clicked")
+    },100);
   }
 });
 
-document.getElementById("hi-tom").addEventListener("click",function () {
+hitombtn.addEventListener("click",function () {
   hitom.currentTime=0;
   hitom.play();
 });
 document.addEventListener("keydown", function(event) {
-  if(event.keyCode===83){
-    hitom.currentTime = 0;
-    hitom.play();
+  if(event.key==="s"){
+    hitombtn.click();
+    hitombtn.classList.add("clicked");
+    setTimeout(function(){
+      hitombtn.classList.remove("clicked")
+    },100);
   }
 });
 
-document.getElementById("med-tom").addEventListener("click",function () {
+medtombtn.addEventListener("click",function () {
   medtom.currentTime=0;
   medtom.play();
 });
 document.addEventListener("keydown", function(event) {
-  if(event.keyCode===68){
-    medtom.currentTime = 0;
-    medtom.play();
+  if(event.key==="d"){
+    medtombtn.click();
+    medtombtn.classList.add("clicked");
+    setTimeout(function(){
+      medtombtn.classList.remove("clicked")
+    },100);
   }
 });
 
-document.getElementById("floor-tom").addEventListener("click",function () {
+floortombtn.addEventListener("click",function () {
   floortom.currentTime=0;
   floortom.play();
 });
 document.addEventListener("keydown", function(event) {
-  if(event.keyCode===70){
-    floortom.currentTime = 0;
-    floortom.play();
+  if(event.key==="f"){
+    floortombtn.click();
+    floortombtn.classList.add("clicked");
+    setTimeout(function(){
+      floortombtn.classList.remove("clicked")
+    },100);
   }
 });
 
-document.getElementById("bass-drum").addEventListener("click",function () {
+bassdrumbtn.addEventListener("click",function () {
   bassdrum.currentTime=0;
   bassdrum.play();
 });
 document.addEventListener("keydown", function(event) {
-  if(event.keyCode===74){
-    bassdrum.currentTime = 0;
-    bassdrum.play();
+  if(event.key==="j"){
+    bassdrumbtn.click();
+    bassdrumbtn.classList.add("clicked");
+    setTimeout(function(){
+      bassdrumbtn.classList.remove("clicked")
+    },100);
   }
 });
 
-document.getElementById("hi-hat").addEventListener("click",function () {
+hihatbtn.addEventListener("click",function () {
   hihat.currentTime=0;
   hihat.play();
 });
 document.addEventListener("keydown", function(event) {
-  if(event.keyCode===75){
-    hihat.currentTime = 0;
-    hihat.play();
+  if(event.key==="k"){
+    hihatbtn.click();
+    hihatbtn.classList.add("clicked");
+    setTimeout(function(){
+      hihatbtn.classList.remove("clicked")
+    },100);
   }
 });
 
-document.getElementById("crash-cymbal").addEventListener("click",function () {
+crashcymbalbtn.addEventListener("click",function () {
   crash.currentTime=0;
   crash.play();
 });
 document.addEventListener("keydown", function(event) {
-  if(event.keyCode===76){
-    crash.currentTime = 0;
-    crash.play();
+  if(event.key==="l"){
+    crashcymbalbtn.click();
+    crashcymbalbtn.classList.add("clicked");
+    setTimeout(function(){
+      crashcymbalbtn.classList.remove("clicked")
+    },100);
   }
 });
 
-document.getElementById("ride-cymbal").addEventListener("click",function () {
+ridecymbalbtn.addEventListener("click",function () {
   ride.currentTime=0;
   ride.play();
 });
 document.addEventListener("keydown", function(event) {
-  if(event.keyCode===186){
-    ride.currentTime = 0;
-    ride.play();
+  if(event.key===";"){
+    ridecymbalbtn.click();
+    ridecymbalbtn.classList.add("clicked");
+    setTimeout(function(){
+      ridecymbalbtn.classList.remove("clicked")
+    },100);
   }
 });
