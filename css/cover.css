@@ -1,8 +1,6 @@
 /* ID SELECTORS */
 #bg-img{
-  position: fixed;
-  z-index: index -1;
-  overflow: hidden;
+  width:100%;
 }
 #coverarea{
   background-color: rgba(128, 128, 128, 0);
