@@ -11,7 +11,7 @@
   margin:5px;
   padding:0;
   aspect-ratio: 1/1;
-  border-radius:100%;
+  border-radius:20%;
 }
 @media (max-width:700px){
   .drumpart{
@@ -57,7 +57,7 @@ a:hover{
 body{
   background-color: black;
   color:white;
-  font-family: 'Mali', cursive;
+  font-family:'Times New Roman', Times, serif;
   text-align: center;
 }
 button{
@@ -66,8 +66,16 @@ button{
 h2{
   display:inline-block;
   position:absolute;
-  background-color: red;
+  background-color: rgb(72, 72, 72);
   width:30px;
+  border-radius:30%;
+  border:1px solid white;
+  font-size:25px;
+}
+@media (max-width:700px){
+  h2{
+    display:none;
+  }
 }
 nav{
   height:100px;

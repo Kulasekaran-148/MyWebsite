@@ -73,12 +73,13 @@
 }
 .myname{
   font-family: 'Tangerine',serif;
-  font-size: 4rem;
+  font-size: 5rem;
   background-color: rgba(0, 128, 0, 0);
   height:80px;
 }
 .mybio{
-  font-size:40px;
+  margin-top:10px;
+  font-size:2rem;
   background-color: rgba(255, 0, 0, 0);
   color:#138c00;
   filter:brightness(200%);
