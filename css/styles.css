@@ -64,9 +64,6 @@
 .nav-link {
   color:white;
 }
-.navbar {
-  padding:10px;
-}
 .navbar-collapse{
   text-align: center;
 }
@@ -92,6 +89,11 @@ body{
   font-family: 'Gabriela', serif;
   font-size:18px;
   scroll-behavior: smooth;
+}
+@media (max-width:400px){
+  body{
+    font-size:15px;
+  }
 }
 h1,h2{
   filter:brightness(200%)
