@@ -1,31 +1,27 @@
 /* ID SELECTORS */
 #bio{
-  margin:0;
-  padding:0;
-  animation-name:brightenandtransform;
-  animation-duration:2s;
-  animation-iteration-count:infinite;
+  font-size:1.5rem;
+  /* background-color: brown; */
 }
 #bgimg{
-  background: linear-gradient(to bottom, transparent, transparent, black), url('../images/bg.jpg') no-repeat center center / cover;
+  background: linear-gradient(to bottom, transparent, transparent, black), url('../images/bg.jpg') center / cover;
   height:420px;
-  filter:blur(1px) brightness(90%);
+  filter:blur(1.5px) brightness(90%);
 }
 #coverdetails{
   text-align: center;
   top:310px;
   position: absolute;
   width:100%;
+  /* background-color: aqua; */
 }
 #myname{
-  font-size: 4rem;
-  font-family: 'Tangerine';
-  margin:0;
-  padding:0;
-  color:white
+  font-size: 2rem;
+  color:white;
+  /* background-color: black; */
 }
 #mypic{
-  height:200px;
+  height:180px;
   border-radius:100%;
   position: absolute;
   top:100px;
@@ -35,9 +31,8 @@
 
 /* CLASS SELECTORS */
 .covericon{
-  height:40px;
+  height:35px;
   margin:0 10px;
-  display:inline-block;
 }
 .covercontact:hover{
   filter: brightness(300%) saturate(250%);
@@ -66,30 +61,12 @@
   filter: brightness(300%) saturate(250%);
   transform: scale(1.1);
 }
-.gradbox{
-  height:30px;
-  width:100%;
-  background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgb(0, 0, 0));
+.navbar-toggler{
+  margin:0;
+  padding:0;
+  position:absolute;
+  right:20px;
+  top:10px;
 }
-.pic_container{
-  background-color: rgba(165, 42, 42, 0);
-  height: fit-content;
-  width: fit-content;
-  margin: 0 auto;
-}
-.myname{
-  font-family: 'Tangerine',serif;
-  font-size: 5rem;
-  background-color: rgba(0, 128, 0, 0);
-  height:80px;
-}
-.mybio{
-  margin-top:10px;
-  font-size:2rem;
-  background-color: rgba(255, 0, 0, 0);
-  color:#138c00;
-  filter:brightness(200%);
-  animation-name: brightenandtransform;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
+
+/* ELEMENT SELECTORS */
