@@ -91,23 +91,16 @@
     </div>
   </nav>
   <!--//////////////////////////////////////////////////////// -->
-  <div id="coverarea">
-    <div class="bg">
-      <img id="bg-img" src="images/bg.jpg">
-    </div>
-    <div id="coverdetails">
-      <div class="pic_container">
-        <img id="mypic" src="images/KULASEKARAN.jpg" alt="">
-      </div>
-      <div class="myname">I'm Kulasekaran</div>
-      <div><p class="mybio">A Web Developer</p></div>
-    </div>
+  <div id="bgimg"></div>
+  <img id="mypic" src="images/KULASEKARAN.jpg">
+  <div id="coverdetails">
+    <h1 id="myname">I'm Kulasekaran</h1>
+    <h2 id="bio">Mechatronics Engineer</h2>
   </div>
-  <!-- <div class="gradbox"></div> -->
 	<!--//////////////////////////////////////////////////////// -->
 	<div class="allsections">
 		<div class="section" id="HTML">
-			<center><h1>HTML - <b class="heading">H</b>yper <b class="heading">T</b>ext <b class="heading">M</b>arkup <b class="heading">L</b>anguage</h1></center>
+			<center><h1>HTML - Hyper Text Markup Language</h1></center>
 		<hr><center><h2>Introduction to HTML</h2></center><hr>
 		<ol>
 			<li>HTML</li>
@@ -289,7 +282,7 @@
 		</div>
 		<!--//////////////////////////////////////////////////////// -->
 		<div class="section" id="Beginner_CSS">
-			<center><h1>CSS - <b class="heading">C</b>ascading <b class="heading">S</b>tyle <b class="heading">S</b>heet</h1></center>
+			<center><h1>CSS - Cascading Style Sheet</h1></center>
 			<hr><center><h2>33. Introduction to CSS</h2></center><hr>
 			<ul>
 				<li>CSS is used to style the website to make it look more appealing which can't be done with HTML alon. Also, CSS along can't do anything without a base HTML</li>
@@ -1217,12 +1210,12 @@
 		<!-- /////////////////////////////////////////////////////// -->
 		<div class="section" id="jquery">
 			<hr><center><h1>JQuery</h1></center>
-			<hr><h2><center>What is Jquery</center></h2><hr>
+			<hr><h2><center>What is jQuery</center></h2><hr>
 				<ul>
-					<li>JQuery is a JS library that mainly helps in reducing the code length but maintaining the same funcitonality as that of pure JS</li>
+					<li>jQuery is a JS library that mainly helps in reducing the code length but maintaining the same funcitonality as that of pure JS</li>
 					<li>for eg. <code>document.querySelector('h1')</code> = <code>$('h1')</code></li>
 				</ul>
-			<hr><h1><center>Incorporating Jquery into the website</center></h1><hr>
+			<hr><h2><center>Incorporating jQuery into the website</center></h2><hr>
 				<ul>
 					<li>Just like how bootstrap was incorporated into the website, Jquery can be incorporated using the CDN</li>
 					<li>Visit: <a href="https://developers.google.com/speed/libraries#jquery">Jquery Google CDN <img class="link" src="images/link.png"></a></li>
@@ -1232,6 +1225,12 @@
 					<li>consider there was a h1 tag with textContent = "Hello". By default this would be black in color. To change its color using Jquery, add the following JS: <code>$('h1').css('color','red');</code></li>
 					<li>If the jQuery CDN and the JS inclusion script were included in the <b>head</b> section of the HTML document, then there won't even be an error and still the style would not be applied to the h1 element</li>
 					<li>This is because, since the HTML document is being read from top to bottom by the system, the JS will try to apply the styling even before there exists any element. To fix this, readiness of the document can be checked by using the following: <code>$document.ready(function(){$('h1').css('color','red');});</code></li>
+				</ul>
+			<hr><h2><center>Minification</center></h2><hr>
+				<ul>
+					<li>If the CDN link of Bootstrap or jQuery is pasted into the chrome, then there will be a mess of continuous code in the page.</li>
+					<li>But its just the minified version of the library. What Minification does is that it removes all the whitespaces, comments and unused code from the file to try and reduce the file size</li>
+					<li>Head over to : <a href="https://www.minifier.org/">Minifier.org <img class="link" src="images/link.png"></a> to minify JS or CSS code</li>
 				</ul>
 		</div>
 	</div>

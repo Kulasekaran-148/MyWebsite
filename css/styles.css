@@ -93,9 +93,6 @@ body{
   font-size:18px;
   scroll-behavior: smooth;
 }
-h2{
-  margin:20px 0;
-}
 h1,h2{
   filter:brightness(200%)
 }
