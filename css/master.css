@@ -1,0 +1,105 @@
+/* MEDIA QURIES */
+@media (max-width: 400px){
+  #profilepic{
+    height: 150px;
+    top: 220px;
+  }
+  #typingParagraph{
+    top:390px;
+  }
+  #welcomebtn {
+    width: 80%;
+    height: 80px;
+  }
+}
+
+@media (min-width:401px){
+  #profilepic{
+    height: 200px;
+    top:250px;
+  }
+  #typingParagraph{
+    top:500px;
+ }
+ #welcomebtn {
+  width: 300px;
+  height: 150px;
+}
+}
+
+/* ID SELECTORS */
+#bg{
+  height:1000px;
+  width:100%;
+  background-color: black;
+}
+#bgimg{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+  transition: all 1s ease;
+}
+#profilepic{
+  position: absolute;
+  border-radius:100%;
+  position:absolute;
+  transition: all 2s ease;
+  left:50%;
+  transform: translateX(-50%);
+}
+#typingParagraph{
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  width:75%;
+  height:fit-content;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(3px);
+  text-align: justify;
+  transition: all 2s ease;
+  color:white;
+  font-family: 'Montserrat',sans-serif;
+  padding:30px;
+}
+#welcomebtn{
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  padding:5px;
+  font-size: 200%;
+  transition: all 1s ease;
+  border-radius: 20px;
+}
+
+/* CLASS SELECTORS */
+.welcomebtn-translate-to-top{
+  top:70px;
+  left:50%;
+  transform: translateX(-50%) scale(0.7);
+  -webkit-backdrop-filter:  blur(5px) brightness(120%);
+  backdrop-filter: blur(5px)brightness(120%);
+}
+.welcomebtn-middle-pos{
+  top:50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-backdrop-filter:  blur(3px)brightness(120%);
+  backdrop-filter: blur(3px)brightness(120%);
+}
+.hide{
+  opacity: 0;
+}
+.visible{
+  opacity: 100%;
+}
+.dim{
+  filter: blur(3px) brightness(80%);
+}
+/* ELEMENT SELECTORS */
+body{
+  margin: 0;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Merriweather Sans', sans-serif; */
+}
