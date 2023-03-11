@@ -1,6 +1,8 @@
 const welcomebtn = document.getElementById('welcomebtn');
 const mypic = document.getElementById('profilepic');
 const bgimg = document.getElementById('bgimg');
+const myname = document.getElementById('myname');
+const mybio = document.getElementById('mybio');
 
 const typingParagraph = document.getElementById('typingParagraph');
 const typingText = "Hi, I'm Kulasekaran - A Mechatronics Engineer from Villupuram, India. I'm currently learning Web Development from Udemy. This page is currently in developement.";
@@ -27,17 +29,23 @@ welcomebtn.addEventListener('click', function() {
     typingParagraph.classList.remove('hide');
     typingParagraph.classList.add('visible');
     setTimeout(typeWriter, 0);
-    if(played===0){
-      typingaudio.play();
-      played = 1;
-    }
-    
+    // if(played===0){
+    //   typingaudio.play();
+    //   played = 1;
+    // }
   },2000);
 
   //pausing typingsound after 10s
-  setTimeout(function() {
-    typingaudio.pause();
-  },7000);
+  // setTimeout(function() {
+  //   typingaudio.pause();
+  // },7000);
+
+  setTimeout(function(){
+    myname.classList.remove('hide');
+    myname.classList.add('visible');
+    mybio.classList.remove('hide');
+    mybio.classList.add('visibile');
+  },2000);
 });
 
 //aboutme typing function

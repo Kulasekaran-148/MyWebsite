@@ -1,5 +1,8 @@
 /* MEDIA QURIES */
 @media (max-width: 400px){
+  .myname-box{
+    top:400px;
+  }
   #profilepic{
     height: 150px;
     top: 220px;
@@ -14,22 +17,25 @@
 }
 
 @media (min-width:401px){
+  .myname-box{
+    top: 470px;
+  }
   #profilepic{
     height: 200px;
     top:250px;
   }
   #typingParagraph{
     top:500px;
- }
- #welcomebtn {
-  width: 300px;
-  height: 150px;
-}
+  }
+ #welcomebtn{
+    width: 300px;
+    height: 150px;
+  }
 }
 
 /* ID SELECTORS */
 #bg{
-  height:1000px;
+  height:750px;
   width:100%;
   background-color: black;
 }
@@ -38,6 +44,10 @@
   width:100%;
   object-fit: cover;
   transition: all 1s ease;
+}
+#myname{
+  font-family: 'Tangerine', cursive;
+  font-size:60px;
 }
 #profilepic{
   position: absolute;
@@ -64,6 +74,7 @@
   padding:30px;
 }
 #welcomebtn{
+  z-index:+1;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   padding:5px;
@@ -73,6 +84,26 @@
 }
 
 /* CLASS SELECTORS */
+.dim{
+  filter: blur(3px) brightness(70%);
+}
+.hide{
+  opacity:0;
+}
+.myname-box{
+  color:white;
+  font-family: 'Montserrat';
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+  height:50px;
+  width:90%;
+  transition: all 2s ease;
+  text-align: center;
+}
+.visible{
+  opacity: 100%;
+}
 .welcomebtn-translate-to-top{
   top:70px;
   left:50%;
@@ -87,19 +118,10 @@
   -webkit-backdrop-filter:  blur(3px)brightness(120%);
   backdrop-filter: blur(3px)brightness(120%);
 }
-.hide{
-  opacity: 0;
-}
-.visible{
-  opacity: 100%;
-}
-.dim{
-  filter: blur(3px) brightness(80%);
-}
 /* ELEMENT SELECTORS */
 body{
   margin: 0;
+}
+html{
   background-color: black;
-  font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Merriweather Sans', sans-serif; */
 }
